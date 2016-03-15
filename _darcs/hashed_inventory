@@ -1,0 +1,2993 @@
+pristine:97bbeda6887353910a1543551f632a9b14d7e5b60598ec335c637418b016ca8f
+[Default front page
+Gitit <>**20100125111459
+ Ignore-this: b5bb7dfda85726e1379672c7a16f5b00
+] 
+hash: 0000000645-899642dc126fb1ef83e057b15245ced81da691e6ed10df3b36302ffd8872abfe
+[Default help page
+Gitit <>**20100125111459
+ Ignore-this: ba479683be7ec30cd097a1153afbe6ed
+] 
+hash: 0000009712-24722ca1e7732b094956fccc3546db4b9857ed2a9dc691cea66c082e2d8345d5
+[User's guide (README)
+Gitit <>**20100125111459
+ Ignore-this: cb16395fd647fc6d95c5597031c1720f
+] 
+hash: 0000020004-37874cda076bd6acd3e38b5eb5ca4d15569e711d6ee1ebbb2c5382e52ed878ee
+[Initial
+merehap@gmail.com**20091224053018
+ Ignore-this: fb67f972e616d543d66d662af164ab4a
+] 
+hash: 0000002382-61406228f7ce37d9e754828f889788bbfdcebedd5bf5e3354d3a46d879c09967
+[Command line processing
+merehap@gmail.com**20091229041355
+ Ignore-this: e35c619c565dd808cb462b9253a4136d
+ 
+ Added use of System.Console.ParseArgs
+] 
+hash: 0000004229-59eee8dbbc3781c71c2ddfbbf2794d249def224e071ae3a1fccc8d91b3590339
+[Simple cat and generalized args
+merehap@gmail.com**20091229053323
+ Ignore-this: ee06f97745b1f3b146f176ed6370ca89
+] 
+hash: 0000001436-19849b686253708164ed70ff52bdf0cf9ad70c177036be61cbc3246a00614c76
+[cat argument descriptions added
+merehap@gmail.com**20091229061924
+ Ignore-this: dce63ecf0be15ca4893453a156a57780
+] 
+hash: 0000002048-592ecaee3f1ccc94245709463cdca22e3e1b75e52f124ff6ba05d16a90ea0fc2
+[Basic echo with arguments
+merehap@gmail.com**20091229071828
+ Ignore-this: a28763c85c34857e288a8d482c780965
+] 
+hash: 0000000780-6ff2e6e4bc573555ecac83539fe98f02edd13f7061d1727c578626a68ce10b4e
+[All args for grep (broken)
+merehap@gmail.com**20091229095127
+ Ignore-this: ddc32b0a3cf20bc9f3d688304babcbb1
+ 
+ Args need to be compiled and rearranged to be proper.
+] 
+hash: 0000005587-316a4d50e175e8c366e5f88c3a5ecd9b2900072d7b037090332dc9527816a102
+[Most grep compile errors fixed
+merehap@gmail.com**20091229114145
+ Ignore-this: a4e1425dc6eb84cac0fb99d5b8642b58
+] 
+hash: 0000005206-32d72744921d4763213c27c06170f5b7d63ce1bd6ca4142be7b5f13b412e1912
+[Fully integrated Extended Switches, Fixed Remaining Grep Compile Errors
+merehap@gmail.com**20091230114726
+ Ignore-this: 6d81cc9ec7162ece673945fb1bf4b93
+] 
+hash: 0000008365-0528b0a20b7ce63016cd6c4f9f191d95b2f9e4af7cfd985577f797a04583fdf6
+[Tool standardization, wc implementation.
+merehap@gmail.com**20100103012030
+ Ignore-this: 37c8abafd11a53214ca4e1ea4d02bdd1
+] 
+hash: 0000019426-9d8dc28aa6586a483506507a426bd658de6eea2e81936c7b5e37b47a7e48e0ca
+[WC and LS clean up, echo re-architecture (broken).
+merehap@gmail.com**20100104095626
+ Ignore-this: d3982820a878d8119656fa0326f5583c
+] 
+hash: 0000005997-6449ad4adbed585929746e69adb159b4d7f99b11cae323ddc1a337084d3e6fa2
+[Initial echo complete.
+merehap@gmail.com**20100106022834
+ Ignore-this: e1cf501561561802e8840616988d69df
+] 
+hash: 0000006063-abf78983ff29bacf2ab9e08ba78700040b2c73e1691c00582ab77cdcd9649f24
+[removal of extra line
+merehap@gmail.com**20100106023426
+ Ignore-this: 7e1f19f4e1776e6a6adea5b2f7708885
+] 
+hash: 0000000134-5f678d465d33fbad24008ee66a6cbb99268b079f2f168de2b53bed56542abe13
+[Cleanup, cat progress.
+merehap@gmail.com**20100115033234
+ Ignore-this: 7d504ad006aa1556b107e9505b88e3e9
+] 
+hash: 0000004677-6c0a1b735f4b302d3e667c3283f8c7e7b4efd7a964ddddd4ef51dab1f546a9c8
+[WC update
+merehap@gmail.com**20100125102611
+ Ignore-this: 805e6b80b11185cedeff048288ea6030
+] 
+hash: 0000003994-d5bb3927872b34e6cdd9c98c339289bc68f6e862c0672dd1c77be131e362c0aa
+[Warnings fixed
+merehap@gmail.com**20100125103828
+ Ignore-this: 17a891e691979fa2621b01b40d5a35d0
+] 
+hash: 0000002091-0f1714aa7e9c777815095461a6fe398e3a27da43c41c9dbddf9f37e0a0a5a5e6
+[hlint compliance
+merehap@gmail.com**20100125105041
+ Ignore-this: 5ac1b4e8138a65f3116f2ba7027af9de
+] 
+hash: 0000002275-72c55242480c283b747e310ac3859b64d442b53349cee4710af7b62d5dc26abc
+[fix yes
+merehap@gmail.com**20100125105201
+ Ignore-this: 588b4c5ca97d95b57348ab8b20126cdd
+] 
+hash: 0000000138-816a30dd0605e796ad268f4af3700b4869f7d492d58f1f0042dcc98d2ea56ad6
+[Initial description
+merehap <>**20100127075343
+ Ignore-this: 6d4dd4edc644ea79afdbe76dbf493ad1
+] 
+hash: 0000001871-61452adec3cf5241d6e6eac7a9b9cd2a42273d2c77b27bb68bdce3b854f53304
+[Architecture section
+merehap <>**20100127084957
+ Ignore-this: b111cce164c56f3f7238e7459e456932
+] 
+hash: 0000000290-834d0de8858366e8578a04190d83ba81defb7037c0f0f7ca2de0b7a61fcbf290
+[Partial utility architecture description.
+merehap <>**20100127095725
+ Ignore-this: be357d86f005ce61c9e7e71fb5c87ddf
+] 
+hash: 0000002202-cc9900b7ffa9f8c86593efcd880b714d65199c2fa6b3631b6588d71c8528f1f8
+[Full initial architecture
+merehap <>**20100127104656
+ Ignore-this: 412bb21271b29bab7446a1d89877283d
+] 
+hash: 0000004223-8aeef3c9ec39d1b5849e5b4017b95476a7bc9c05c1ab5a02b65b9cda21be2a3f
+[Build page and GNU core utils link
+merehap <>**20100127105415
+ Ignore-this: 19debc65ed6865b064d10c4a0f24120a
+] 
+hash: 0000000704-bf80acba732ed5c50770923a08d4ba9609670ecee6f2888c5f62f17d6264067a
+[Description of building stand-alone binaries
+merehap <>**20100127105940
+ Ignore-this: 1b6d1045b68fb1d69c18296fc73de1ab
+] 
+hash: 0000000497-7f72be38f770587019f89a5926a761869b259ee0046748dac2bae9d7c299d31b
+[Modified version numbers to be more in line with Hackage convention. Added other objectives for 0.x releases.
+merehap <>**20100127190547
+ Ignore-this: e99130373acce0771671121c517eeaad
+] 
+hash: 0000001281-ddea3b482eb8116bda54ada9206b08de0ee5ff06da9c08e822cff892c8de1a12
+[Removed extra blank line.
+merehap <>**20100127222933
+ Ignore-this: e70274217160d05fc3ed22b02a577352
+] 
+hash: 0000000132-b06dc7df2b23462147463aa448de6af91a8b9bdf6b1147edb1181d159425b96a
+[Added imports. Minor spelling grammar fixes. Improved pure utility description.
+merehap <>**20100127235013
+ Ignore-this: c5b1d179341aa3451064b198c47029e5
+] 
+hash: 0000003030-6c5845764d3263e15f59d4cec968da3dd5f841365d89f647495fa28c27204b1d
+[Additional constraints on submissions.
+merehap <>**20100128071454
+ Ignore-this: ae775c6ffe159456c4031bfa19dfcef9
+] 
+hash: 0000000570-e5948ec8210492d40f8e476adfdb9d73167ba07983bdba116c170fa9792d45a1
+[Subdividing Core Utils into File/Shell/Text
+merehap@gmail.com**20100128074854
+ Ignore-this: efd2fcb92bb2ef8662babdb4aa1672a2
+] 
+hash: 0000000807-accc4d5e3bc5abe0548eb263d786054cc6adc8aea9f85db7b945b90d4bcb73b7
+[Structuring the source tree
+merehap@gmail.com**20100128083648
+ Ignore-this: ae3cf58ced541afcc8f4cea42d20ba16
+ 
+ Core utils are broken down into file/shell/text. Other utils are divided similarly to BusyBox.
+] 
+hash: 0000001691-131a775c1323b390033ae6320721a9366186246859203932f2b22289d8e612dc
+[Common code folder creation
+merehap@gmail.com**20100128090429
+ Ignore-this: 50394c0601ca9be16608f4508a5154f5
+] 
+hash: 0000000175-19c1249ddf208b4a5137aa35b94edc90caf69ecbb7d403fe8f0a3d2906298fc2
+[Fixed over-length line
+merehap@gmail.com**20100128092902
+ Ignore-this: e64aa29147f5086db4ed0729d23ea2ce
+] 
+hash: 0000000385-fcfe8dd2c27d78a707350be9f0ba1bd7f83ef3be737fa3652597cb65274206b2
+[Added TextUtils TODO list
+merehap@gmail.com**20100128093000
+ Ignore-this: c898d396ef2bfb2c6de415ef46f6e394
+] 
+hash: 0000000402-d9535dbb2ccb1d8c911bf83030c5644c9605ec57ef13c4918ce206b3391395c2
+[Explicit export list per utility in each module
+merehap@gmail.com**20100128111235
+ Ignore-this: a7a07cbf11bf14ff28e6c4e13d1cbc74
+] 
+hash: 0000001508-e6774f237604f3c3fc5ad7623a8347907dd854b6ccce454001d38fd990a5508b
+[Initial HusyHox support for combined binary
+merehap@gmail.com**20100128111353
+ Ignore-this: ba99eaf0800dd3f39bf3d274de5a5b5f
+] 
+hash: 0000001067-d3a25d067f45d3d433ecdb9fbc515ed60056753250c87bf7f181e81a9557b30c
+[Export list information
+merehap <>**20100128112217
+ Ignore-this: 5e6490742f6cdb772bd911b1ac728d50
+] 
+hash: 0000000459-ebfaa42e9221e569b18dd0a94554a3357747a500c7151d48d6c0a222964c565d
+[Generalized and fixed util category information
+merehap <>**20100128112409
+ Ignore-this: 1540f308bb318f628f440c4144e3a87b
+] 
+hash: 0000000374-028dbaaed1c3545e8394a4138ac27ef0e2c3237483c81dd3405a9fa40fd63693
+[Updated stand alone build procedure
+merehap <>**20100129024938
+ Ignore-this: 140daa97ea9a2cb6acbe3f8853e8a95
+] 
+hash: 0000000483-5252e1ef9cac0eb5e9b7061535ea18c7825c442aa70b51a016005fda77ad3aa2
+[Added way to build entire HusyHox
+merehap <>**20100129025950
+ Ignore-this: ad4deb620399862da591e7e38f1ca7cf
+] 
+hash: 0000000468-e31b750cc0db07bd9944601211fd67da54e9c11f4af4c4e349e59152ae859f6f
+[Fixed escaping of ghc calls
+merehap <>**20100129030709
+ Ignore-this: c1e840dbef11869b019c1c1f42e80f27
+] 
+hash: 0000000363-fc5f0c42182d0d0828b848169532ff8f22e917f51c6cd1c3ca158cb756bf10fc
+[Standardized husyhox build process
+merehap <>**20100129091936
+ Ignore-this: c6f72e5e3422ed2f722af312983dbe3e
+] 
+hash: 0000000320-5c275a8b2a0f2ecfe4d92573f58e17e331eea492db93c75266a883dc48bd0c27
+[Adding version and usage feedback
+merehap@gmail.com**20100129081429
+ Ignore-this: d5e7a0be78cfa87b1de5cf9c7b31a052
+] 
+hash: 0000001097-fab5b94544fc788f69b55c1b55f99eacc3087311f0223380dcef70c8a09fe24f
+[Minimal uniq
+merehap@gmail.com**20100129082655
+ Ignore-this: 41232a0a2f96b6714048e9c8a0e10e4c
+] 
+hash: 0000000457-900ba33b9447e87ebeca57b53dc656153dedecb6560c28c6375f5a43f63e2951
+[Updated export information
+merehap <>**20100129095646
+ Ignore-this: 77a135c5f3052f04544c00b5bbc67d52
+] 
+hash: 0000000402-f4f30ace8ba78f896612ace6f0a7aafa08e2e4413dff8005e6385d677d2d3579
+[Clean up imports and exports
+merehap@gmail.com**20100129100849
+ Ignore-this: cb14a98639b3e6bf280e011c750ed8b4
+ 
+ Export main from utils, explicit exports from common.hs, explicit imports for husyhox.hs.
+] 
+hash: 0000002774-a30fd28bce3ddaab27f26ea591b82336203047b39b3f59b7230bdd6756152c28
+[Qualified System.IO imports for cat
+merehap@gmail.com**20100131104725
+ Ignore-this: a89d262f71bcc7ab21099b11f9684dac
+] 
+hash: 0000000218-5f77aa89dafba19355950b6b3db4612db83c89c1a5d16109c8a80857908c8963
+[Added build script
+merehap@gmail.com**20100131202329
+ Ignore-this: bc41a8e66642b86cef01706c3a4a7367
+] 
+hash: 0000000257-ed5dce4ca53710a2c55c3fe207a80024220039cab92b565774578d15534e38c8
+[Updated build script location
+merehap <>**20100131203117
+ Ignore-this: 17d0f8aabfaa55a7c43293da4f0d494d
+] 
+hash: 0000000534-21855e7574e9550d3c82b5eeb981cf85c62472ad84978231a208960c193fbb54
+[Updating build script, removing unused TDFA dependency
+merehap@gmail.com**20100131205158
+ Ignore-this: daa6b6eaf3ca014117e3e981e3e19193
+] 
+hash: 0000000475-031f25af34330049b6484a8fe38fb01c72d658361d22394da69185710a76395a
+[Additional purpose added
+merehap <>**20100203202017
+ Ignore-this: 980294e3406cde2a50e5efc415e6d7c
+] 
+hash: 0000000990-ffd552e95b34a0f8d3b97c846a89a77299a8bd3f5e7bd32716913190c9ab0f95
+[Added BusyBox link
+merehap <>**20100203202231
+ Ignore-this: a9e404f57b4fc70f6b6ba010eb2bf53
+] 
+hash: 0000000221-17acfd8a5486efa11de40d867edde7e504c7e47896699554cd244bcdfe5dfefa
+[Reference to warning and hlint compliance in build script
+merehap <>**20100203223858
+ Ignore-this: 5afb2e586285cd66a3c9e1ac979a12b7
+] 
+hash: 0000000763-6b81a4042a0adb0b8ec5290c6bb9a07c52a84f7131139dba3887c61635ab9930
+[Added core util documentation location
+merehap <>**20100203224201
+ Ignore-this: da8f85c6d424574ccac9ae78a3d14329
+] 
+hash: 0000000256-1cd2245803a953bc97e06f37b900314310e17ee99c7bb5bac1281754d6da3c30
+[Implemented pureUniq parameter list
+merehap@gmail.com**20100201040700
+ Ignore-this: 6989f0b412e2c8eb4c87cc1a7e8bf615
+] 
+hash: 0000001092-bab2413a9b29ab265b53a4691c81cdc6eabe0df217c4b454b46f7409fda3c098
+[Most of pure uniq implemented (no zero delimiter)
+merehap@gmail.com**20100203054327
+ Ignore-this: 78bfca589c743641e3b7bbe9e38930ce
+] 
+hash: 0000002816-bdee94c0e56e29d6660a4d0993c438866c084a4ad42f76770276a084e28b0682
+[Fixes to pureUniq
+merehap@gmail.com**20100204044622
+ Ignore-this: e0de7af551bd3aabd143997051e977ba
+ 
+ Corrected pureUniq so that it will allow skip fields and skip chars to specified.
+ 
+ Fixed processing order so that output lines will remain unmodified.
+ 
+] 
+hash: 0000002993-93193b624c4439c3abee7fccbc3261169351f9d18e8110b68b0cc65e6a9c4e14
+[Relatively complete uniq
+merehap@gmail.com**20100204063536
+ Ignore-this: 55f1fe510e1f19806831c43658ca05b5
+] 
+hash: 0000002103-b33d38ca0a666521c807eb3e12d8bebd097560131b8a196319a90e43d9193d87
+[Cleanup and ADT commenting
+merehap@gmail.com**20100204224518
+ Ignore-this: 55074192b1aec3481563cbb1d78f7a1f
+] 
+hash: 0000004613-34817d0f9e4d9fe22c53c460b4cae5c037076d694cc9de0fcbd77b21cbe193e7
+[Moved build.sh back to src
+merehap@gmail.com**20100204234754
+ Ignore-this: 59649c527291f3091c704617b332b08f
+] 
+hash: 0000000435-05fe81b8d2558e5ce8e0627c0fbc020ff1f1096168f8a50a59ddabb2e136da80
+[Added int arg parsing
+merehap@gmail.com**20100204234849
+ Ignore-this: 21448fd47e8caec6f56114d315f62f80
+] 
+hash: 0000000695-71f2708b8b3f71e33c46af84a21c8dc58f6d1afc99765f0ef21da411dd6ec26a
+[Added input and output file handling to uniq
+merehap@gmail.com**20100205002018
+ Ignore-this: e8be3a770442f29a7fcfc6843b7a2b4d
+] 
+hash: 0000001125-8907c673910644099465b407b33c6e7a1839bb275a9bbfa6d744a168c0f3e323
+[Reverted build script location
+merehap <>**20100205084246
+ Ignore-this: cd71a0c566800d5548620d19dc9095aa
+] 
+hash: 0000000269-843cc09dfc00e0412ef564e7b0974a4f04f811872dd86ee1178a6b51934d65ab
+[Added dash (-) as additional stdin reader
+merehap@gmail.com**20100205004430
+ Ignore-this: 879f3578c813e8e2bcb9a0a7a2ad6d63
+] 
+hash: 0000000194-a857564b318cccde2ad059b27033270a46fcc82dd894f6b50b2673e8d9ad867f
+[Added support for multiple input sources
+merehap@gmail.com**20100205014949
+ Ignore-this: 844c594a0ac67cc625fd06f7104712cb
+] 
+hash: 0000000732-1b3e14bd08c5d7094908e9ae0ddffc04bf7cd37d32ec160c67038040936a8f3b
+[Pulled out common input code
+merehap@gmail.com**20100205022946
+ Ignore-this: 7686371cf1f775aee81c5ae304df12ea
+] 
+hash: 0000002251-3537191f21d52b3b35e56458b05e23ac2da1882ec1c345af6cde224208ca3d40
+[Fixed failure to read from stdin when no files specified
+merehap@gmail.com**20100205090509
+ Ignore-this: 2a1d211a2cbbfdfe3365d9479fba8042
+] 
+hash: 0000000805-eaf49e02a745208c7d9dd17a0337ad320500c1faf682ba5403e8af721eaf02a0
+[Corrected rev namespace
+merehap@gmail.com**20100205094802
+ Ignore-this: 94822f717a4f3da263781a51c856f2a7
+] 
+hash: 0000000216-ca54cd5b861affd37434c663d15357b287490578b8c2b849912fa66b6a256b43
+[Grouped counters with their default on/off state and switch
+merehap@gmail.com**20100205094850
+ Ignore-this: a9d902cfe67772d7f69c584d65aa6496
+] 
+hash: 0000001239-fcdf33e39006d948dff500e47c866ee9f6b4251002d5294d9920b88398676ccd
+[Cleanup cat/converted pure argument list to data
+merehap@gmail.com**20100205102036
+ Ignore-this: c0020ea194466f7453fc3d371443e0a0
+] 
+hash: 0000001352-67d4e94523b9de63051a4ae3146d712c7970bd5b4a4502a4f40a64905f0f816a
+[Cleanup
+merehap@gmail.com**20100205102255
+ Ignore-this: b2a96459acbdea551d22f688a843c557
+] 
+hash: 0000000551-3bb1fa5eee26a3c526522c988ed259210f8815c382d22d2e45d3d4ef705d495b
+[Cleanup
+merehap@gmail.com**20100205103334
+ Ignore-this: 788c2b8621d8062c049f6e4ed5fc257c
+] 
+hash: 0000000774-993e709a54fcd81e02dd853fdddd09c9ebb00db97453ec1d28bdd01603c3c146
+[Simple tac
+merehap@gmail.com**20100207010839
+ Ignore-this: 6f6be85abb3255eb7016b2c36ef345fb
+] 
+hash: 0000000350-cecdded0d86c199aa8e16351feacd297bea1ece17fe3ff5b1aa3e4bb75b3db5d
+[Everything except regex support
+merehap@gmail.com**20100207023515
+ Ignore-this: 5772c87ed858cdb8223c6c3e28526ee3
+] 
+hash: 0000001044-265532e49e65bd4c00fe1ccddd8a269a71f81edcb6efec53ecda767955e0c9d2
+[Full version
+merehap@gmail.com**20100208053652
+ Ignore-this: af3754fcec62b106338a07921451fa4
+] 
+hash: 0000001924-1c21409c7046d1764e6df0698b168eb5622ee83c1436c5009db12507c5200934
+[Added TODO comment for special char handling
+merehap@gmail.com**20100208073317
+ Ignore-this: b5f7785bd08007b06ded5e8df808adac
+] 
+hash: 0000000200-3a9b027669167b5a67d0d61247e707d0cba2e01aa51e9256f53550e9190a757a
+[Partial fix of regex functionality
+merehap@gmail.com**20100208073352
+ Ignore-this: a8d1299899a2b70532b5b94dcd8446dd
+] 
+hash: 0000000523-58901b481c5220c22846c30db60d0b87f4247ad026e0dbe1fea1248e95cff653
+[Partial fix of regex with separator before
+merehap@gmail.com**20100208074907
+ Ignore-this: 27091cc617068f75cd9832d7d46d456b
+] 
+hash: 0000000365-31f69ea55b78bde88e249a7cbf5931cb7cf9fc9d35b6eff338602ce72ff1b67f
+[tac and uniq
+merehap@gmail.com**20100208075056
+ Ignore-this: 22af0ab4d2a35cbe2ebcd2b2f41d4112
+] 
+hash: 0000000183-05ce5ac59e02353ad85f3606daffb7725e0a987072650ad2becae138bee8fb6f
+[Removed references from husyhox to utilities with little work done on them
+merehap@gmail.com**20100208080057
+ Ignore-this: 3a8081579d44b4f2c22f43818b1b7548
+] 
+hash: 0000000516-bcb48aa772ceec36ef033184566fc7b109e94683717df757fc279dbbea469704
+[Updated TODOs
+merehap@gmail.com**20100208083737
+ Ignore-this: 5ea2b0e3bcc0bb8c65a723a82b03baf1
+] 
+hash: 0000000231-1db0eb862656f300acb0112d45a7110d61d58748e77a3a675abf424691be5916
+[Added TR hook
+merehap@gmail.com**20100208084403
+ Ignore-this: 201f56a21a44f2a9224b3fa3bd69363b
+] 
+hash: 0000000543-f366fb22b2412342f9d785e6856d18d69ea05cf9fd51c1b57f90b82f46418671
+[Added arg descriptions
+merehap@gmail.com**20100208084518
+ Ignore-this: 4e7f012bd011528aea91e6e2951baea2
+] 
+hash: 0000000778-16c9e77d8624673fb2a3415ec4b6c2853f8921b029fbbe6b115cd149d1e04aad
+[Added required switch support
+merehap@gmail.com**20100209002049
+ Ignore-this: 656e87e7380f33b71f3b6992d18ab0cb
+] 
+hash: 0000002400-b220a932927a9db8a32cf757e4d391ec007ccc950491693bb96cfb8671acb88c
+[Minimal version
+merehap@gmail.com**20100209002245
+ Ignore-this: edd3ed04d37dd436579b6bc843673909
+] 
+hash: 0000000885-702de1413ffcd7861fd975540c7843025cd69c0cffcaed666c1247598acc3616
+[Made unique unnamed arguments
+merehap@gmail.com**20100209023017
+ Ignore-this: e32de6e9cae0f6b4e09436ef77a20f66
+] 
+hash: 0000000296-d65696969f382192c57fc7e16bc59d27420f53b3dd5eeb9b24795df66abdd484
+[Made proper parameters to pureTR
+merehap@gmail.com**20100209225846
+ Ignore-this: 6448226e469a50479e020c4785292e3d
+] 
+hash: 0000001368-e67fa7920b74c92c66c07dd37e81dde17b4a69ebb24a3f61cef47f27ec2efece
+[Improved structure and error handling
+merehap@gmail.com**20100209232920
+ Ignore-this: dc4bb812e2d8eabfdb4b0fcb6fab7a62
+] 
+hash: 0000001013-d4c5eb9790b0dae9ed554fd51799a5654b29567de0870f65e65329e3a395e1e6
+[Added mode determination
+merehap@gmail.com**20100210005400
+ Ignore-this: 747ce2b3aa2b9d69e256f18677be4e30
+] 
+hash: 0000002261-3752beea74317a19748c7e67bd0c1a8f8de3f8ec8284e91a6f706dcef20954ce
+[Rearranged mode determination into error and standard
+merehap@gmail.com**20100210011036
+ Ignore-this: f160c84de7721203cac599026929c6fe
+] 
+hash: 0000000906-c588aca8cfa5d7e4447075917f7860c9ae1a8865759b27a39c83c06c5d4ead93
+[Full pureTR minus complement and interpreted chars
+merehap@gmail.com**20100210021342
+ Ignore-this: a9e470c6e4fd904f16ca0992f35b90de
+] 
+hash: 0000000665-b3461721f0b92415c8be4a74f2f2ff3adaf8011d5234847440f43c0eaa5d5c9a
+[TR update
+merehap@gmail.com**20100210022454
+ Ignore-this: edf03503ccf38f8b72b5bd81d8ceb7b3
+] 
+hash: 0000000167-6de605d5d8a861267637324b1f1d5601ef5efdfdc0117f71e3ab2319bcfdb272
+[Additional tr feature needed
+merehap@gmail.com**20100210022848
+ Ignore-this: 6f370c844f75d0593ea16a21198f9445
+] 
+hash: 0000000272-5c5173002a0f781d27c9d05db82ce8c958fc1cdcc73aa9be57372cbb34b1ca3c
+[Minor improvements to base and argDescs
+merehap@gmail.com**20100211064859
+ Ignore-this: 8bf13d402da4540477fee2f3e6bc0e41
+] 
+hash: 0000000668-fc34456c64167e62604f121efdd2b428150fcdd94a73c92cab3a017136e57ae7
+[Fixed compile errors
+merehap@gmail.com**20100211084434
+ Ignore-this: 170ee789ed65c71600f8eb31c6c3a43f
+] 
+hash: 0000000630-7e2670d8145350cbb5b24309cfd1761421911d830fac09a94047c2f26171571a
+[Minimal md5sum
+merehap@gmail.com**20100211085510
+ Ignore-this: a1925fe1b3d27237a58f035ef06c0dca
+] 
+hash: 0000001696-1d8b4df12ccf0c5805cd1910ef368bf507cf37ce4e3d178affd69e734e869518
+[Added true
+merehap@gmail.com**20100213100328
+ Ignore-this: 943b1128d9985953576a1959d7912aa0
+] 
+hash: 0000000422-9dc4e24b1d4bc4a8bcf61d3b3d732169527dd6ccbe56e9a2239baa8152fdfee1
+[Adding false
+merehap@gmail.com**20100213100723
+ Ignore-this: 5de219094b5f84e95ae9810fca3560c0
+] 
+hash: 0000000432-cf90ac4b0f6f4c97df5459007f15657bcd2deae35cc50fe4ed53e3357b79b63e
+[Added heads and tails
+merehap@gmail.com**20100213104249
+ Ignore-this: 69a69224b0200a9c164ff0eb4d43b7ef
+] 
+hash: 0000002032-bf0e24df5a6467dd1b8a8a3cf1cd4559bb908474337fa1938307391858d6bb4b
+[Fixed return value
+merehap@gmail.com**20100213104947
+ Ignore-this: fe3a0e6c8ed2b3ae93f9c713c6c890c6
+] 
+hash: 0000000174-9bec2bbcafdad588f04df9ccaa8f9630b3c511b8a946f61c60b8d8ebeeae3fdd
+[Added minimal sort
+merehap@gmail.com**20100213110800
+ Ignore-this: f88434187a203573b63837c07455ffed
+] 
+hash: 0000001203-40a25cac7d48fd71c254802fe91b61cc07e4c48ac6ff39b520b3a4e3bd36c09b
+[Added minimal expand and unexpand
+merehap@gmail.com**20100213113550
+ Ignore-this: ebcde6aa5825ec3281f2e4566f14a3e7
+] 
+hash: 0000002715-2985130e4cebfb0439350c8648835736e466cc3680a774d8e4bcc10e986e1c08
+[Added easy source code link
+merehap <>**20100214204936
+ Ignore-this: bced1a0c8604f14efcbd29a4d5d4e0a
+] 
+hash: 0000000231-4cb913bbecb4e872b8cd1bbff5c0a16565bf6aa32744295fba69ebb1fa052d4c
+[Minimal nl
+merehap@gmail.com**20100214214637
+ Ignore-this: 1ab95e55ac705668f464d6af0c819025
+] 
+hash: 0000001210-807d44462d4338e0cce792da7d4116012173d35903d8a8afa0348969d4e6df98
+[Fixed repo after move (re-added expand/unexpand)
+merehap@gmail.com**20100215104922
+ Ignore-this: dd8c8c22a4d90d7bf00083ed86dded9c
+] 
+hash: 0000001478-0cd01ed3ef72b606c60fcec8f052bec60124b1325aaef2e6b421aac2250ae3a3
+[Added minimal sha utilities
+merehap@gmail.com**20100215111758
+ Ignore-this: e815e43bdec8876d6d87519dcb604748
+] 
+hash: 0000006514-503ec62a5478355b29ce6f646dc3fff9f7947ba7fb4c405e861589c53c11627f
+[Added shasum umbrella utility
+merehap@gmail.com**20100216030752
+ Ignore-this: bce838d02a7e600f5ecea4aaf95bcf2b
+] 
+hash: 0000002558-ebbfc594c15bde7c1e0fc1f42ed0838bd376ad9f7c8d89341a4c2badb03b16c6
+[Fixed expand/unexpand
+merehap@gmail.com**20100216191506
+ Ignore-this: f187308dc9ef0c9aef09baaf86492836
+] 
+hash: 0000000590-dfd5233a71d62276c85e2f5f1c3ad83db1bd9fd89eec25cf07b8a0a5487a30e8
+[Added mininal sleep
+merehap@gmail.com**20100217030157
+ Ignore-this: 2c49d775ae0bfd4899b25f46d4d45e0
+] 
+hash: 0000001389-911daac6d3bd0872764b7d7a770602d8791739227fca6a58d0f5837ee39b9051
+[Fixed and cleaned up
+merehap@gmail.com**20100217033541
+ Ignore-this: 8a77b4e21faf89bcf613347ae4726960
+] 
+hash: 0000001548-f2538f23c7da6d18abc36583f008c34b576f8805ef0d0782313f1b73436534eb
+[Complete whoami
+merehap@gmail.com**20100217112757
+ Ignore-this: 2b2947952b66f2b762d2d6d7f24ba175
+] 
+hash: 0000000730-fe88d4d18861042030c463b512a895f68a90a556a9f5570f8fa1743c259e72c0
+[Split common functions
+merehap@gmail.com**20100217214946
+ Ignore-this: e100d1a65c1c38392605f7e7955d31cf
+] 
+hash: 0000005887-e6e1c4c2ed651ef47d662eb59fe178d325df61828d2204a7dd404ab03726517b
+[Added tee without ignore-interrupts
+merehap@gmail.com**20100218004745
+ Ignore-this: 128476d2db9574cde1957388a27502f2
+] 
+hash: 0000001814-341f2b3b72f11f955779560458938d2388a256fea710749db18b03d26b0cdbd3
+[Hook up and minor cleanup of ls
+merehap@gmail.com**20100218005416
+ Ignore-this: 9b126064a06b22134d75aa3cce11256b
+] 
+hash: 0000000867-c38ca14f8b9b9020c504d02e13d79d91f2eb5fdc7ae1ffc1d63740774e3e4e4a
+[Echo cleanup
+merehap@gmail.com**20100218010610
+ Ignore-this: 728445a423d19a60789e2eab0dd93e7c
+] 
+hash: 0000000643-54662e91c7e980c3ad917821dae4f6ec9af27f823e9f6165a6ebeb9671593f81
+[Complete argDescs and pure args for sha1sum (breaks shasum)
+merehap@gmail.com**20100218024028
+ Ignore-this: 4a39ba55ef2f4a73909c0e550dffb345
+] 
+hash: 0000001527-5e94734923be76f756b80fd5d69b68d86856937ac4f6ebdb3f8f1de21a55dbea
+[Pulled out common functionality from and upgraded sha utils
+merehap@gmail.com**20100218044423
+ Ignore-this: 493b9c50179575e3b11eceb5f51b27e5
+] 
+hash: 0000006018-36d1b26de3913e72466f444f7033c25869f47206c19790d9f02bbabb678062dc
+[Refactored md5 to use crypto common
+merehap@gmail.com**20100218045425
+ Ignore-this: 935204b31f47a3d7c67e27d8cddadf95
+] 
+hash: 0000001237-883bf437c65299820d443ebf3665ed5eab0119b165d3f5e951c9ffeccfc03ac0
+[Fixed md5 name for usage
+merehap@gmail.com**20100218045741
+ Ignore-this: 9940122f7b8418ff8d61e95c51faa8e2
+] 
+hash: 0000000238-76aa1a9d595203d252fcaa311c5aadba2e9e703da0cf9d8f81cc339c28e9fd7b
+[Added utility template
+merehap@gmail.com**20100218055413
+ Ignore-this: 66f5b8d5f4fa7d3f2c71ccb9f268639f
+] 
+hash: 0000000473-e107b054d1a6800d4931ada9c24fca788fe478a2fa6b934b86b47870ac3b5806
+[Renamed template.hs to template to avoid confusion
+merehap@gmail.com**20100218055511
+ Ignore-this: d84e1f9cec5304a06e155e229aa4751f
+] 
+hash: 0000000172-16f111dcace82144cb2d90f52f21ceecf14d1219e9ed012d3a04c29b619363d3
+[Minimal touch
+merehap@gmail.com**20100218061226
+ Ignore-this: 5c84a2819999962861d6727335b01c18
+] 
+hash: 0000000749-3f6c05565ff5be623a0c2e65f661ce09531fbbbe35e41fb280170ae7975f6158
+[Removed TODO files (TODO discovery will be automated in the future)
+merehap@gmail.com**20100218061609
+ Ignore-this: 7de094918d10490a301d9ac5f2608352
+] 
+hash: 0000000702-f83c73fd059fa5c04b14a5aade65820a3f81ec33e894313d3534fe687c668f1e
+[Cleaned up main function in husyhox
+merehap@gmail.com**20100218063716
+ Ignore-this: ff6a36b792b0af624f3b7bcaccb07c72
+] 
+hash: 0000000661-bed9b55339a8a854c6f53b37a2bd0c379bee79de495d16f04717521fc418a029
+[Updated template
+merehap@gmail.com**20100218064319
+ Ignore-this: eaeaea3572405ab6f8b841c471c28d30
+] 
+hash: 0000000175-887221bced07ea9b6714bcfce54df971d242127e8c605892245330af67d6b44c
+[Fixed husyhox
+merehap@gmail.com**20100218070201
+ Ignore-this: 693ad3a98d1f39fe720ae4db42d0a008
+] 
+hash: 0000000397-47fb11c5f247e01dd916a5bbf142d139977810583316756de5414538297f111a
+[Minimal cp
+merehap@gmail.com**20100218070558
+ Ignore-this: 13c30e09f20648b1920ed10be905cb9
+] 
+hash: 0000000861-a0e699d16a17928a7bbcade7b175a2c42113c583712a86133faacf71b9d9f045
+[Updated template
+merehap@gmail.com**20100218071020
+ Ignore-this: 60c8c234fe1fafb21596b890cc674720
+] 
+hash: 0000000249-c5a2b0cd60a48fddad8cfdf8b09b37523f189a03ec9c881ca18702739ccf08a4
+[Minimal mv
+merehap@gmail.com**20100218072940
+ Ignore-this: 5c52f7359abeb79f263d066bc9b42175
+] 
+hash: 0000000888-05c44ff005249298d81136bd5b5f6fd05089323e30864adf571188ea6ecb73a3
+[Removed unused rev utility
+merehap@gmail.com**20100218073227
+ Ignore-this: 641220a918a5ee633511f237fc25a069
+] 
+hash: 0000000459-065c6844c01f3eb678505eb0e013e012a1bdea245d371de6ddf99346c9eb7c10
+[Added minimal rm
+merehap@gmail.com**20100218074241
+ Ignore-this: 9904d23422538ac2e95673f50fc58e33
+] 
+hash: 0000000733-1e655c3c5ea1c95d0c7f49d13006793ddd211f7e63761c0e385fbb537e07d7f7
+[Simplified minimal cp
+merehap@gmail.com**20100218074713
+ Ignore-this: d61fcb771b1fe59aef3b99d4cd3389ed
+] 
+hash: 0000000368-5f79d8fea4294ec3a739e42a2df0ccd19da9e11720691e714f8191fdedee408f
+[Added minimal rmdir
+merehap@gmail.com**20100218080440
+ Ignore-this: 703f02ce8da94092a8ca414116b68854
+] 
+hash: 0000000993-f1f635b519513dd400007906795af2c26cd5c43600f9f1853f9e2c55f45f6f07
+[Fixed arg description for rm
+merehap@gmail.com**20100218080545
+ Ignore-this: ece5303f52ed3c18ef9da38750b8a3ff
+] 
+hash: 0000000237-f2076adf4fb1542ade884da0eab58b240dba0e86c032d6bc2d4bc4638b066e31
+[Added complete factor
+merehap@gmail.com**20100218125143
+ Ignore-this: 5509f129259bb7868463b8ea8c60b8a8
+] 
+hash: 0000001872-c0173258c7bd8e342992b5e74ada312c89aa47b3e4a812901cc4224d281f9e14
+[Minimal mkdir
+merehap@gmail.com**20100218234820
+ Ignore-this: 5fd0d583f158410d6f0e9a4f303e32f9
+] 
+hash: 0000001028-b81f845b20be0b2ae37e49e7602b72221c11170ef6c0b02827982bad09c33218
+[Added minimal chmod
+merehap@gmail.com**20100219002911
+ Ignore-this: a4f5f8781fc420c719296997393e4e55
+] 
+hash: 0000001140-680cb4e93ca06fcda81b35b9bfa3fc35aaab027b193b07a68b2a91ee337b8b6d
+[Added minimal chown (was in incorrect file chmod)
+merehap@gmail.com**20100219003619
+ Ignore-this: e328c48cedc52624004f260bd5127947
+] 
+hash: 0000001022-08e409acffe3a82e6dc0a596e506c544dfd1e8350830c743092ed4359d8ebe61
+[Removing util template as it hasn't been used
+merehap@gmail.com**20100224025144
+ Ignore-this: 4d19e9178c17dead16cb53ac2786c727
+] 
+hash: 0000000568-141b9317b5563975add3918ead143ab44a292c4c606f74f714f76b5c101abe51
+[Minimal chmod
+merehap@gmail.com**20100224025232
+ Ignore-this: fa42cdf66c1859161a8e366b0760f88a
+] 
+hash: 0000002199-df2daaecdc6ed55570d92d521e093e6eae6d91b4fbf897e139dc890392c6d8da
+[Added help and version argument descriptions to several file utils
+merehap@gmail.com**20100224095740
+ Ignore-this: 5cec4a30d4a03dbee328437519da34ee
+] 
+hash: 0000000554-4712cd5e5ac5ad451b96a2d67b3fd28844dfb447e9376182bb126842880d6687
+[Added link to milestones page.
+merehap <>**20100225001440
+ Ignore-this: c4d8370a1c3baa9d1b0d84e25718f17c
+] 
+hash: 0000000220-34573d27cf0a7024f70465ad856662f918a4a99d22fa573724953e8a69c09d1f
+[Initial project roadmap.
+merehap <>**20100225003646
+ Ignore-this: 15b372f9d2d5c6da5f05e67fa2c5552
+] 
+hash: 0000000947-ad3e7df73b22107c342c31aec258d8a8e62d6c0f774b325b77c522c4be458d32
+[Added minimal chgrp
+merehap@gmail.com**20100225072055
+ Ignore-this: e8582d3ea5a08028079262031e24b52b
+] 
+hash: 0000000964-1690dfcb134114689d4ecb0f9915c41ff8d4996921381be6abf13ecb9a6eba63
+[Added full basename
+merehap@gmail.com**20100225175532
+ Ignore-this: d71e29cd62d5bace5f7277a0744d5c54
+] 
+hash: 0000001642-50e6559d16706aa1540daec729c6cd1faf9ba16ebc238207a4b56a1ff2790468
+[Added minimal date
+merehap@gmail.com**20100225192904
+ Ignore-this: 8fa698477c48e6e39b7283937c8d4c61
+] 
+hash: 0000001280-37fd12f9e216fe7abc40e25da7c97b67bea2d6881a7cc0a9a696c9130340fedd
+[Added seq without formatting option
+merehap@gmail.com**20100226032325
+ Ignore-this: 7eab09856c93f93f7bd2d39233b615da
+] 
+hash: 0000002848-446c2fa80f47cc33c608fed88d9e726aa32a6719d6f8cd9fcbaa7243e6d6d02e
+[Added relatively complete groups
+merehap@gmail.com**20100226062614
+ Ignore-this: 94c5bf54da8d4ceba5cd7f648054cb74
+] 
+hash: 0000001278-04fc6bd081fb765560335e9ebf392e9577fb5aacdf7a5273ea38a07a647f649c
+[Added relatively complete dirname
+merehap@gmail.com**20100226065735
+ Ignore-this: 88f9ef2ac1e6a20a4f7955988a7f037f
+] 
+hash: 0000000963-05e1561e4b8f640a6fb3905c23bece1aa822915fca4c4349bf11041617feac7c
+[Added minimal env
+merehap@gmail.com**20100226072345
+ Ignore-this: 644dbb363144c2f7ef659d917ca2ce1e
+] 
+hash: 0000000792-4bfc7a966ff4c405eb57e475dea25c77d6549c81336e636b904c3dfc0f04cf11
+[Pulled out common functionality from env.hs into common/environment.hs
+merehap@gmail.com**20100226073439
+ Ignore-this: f17df8c202fdd098d7e89cbc5cd72ed4
+] 
+hash: 0000000708-12d14b29bf1ca6e49cb1774e67753f8cc17221d071a25d368b4f1e9e4f727d87
+[Added minimal printenv
+merehap@gmail.com**20100226074352
+ Ignore-this: fe643ca12082ed053d2917f8eb5af951
+] 
+hash: 0000000831-6a2b4736f1c4f71d5b61113ba1a62b56e864f737148d6da51e2cb56e7056d0ff
+[Fixed whoami to use effective user name rather than login name
+merehap@gmail.com**20100226074946
+ Ignore-this: 660319355b7379a1ad6c14d3a165c8f4
+] 
+hash: 0000000353-0ac19fa8a661a1536aab5f2273426c8a41f856ae0a3926f0a37025bdbcf0f24a
+[Added complete logname
+merehap@gmail.com**20100226075610
+ Ignore-this: d18c483a19c59d1ed6f855e28f039468
+] 
+hash: 0000000752-ec8f78c279dcd76d453c720d31955a1ebd8e779e43aae3ec2a4498fffcc92bc4
+[Added minimal pwd
+merehap@gmail.com**20100226080515
+ Ignore-this: d31131ef2440ca61accc6f2ab2b164d3
+] 
+hash: 0000000713-13be550f799d1873a152ecbd06d07787fa7a4522559d613ff7932ede854971ac
+[Added pressing cross cutting concerns.
+merehap <>**20100226105947
+ Ignore-this: 9e839c1a87f0414cfbc9a36ceb7360f9
+] 
+hash: 0000000809-fdec845c5de7c07e76337b641f2aa79fc3bfe124b9e468f5923cbfa7cf711149
+[Added multiarg functionality to wc and cleaned up. Changed global default mode to ArgsTrailing.
+merehap@gmail.com**20100226224545
+ Ignore-this: f117776f165cc9991449b4a7f35a0e82
+] 
+hash: 0000004485-42c2a5117459439c712a5a137dc5f7e0a649cab1e7c5645b2b6fb43adea99d14
+[Further tightened wc architecture
+merehap@gmail.com**20100228030923
+ Ignore-this: 1883b21d8974414de79d575c4e988fce
+] 
+hash: 0000001639-3cc524fa4a97db207b991fef9b7ca8bd5628a0685f48c1f8cbce37ee7fcf966d
+[Renamed UtilBase to UtilHook
+merehap@gmail.com**20100228031843
+ Ignore-this: a51de498ba2853b466aedee5bc948c8b
+] 
+hash: 0000005597-d029cfbee78ed8fe5b85cf4aec65fd438f3df78eb349a1ee644035ec9dfdb6a8
+[Globally renamed base to hook and pure to core
+merehap@gmail.com**20100228033126
+ Ignore-this: 6e68b89db20d03137239768183e38bcc
+] 
+hash: 0000022619-717cf2bf9c55efe113d7bf30e2c86e356cc8c33f06d7064bd1e03651a67834d8
+[Pulled common hook functionality out of wc
+merehap@gmail.com**20100228040246
+ Ignore-this: 20ebffe998500f3d037cd8841c19de00
+] 
+hash: 0000000757-0ec8caf37425b8d7ed2f3d66931fcc72972dc3e4b8cfea54e742e58f897fca6a
+[Updated name of standard hook that wc calls
+merehap@gmail.com**20100228235758
+ Ignore-this: 2b6fcadfefda7d5624118cc1949c5c58
+] 
+hash: 0000001178-78ce38f1f9939cf879dad8996097725681556b34fb2a64418178e3ca37a9a76b
+[Refactored cat for standard hook
+merehap@gmail.com**20100301000217
+ Ignore-this: 28837615cd902b8d69747c3ee1e82f28
+] 
+hash: 0000001212-ec8fc35234de280227d3c8703f8733410db212f5a85876b208bf67927045dbc2
+[Modified wc to not print total when less than two files are specified
+merehap@gmail.com**20100301002930
+ Ignore-this: 97f1a1e71bff40e327536c850ba9ed4
+] 
+hash: 0000000663-9bd59208e065e3cd83f5543780f65cac6c2841f491ca41e1fabffabfbb2ac0f5
+[Conformed factor to standard hook
+merehap@gmail.com**20100301005644
+ Ignore-this: ef4a6b22579915d7e109a7df099a02f2
+] 
+hash: 0000001422-7802fd5757684c99005b017f0980ca7b09546ad548577c4c77801ba4e9652783
+[Improved factor to use library rather than custom factoring
+merehap@gmail.com**20100301014105
+ Ignore-this: d743422a4b2a2e1527a15072d3a5fbc5
+] 
+hash: 0000000967-f20b32310af6c64138396a05be25474709ef8c0c8ffb5d64b08d6fabebc494d8
+[Enabled multiple arguments for factor
+merehap@gmail.com**20100301015540
+ Ignore-this: 8f64d4f7697f8b2b603643c3d1421c9
+] 
+hash: 0000001057-243749e58ea3165f24e09fef5c97b662fc217f5250baf6db607841fcc0f16fb4
+[Simplified standard hook names
+merehap@gmail.com**20100301020343
+ Ignore-this: fb2bd452b739c09fbc4ca37abe552c13
+] 
+hash: 0000001394-8873567a128a8aa3937d371493bafc6f89d01be772c351870f6d48061974efb8
+[Added multiple input ability to cat
+merehap@gmail.com**20100301022044
+ Ignore-this: afdebf8f95a6f98199f9c2d1fdfb963c
+] 
+hash: 0000001403-d17f663aac2664d52bf72e5d548187142c49f5f9f23e11f88d2c7f4ad536d621
+[Enabled multiarg for expand
+merehap@gmail.com**20100301034806
+ Ignore-this: 629c0e77a1e1c3df114b9de3db526999
+] 
+hash: 0000001287-be4273237028f55cc7839fb961915ddfb8e406a8e5341da1b843858d2f43f099
+[Enabled multiarg in head
+merehap@gmail.com**20100301040222
+ Ignore-this: 292261547ea4cf8fbfd288eedf656a30
+] 
+hash: 0000001354-d3ab75fca206a4e90241a603d7b67a4ea5a46b8fefa0bbe8763afa8784fa56e7
+[Upgraded join architecture
+merehap@gmail.com**20100301040843
+ Ignore-this: 8f95178b6c01563db26e5c1b7bf9dff3
+] 
+hash: 0000001053-0ee885d9fdbe64d9b7711634cace9df4028fd8663d7d2b530791f284ee57c7ec
+[Upgraded crypto tools architecture (md5 and sha*)
+merehap@gmail.com**20100301062353
+ Ignore-this: 3a54e124b8a8445f8dd8a3e35ceba149
+] 
+hash: 0000005299-54b00b62aa8a9316bf547728d5b82d871a34cadda022f38ea7c0f790795bcefb
+[Added common crypto functions
+merehap@gmail.com**20100301083518
+ Ignore-this: ff5858823d4f9da3281f06bce8936f4c
+] 
+hash: 0000002559-e2abc01c74b1d62fa69fe8cac29b61e67cf4bb003c4157afe0c6a2dd2fbfe730
+[Added multiarg support to nl
+merehap@gmail.com**20100301090332
+ Ignore-this: 9effc54d1c789fede9349b6f55a998f
+] 
+hash: 0000001342-b85812110f8aaeadc5f632c05224f17e1f1c7f31b535b480e4d34a9cc1ae7648
+[Added multiarg support to sort
+merehap@gmail.com**20100301091913
+ Ignore-this: 8853a47fa6fab4478c048761ac88179d
+] 
+hash: 0000001329-c280b307c2eceb3f78c23265190761529e9e95f0cdc1a4f137233d5e898a35fa
+[Improved format responsibilities
+merehap@gmail.com**20100301092549
+ Ignore-this: ec023a80e62c9ae980b6efa03934542d
+] 
+hash: 0000000656-239285ad23640155c571cf2bb44dd26949f53dd4809c97bdba9164b6d5cf117d
+[Fixed sort arg descriptions
+merehap@gmail.com**20100301092716
+ Ignore-this: c924d320320b9d1e360c0444b9b26ea3
+] 
+hash: 0000000245-7624b51a5a4557117fb50a2c143812ee4a7e8e5b787e68f80200d487e1eb1e83
+[Added multiarg support to tac
+merehap@gmail.com**20100301095451
+ Ignore-this: aa871d0bfeb1a27170436be8b2ed7d26
+] 
+hash: 0000001465-7fe2d41640aae776cfc651848395f6b6cd4bf020e75b51f1235349d7eb496d43
+[Added multiarg support to tail
+merehap@gmail.com**20100301102519
+ Ignore-this: 899f2cdf78039584682834811d5e0f40
+] 
+hash: 0000001396-663361d738691dd857afa43dca7dab576a4f8ef87b56e3370329cc9ee85ef23f
+[Cleaned up tr architecture
+merehap@gmail.com**20100301104216
+ Ignore-this: ca52eb6878f802beeb20f769e2c143e4
+] 
+hash: 0000001684-613b372e3bf3e29dd14acc42c5d9c783437455a81520a19679001d6a7fb6df78
+[Added multiarg support to unexpand
+merehap@gmail.com**20100301105512
+ Ignore-this: eb4e46c3b19f17e5e49e9d5e3de388c7
+] 
+hash: 0000001317-8f2a1bcb2b874172d5bb09a5293f021e402327930de277227a961e78c68ebe34
+[Improved uniq architecture
+merehap@gmail.com**20100301114328
+ Ignore-this: 6a05a94b28ee9e3a5b7fa075ce047cd1
+] 
+hash: 0000003237-f65d3ddeedc6b60b69b8d9c60088fde8e42b2807641c2b13553f56b6b4ea42cf
+[Improved basename architecture
+merehap@gmail.com**20100301212112
+ Ignore-this: 705bc6f173d8a18d25391d1b5ae98f02
+] 
+hash: 0000001940-d72dd0990952772960d51d42f71d8496d530d75a672723e4fc675b6ecd9f7532
+[Improved date architecture
+merehap@gmail.com**20100301225002
+ Ignore-this: fc6c5a8562d54e24666e3e9ebb6b8645
+] 
+hash: 0000001450-ecb561c416223c9879a32384e4e8acf6df36d8ac1e1c1f0dfa567bc1bc880bb5
+[Split parse hooks into separate module
+merehap@gmail.com**20100301230717
+ Ignore-this: 858ccad118b47a47804c1222d89367c2
+] 
+hash: 0000005160-e283608fe974311db84ee87d49951a33020b77586a4ffeade442e98c2b7546a2
+[Split util helpers out of args into separate file
+merehap@gmail.com**20100302001312
+ Ignore-this: 6759431080f841e5b63c58dd0b505571
+] 
+hash: 0000007887-1841f2dffd215407072036a39f9df8aabf58293db95ef2a17c20d57b979415a2
+[Changed common libraries to use singular form rather than plural
+merehap@gmail.com**20100302001850
+ Ignore-this: 728a5692ae3489b0fcbde9fc4e09b2b
+] 
+hash: 0000005860-f898a304f339ab7e7e2eb04631204b508d8e9027b97488ae32b467af10903655
+[Improved dirname architecture
+merehap@gmail.com**20100302003141
+ Ignore-this: c40cb8b45692d80eeae3041029a7522e
+] 
+hash: 0000000953-c96221d96af7f94957c46030e6ae03a871b2dd0a3d4d591828d89cf8ca044f9d
+[Improved echo architecture
+merehap@gmail.com**20100302012451
+ Ignore-this: 261c696775e264fe84a4a62e5a4dca09
+] 
+hash: 0000001770-bd79cb564211fd889ad59b3b377fc2310866487c9f5f33bc53952dd71a51301e
+[Improved env and printenv architecture
+merehap@gmail.com**20100302042049
+ Ignore-this: 19766906d1bfdb70940934ed1e58b261
+] 
+hash: 0000002424-c1c144524e81abcdd2666581d57849811aa755bb07c5b06363e7d803e4505560
+[Improved groups architecture
+merehap@gmail.com**20100302044307
+ Ignore-this: 5152ccd660c49265110083ea2e7de0c8
+] 
+hash: 0000001482-aa8e2e5fc440d74d53e96a021388e0e473bbf2926a31d81e91a03d86cc35e316
+[Improved logname architecture
+merehap@gmail.com**20100302045232
+ Ignore-this: 91074e558975014dc2277f2377d77634
+] 
+hash: 0000000811-7c9f0ef8636bc28b2ed2da2b6d75a6d43edfbc8f6e3a417d19ec471f2f967f3b
+[Improved pwd architecture
+merehap@gmail.com**20100302045832
+ Ignore-this: 7534afb8d81616072cf9b4aa2e9ca43d
+] 
+hash: 0000000812-9b9163df576084b69fab61f4c43669c4a6662508403481848ca4ca15f57a4ae7
+[Improved shell architecture
+merehap@gmail.com**20100302050958
+ Ignore-this: e0f7c92f72fc57bbf9e9db62a6539705
+] 
+hash: 0000001379-5ea04be3195f0faeed910196454e5bdd9a96d772432223e1701f5c71953297fc
+[Improved shell architecture
+merehap@gmail.com**20100302055320
+ Ignore-this: cf6ab7ec59a41b6e1e405a34509bebae
+] 
+hash: 0000001056-d63402d3f11c7923c5fb65a2507bb39439cfcc3242d23ffec2cf2ed862aa5461
+[Improved tee architecture
+merehap@gmail.com**20100302193143
+ Ignore-this: b6f16ec0a4279a3b69d5119540b92a0b
+] 
+hash: 0000001656-9914dd20af890d95b0aec8e7a992e873e7fabe98af7fde14b86513f0af579ba0
+[Removed core from logname
+merehap@gmail.com**20100302194509
+ Ignore-this: 46c16902ab604108fcac0be7f6867e4c
+] 
+hash: 0000000807-161c09c7709b517f64fe63a6ae5fb77e46ecad148ef2196c13b2c2badfbba5d1
+[Removed core from pwd
+merehap@gmail.com**20100302195740
+ Ignore-this: ecc298abd2e4b2760c712c68f40e9c91
+] 
+hash: 0000000637-45fb21f75d4072b55e51fa4b16a2b80374c3688b93229f25514bd2a097571c44
+[Removed sleep core
+merehap@gmail.com**20100302201042
+ Ignore-this: e13c60d514e25881470d984d19f797e4
+] 
+hash: 0000001953-fbccc4dabb8496ffa9616b98b216d9295b413f18157136c8cbcaa4ba1095eadc
+[Improved whoami architecture
+merehap@gmail.com**20100302201533
+ Ignore-this: 78fa286dafb90dd0e1cd2bf7bdca3c58
+] 
+hash: 0000000681-2f15566c48cfda95ee5572a116918a3b8153a2e6187ed3e1e43e47f19473ad6d
+[Improved yes architecture
+merehap@gmail.com**20100302202404
+ Ignore-this: b8f36e458f08d6b0c1745fcada0bf231
+] 
+hash: 0000001102-79786dbb437abb8f4a8fbe7dd7093f8f38aec1db0fdcf2553308b2963b4bd9f4
+[Improved chgrp architecture
+merehap@gmail.com**20100302203538
+ Ignore-this: 5de01a13f4e3095c6dc716c5207bf16d
+] 
+hash: 0000001167-96fc2e4751b6867703589413ed796e464754219037524bc6593a4aa51dcad348
+[Improved chmod architecture
+merehap@gmail.com**20100302204334
+ Ignore-this: dd451e967f96debd751d9b89ba3414ea
+] 
+hash: 0000000899-2498559c31e54ecfeb8c1f59f71f835b3bec6538fb3bbf93878d287549a824ff
+[Improved chown architecture
+merehap@gmail.com**20100302205119
+ Ignore-this: 56f4ba8f0406bce00457160944df8550
+] 
+hash: 0000000943-8c19ef4e87f821271b6b0a1e8d4aa7c338936665f7bf9af81821321063b1b28e
+[Improved cp architecture
+merehap@gmail.com**20100302210026
+ Ignore-this: 731cdf06a8d89d57fad7df386b004da6
+] 
+hash: 0000000890-72ece37e2fa187f1b3c5b18b1357bb594e0f62a76cc74694b510b918e512fa24
+[Improved ls architecture
+merehap@gmail.com**20100302211447
+ Ignore-this: d02a748032131af93df0e32d3ed47d40
+] 
+hash: 0000000941-228891165cc36278b629f225500236569ff9c3aeceb810ba94ce3cf26d8aca73
+[Added multiarg support to mkdir
+merehap@gmail.com**20100302212642
+ Ignore-this: 46cc58e6797a7053d1bd33eaab17e799
+] 
+hash: 0000000932-abd52b6fd2d678ce06895b4716de18f3c443f0d71e7333995b6e251a5ea285dd
+[Added multiarg support to mv
+merehap@gmail.com**20100302215142
+ Ignore-this: 13072a6d3443beb79602a6760cee7b3a
+] 
+hash: 0000001473-0f5f72e6676feffa3aed0c42836e2e5e74ac71e06a55164cdb38abdfc594e6f8
+[Added multiarg support to cp
+merehap@gmail.com**20100302220151
+ Ignore-this: 9bf8f482c1fc83cbe4f6caa88d206b3c
+] 
+hash: 0000001051-7d84b0cbfceff0470acb70bb160d82dca68b6da568ca95be4c838f4235c815d5
+[Cleaned up mv
+merehap@gmail.com**20100302220320
+ Ignore-this: bd8e1c43579531a63e5522c7b5d9cce1
+] 
+hash: 0000000626-014652ebc37a8866619681c7a708abe022d6509691ad862fe0c0ca931498ad91
+[Pulled out common functionality between cp and mv
+merehap@gmail.com**20100302221620
+ Ignore-this: ccab21a40949087e13355403accef88
+] 
+hash: 0000001269-fa613b28bf52e53612e1425e1e8163d9519a276557632d8d7e326c948dfefa4a
+[Added multiarg support to rm
+merehap@gmail.com**20100302222612
+ Ignore-this: de466774efc7d4e1b26e4bb14c82f8c4
+] 
+hash: 0000000879-6bfa3be3c090f78e2b1be11cb1ed4c1ae1e67bf60c1e0c1cc9b6496ceb710132
+[Added multiarg support to rmdir
+merehap@gmail.com**20100302223914
+ Ignore-this: 7ba2ab7eddfd48f276b4c1f11b2ed8f7
+] 
+hash: 0000001195-6e803b0e83609dccd68763a422efecfa99671169aa56bf21818bf9b165236ac6
+[Added multiarg support to touch
+merehap@gmail.com**20100302224516
+ Ignore-this: 1ff3c60a81022b523cf9c5d3785670f6
+] 
+hash: 0000000948-43393db730c7fe760ef5148c83223de35921b927014062e85939822ee7267bd8
+[Added simple template haskell helpers for removal of redundant syntax
+merehap@gmail.com**20100305053131
+ Ignore-this: b4fd0790a194acf7606f1a1efe315525
+] 
+hash: 0000001362-aa38d215f0aa9e7b4d1b95ca89313850c7148f3502a623acbfe3ff3da12f64bf
+[Templatized false
+merehap@gmail.com**20100305053342
+ Ignore-this: 4cefde151ed01d5bac1eb76b31576fab
+] 
+hash: 0000000342-42b1f6fa11199f472c6e7cb06c5ba2658bc2051817ada7587ef3926a1eea8581
+[Templatized true
+merehap@gmail.com**20100305053440
+ Ignore-this: 342ae56c0f326f2e66537a1b1b375277
+] 
+hash: 0000000335-49f5aa062c7b0b9892de21cef57a24f988bb5e44205feb34406ef1ba28e18275
+[Added template support for io parse only utilities
+merehap@gmail.com**20100306201447
+ Ignore-this: 75d0b56ca05fa8816ce8514bba5c541f
+] 
+hash: 0000002787-969cc059ac71455252c09432c2d5a4cabb83e9bec9981671f5a59cd00cb63e99
+[Templatized logname
+merehap@gmail.com**20100306202109
+ Ignore-this: e36f49e56b704b4df9baebf16f1fc3f7
+] 
+hash: 0000000724-564a8aae1178228391df1722d6d49683cf7d4ab18dae471370f32dbf7e939804
+[Templatized whoami
+merehap@gmail.com**20100306203204
+ Ignore-this: fed9f2b1b9239e7058a5f323487b13d9
+] 
+hash: 0000000596-48aeeea06e632021bb0fe894293dc3a71f1e37932a45443acd4421ba4a205db2
+[Templatized pwd
+merehap@gmail.com**20100306204115
+ Ignore-this: e1d4aca3fed0fa09e5f239086525aa01
+] 
+hash: 0000000837-da73ab2d13560c6f21fd033069d04c10adbc9aedd8db1aadbd70074e005ee245
+[Removed Common.Util dependency from templatized utils
+merehap@gmail.com**20100306205906
+ Ignore-this: c80566cad371c145918c2d4df219fdfa
+] 
+hash: 0000000766-c5d038d0ef28cc678aa65440ee1f377e0e39c5cb008a06394fb0dc6979f84c55
+[Moved dependencies from templatized utils to templates
+merehap@gmail.com**20100306212108
+ Ignore-this: 2f65f99a9d74aff202272b5e8602f167
+] 
+hash: 0000001710-f8be65286a4881167ff01629e2fb0997fd1b2f6437da4c1fa64f0c5186c4f12d
+[Improved templates to allow ExtSwitches
+merehap@gmail.com**20100307011235
+ Ignore-this: 5abf641bd28bb0a9425bf732e7e77bac
+] 
+hash: 0000001891-a86df9b6ec1f93d94dc78f421a9789ec72aa648db91021c9bf18ae4ba7c1f895
+[Added full hook util, finished generalizing switch type
+merehap@gmail.com**20100307112312
+ Ignore-this: 4d4cdbe6d2375b036eb716097daa3ebe
+] 
+hash: 0000002133-e92a95fcb009afbc1397b976b3243cba4397a1c5d521885ec9467d202e871ec0
+[Cleaned up ioParseOnlyUtil arg order
+merehap@gmail.com**20100307112847
+ Ignore-this: e77b56e3bd6c4f5fac4a97509ff2340f
+] 
+hash: 0000000793-d84f6dd3f0278ba59d1d1685b53d7c2fce21674f1f7d6cc59945db0fb321010a
+[Templatized echo
+merehap@gmail.com**20100307113219
+ Ignore-this: 38fe23ddc37eba4e734b60102afb48d4
+] 
+hash: 0000000420-4a906d8cb185f6252ac344b51727c8032c5267ecac7962e6503a04053065754f
+[Templatized basename
+merehap@gmail.com**20100307114708
+ Ignore-this: c2c0fa17fc573eed2f5d10ceebc3cde0
+] 
+hash: 0000000601-e2597b042290d1a80cec5ed157efc2e98fd6cb8217a41c864d97baa1d58b6e14
+[Removed noFormatHook
+merehap@gmail.com**20100307115316
+ Ignore-this: 65cda7113e4fdc668b4b4ad9d09d9473
+] 
+hash: 0000000823-c345b2d4e09dc67f0b6a4aa0be81c614ae0cfcfabce8ca8dea30d06d95abc78e
+[Removed noArgHook
+merehap@gmail.com**20100307120450
+ Ignore-this: 23a7bc6a663439bdaf0214354010f5e3
+] 
+hash: 0000001330-c1fb95aa72ba7ab2b3dabe918984580cf077b5bca5154abc7810bd48aa2bfe46
+[Templatized env
+merehap@gmail.com**20100307120618
+ Ignore-this: b63d95c0384e7726b19125a30ff92b86
+] 
+hash: 0000000419-46ac17527ef79f80fe66963daf8b7cc66892939cf116b8b4648c2236dbfd5837
+[Templatized printenv
+merehap@gmail.com**20100307120800
+ Ignore-this: 6ed66e9f8c7204ae8508fa2c10262330
+] 
+hash: 0000000454-77b16ed7d058c240dcaca57f97210401cd41caa35c8310754c5db4d16650ea35
+[Templatized groups
+merehap@gmail.com**20100307121017
+ Ignore-this: 302d297e17b0d8dc1c735696cdb99fb4
+] 
+hash: 0000000440-8d828af2a40ec3faf2103a347cd6da7b53aefc673db467b3d4fec325cf7df4f5
+[Templatized seq
+merehap@gmail.com**20100307121234
+ Ignore-this: d3472fa45a293a1d312611b6c23bb0e1
+] 
+hash: 0000000413-24af60aa894a23019baeeccd1288df20f210c2de2cff9ea3c1d27b43993ab73b
+[Templatized yes
+merehap@gmail.com**20100307121517
+ Ignore-this: f9e70bcdb0ce2da63e3766a29c18334a
+] 
+hash: 0000000412-9cd5c36a2a2267a03dd21911c8aff8249d137b950945dc3070830ee158be81ee
+[Templatized cat
+merehap@gmail.com**20100307122131
+ Ignore-this: 1281914caacb5f16b73af3dcc1e81744
+] 
+hash: 0000000416-2b151503b06d6a509e53ee2523f9ff55a9cd6fb785eea8e6699305772c8b83d3
+[Templatized cksum
+merehap@gmail.com**20100307123443
+ Ignore-this: 313c2592e83102df81c8bb14382947cb
+] 
+hash: 0000001170-6bdba9fd9d822a5e1da6f0ec8466a6b675a095a0bf77bb2ab23ed8df33c37750
+[Templatized expand
+merehap@gmail.com**20100307123642
+ Ignore-this: 81469f883bb22af5d323ef99abdf9d21
+] 
+hash: 0000000437-1cd1a0b9ace33617d14d8d728ee1be303b0da005eb1637ad9753d13a9a86003d
+[Templatized factor
+merehap@gmail.com**20100307123853
+ Ignore-this: 43c0db682504d4bff43093f4edb35b5e
+] 
+hash: 0000000438-bd31970e76de78f8b93c7e8c06ae9fbb70fe364d264cbdd9d7c27ddc0214c857
+[Templatized head
+merehap@gmail.com**20100307124023
+ Ignore-this: 6b527762cb10214da4a88213dd14ffd5
+] 
+hash: 0000000424-52ffa2899c4896d826c984fd665a2fffa39d9ae3cf125e22f8de7bce5911275d
+[Templatized join
+merehap@gmail.com**20100307124645
+ Ignore-this: abc0e3cebe2f8679aa44bc8f6facd80a
+] 
+hash: 0000000475-68ea12d40717d4169f5414ea92e3ba239a5d7207904eab141e2128337a73b5f4
+[Templatized nl
+merehap@gmail.com**20100307125036
+ Ignore-this: d51b3e406b9ac26fa4c5df1a03624323
+] 
+hash: 0000000409-7e83a98cff3b3d707ad5c4fa76b15e89ffe409332dab993b02ba71dce2d677e8
+[Templatized sort
+merehap@gmail.com**20100307125226
+ Ignore-this: b21af874d966ae82f6cf1d90ece40885
+] 
+hash: 0000000424-95274bef864c8964069489b74ce6f99af536ddac9d3a9add40550b4cc779776d
+[Templatized tac
+merehap@gmail.com**20100307125343
+ Ignore-this: f1ddacb678ce2f553d49cc231b7930dc
+] 
+hash: 0000000417-dd17f825ddd41115370c3550f233e1b125727bf3f01e674b10d5d8ee80646665
+[Templatized tail
+merehap@gmail.com**20100307125454
+ Ignore-this: 2cdd3b4f1655f0f41e8672fa10a986c3
+] 
+hash: 0000000424-253936e64516f0001e6fdeab08ee1033e2e95606ac2a65407aa4a0cf1ac96794
+[Templatized tr
+merehap@gmail.com**20100307125655
+ Ignore-this: 67e1182a7413f7c66ab340f631e44784
+] 
+hash: 0000000410-5b790e5f5e2678962a9b97a4ff36cfe7d9d9db8a9b693f7596cf20b103118f47
+[Templatized unexpand
+merehap@gmail.com**20100307125832
+ Ignore-this: f1252a95da42ea7e62c3b486b235b9bc
+] 
+hash: 0000000451-73b079ee35271799b3a6e81b9e8f4624ee92b75ae02d44866cbcc784fc276f3b
+[Added customOutputHookUtil template
+merehap@gmail.com**20100307132840
+ Ignore-this: 8a9e7e4f1161ebac2ba4ce99041e35d8
+] 
+hash: 0000001044-141a1385f01634f0f89075c74816b150d73a6b4e1b470e2004d4125a72e2f626
+[Templatized chgrp
+merehap@gmail.com**20100307133048
+ Ignore-this: 96c8dc61269529ed7846e3cf2a97e5a0
+] 
+hash: 0000000466-e32c7eca4bda7e264d09dba9d29fe6ec5bfbbbe23490fbad1bc164d68e1180cd
+[Templatized chmod
+merehap@gmail.com**20100307133153
+ Ignore-this: 2477a4d4ac065ac3a815693ee114fff8
+] 
+hash: 0000000466-1cd65b8c91249d24dbe950df07684bc203de0840802cbef229a7bebe88b51fe8
+[Templatized chown
+merehap@gmail.com**20100307133408
+ Ignore-this: 7fede402a1996013da6c6289ac9ea572
+] 
+hash: 0000000466-f69ef1bda2b99b1b63a531d44290c9dcbe973862b0ce22f5a3cd26d46f4e73c6
+[Templatized cp
+merehap@gmail.com**20100307133538
+ Ignore-this: fe896d848a4ea5d6d1f0ed3ba8c6b8ae
+] 
+hash: 0000000430-02d53f7763b2e3d37f87a46a333dea898e470a21b7ccae5262f5dc9141ecf162
+[Templatized ls
+merehap@gmail.com**20100307133804
+ Ignore-this: cf30f1d23399940423db195dfe18cfb1
+] 
+hash: 0000000455-cefd9aed08784bc9adc390725cff508871b0a48e46885f4627533f1ea4f0b231
+[Templatized mkdir
+merehap@gmail.com**20100307133954
+ Ignore-this: 75c3da86b8b495ed6a122fcdee9eb6e3
+] 
+hash: 0000000451-1c63896f586d9fc25deb77fec0bc2157da7629cd606034f47c84934f12f28f24
+[Templatized mv
+merehap@gmail.com**20100307134127
+ Ignore-this: ff057a39e2e901c788eb8dbbd48f324d
+] 
+hash: 0000000430-89f886b7283a03dcd58a5721a464f055086a5411263a39e341b4765a81ef3814
+[Templatized rmdir
+merehap@gmail.com**20100307134346
+ Ignore-this: 5c7c2ed87ec267d5182257fd4458fcfe
+] 
+hash: 0000000452-56ddd153f8f0f1fe8a72d33927a9425b65f63245384946ae790c418d62c391ca
+[Templatized rm
+merehap@gmail.com**20100307134451
+ Ignore-this: a60116c5885ac22ed15afbd9cf2a806a
+] 
+hash: 0000000430-8cdc1cf2374d03d0d78aa15978129481c3d87706931b2c7228e6e36ed01913e9
+[Templatized touch
+merehap@gmail.com**20100307134608
+ Ignore-this: 9800ac45fb85f935f326b36d73a8c2b1
+] 
+hash: 0000000450-76b0f243a5b8f33168c84d99b4bc21b7c900e7f4c9b805c86a0ceec6402c4386
+[Factored out common util template components
+merehap@gmail.com**20100307140347
+ Ignore-this: b9d2e68aac00d2fc5efd248e53842a42
+] 
+hash: 0000001248-a05cf5e221696cbea9452183b67f45113deff49671de7533db25cba56a4fc1b2
+[Template cleanup
+merehap@gmail.com**20100307155006
+ Ignore-this: e667de48efe869533a8c2aa6130c559e
+] 
+hash: 0000002307-c9e7a8b376a1ee1f007898fe9126fda855ed034448e7bf2d7e7abe19fbc76f46
+[Added pcfoUtil and improved template naming convention
+merehap@gmail.com**20100307205145
+ Ignore-this: 6f2077c396def2a7fc183972896bef92
+] 
+hash: 0000009929-fd4f4246e9e75bd9a53eafb256ea9f79bcc0ec7e76490f8385c27d7f5b94f245
+[Templatized uniq and cleaned up template arg orders
+merehap@gmail.com**20100307212604
+ Ignore-this: 8e1b9aa64337ea70bff550e175029e3
+] 
+hash: 0000003609-26a3fdbd117e138a37f7b72323bbcfc04e28d8e322b6b99909f7cbf5dc623897
+[Replaces ioParseNewLineHook with ioParseHook
+merehap@gmail.com**20100308025034
+ Ignore-this: 486d345a5087fe28018b9aa74afe4774
+] 
+hash: 0000001327-6d52cba07d9deeae53283a7db95e7ebea23703ef010ef8c92fc748ecae78b5d9
+[Templatized wc
+merehap@gmail.com**20100308025405
+ Ignore-this: 380871d1b8fe4a336b566a11955d5f94
+] 
+hash: 0000000446-e6baa91bdb1e727d584bbf0a5f23797e8567a5acfc5579032f1632885bacc255
+[Templatized shasum
+merehap@gmail.com**20100308042003
+ Ignore-this: 99a37338916e6d1f4bcce0e925d75b06
+] 
+hash: 0000001502-de57b717ddbb55fb8509b451889e4fb635d44a455354fbf68ec16eb6c2c830a8
+[Templatized sha1sum
+merehap@gmail.com**20100308100305
+ Ignore-this: 62481eda6ec6660bd71a553a691b8d7e
+] 
+hash: 0000001708-8fffa5ac3c956762db967f9de4433179001b33da0849c0ca2b52e7ede3dc81b1
+[Templatized sha224
+merehap@gmail.com**20100308100629
+ Ignore-this: 66123b8beba58a3b2ac0cea28dcab56f
+] 
+hash: 0000000436-051491409a94fe9471a91cf312a9a86a21c00c8a0220e5c417bb272f7a923238
+[Templatized sha256
+merehap@gmail.com**20100308100847
+ Ignore-this: bda8eea2d406bf44eb666578e7771729
+] 
+hash: 0000000436-260a6083d6917ad942f6890afe3abfe3f131c7e6a5279e3ffdfa5ef0e202f43f
+[Templatized sha384
+merehap@gmail.com**20100308101007
+ Ignore-this: 72ae6c22c5703171efc1edb65aba693a
+] 
+hash: 0000000436-27dc92e1ce891bfa50eea8836f40438d7c3a495a5716ca3408ce1fab326697df
+[Templatized sha512sum
+merehap@gmail.com**20100308101205
+ Ignore-this: 85d2d0b25cee759c6a5685291035829d
+] 
+hash: 0000000439-ef904ab4b56fa1b186cf5b3887894c7d679083f5c1928c1c9265cdd85da596ce
+[Templatized sleep
+merehap@gmail.com**20100308212906
+ Ignore-this: b00f3e8183a5fc374c8037bb1e806fc1
+] 
+hash: 0000000425-06309a3c206db83d9a79fe2efb04698a3e4ba119ef090cd8859b784cd3d8647d
+[Templatized tee
+merehap@gmail.com**20100308213134
+ Ignore-this: 3ad603e9e51b6829fe3b9583572ca502
+] 
+hash: 0000000425-173bafd1e45eaa926c2f014b05d0e4682d646caa04d2388043b73016a64a8867
+[Templatized dirname
+merehap@gmail.com**20100308213421
+ Ignore-this: 5e52108fde893e1329bf335405b76a
+] 
+hash: 0000000428-9f14aa6c23e4343cd4cd3ed3cc58dfd602fb92fdb79d92f03d75b1ec766d3717
+[Removed grep as it isn't a coreutil
+merehap@gmail.com**20100308213920
+ Ignore-this: b424a923ac27f5a60bf2132aa0c996a1
+] 
+hash: 0000005100-f9dad31c029e51e67e38c5cb7e9a5092cc0a876ec993281799f09e8618425e53
+[Templatized date
+merehap@gmail.com**20100308223817
+ Ignore-this: 1f8a158797f61b22d74c66b80c0415a5
+] 
+hash: 0000001366-56000f126f6413b0f4ffbfe3caf7de759444cdd1144ca1c722e6cfa7c4b82bc7
+[Partially complete retemplatization (doesn't compile)
+merehap@gmail.com**20100311062302
+ Ignore-this: 61ef3da41c1d5257887c52f404fb5ee
+] 
+hash: 0000022096-8719921c070896a094b1fe13963acc8a7986d81a808ed79afd2eaba8838d43f7
+[Relatively complete templatization work
+merehap@gmail.com**20100311102142
+ Ignore-this: d89b55102fd3992e1f42e9d55b14bf92
+] 
+hash: 0000017905-6df0045d47222b0524eda99b5c430e23d30782756b8c029f9a41d288884b3190
+[Added fold
+merehap@gmail.com**20100311132138
+ Ignore-this: e5b2fdfe92fd306feb2797c8f5d13e6f
+] 
+hash: 0000001677-eecaf9852b0e272cd03683d43f1890da87676942912b796cc531a25d6925dfbf
+[Added split
+merehap@gmail.com**20100312224436
+ Ignore-this: 23138af37ec11b661e357c643d361891
+] 
+hash: 0000002010-8fc7263ff13382c156d9470309ec9d5492c22da78e70244bc35e254f9f31bdb8
+[Changed core from full text based to line based
+merehap@gmail.com**20100313003421
+ Ignore-this: db560fe2bed5946df526aa39bd7ff7e
+] 
+hash: 0000001028-76df94be7eff82676710e76f264f5c634d56f8ca6ec188862eeb385bcd52bc6c
+[Added options for omission of hidden files
+merehap@gmail.com**20100316124322
+ Ignore-this: 44e9508ae4343eb6134bee6b7aa4acea
+] 
+hash: 0000001532-3bd15367e49f914a6d7236dff3f7a657374f6820f8719e70c7bcf057c97829ea
+[Added reverse option to ls
+merehap@gmail.com**20100316130049
+ Ignore-this: a51d9c07d53a607a3ce5beb4284e40e9
+] 
+hash: 0000000995-ac31f839661c614717552de232cea336f56022ac3a12871320c606752be2a606
+[Added multiarg support to ls
+merehap@gmail.com**20100316133809
+ Ignore-this: 2dd4cea6f5d4270b09963a0abc75b84e
+] 
+hash: 0000000943-95267f3cb6f30bf0ffc658b8544f0079407bda051d6033a63e9d286ebe0fcd3b
+[Generalized line count for head, also allowing for counting from the end
+merehap@gmail.com**20100317010137
+ Ignore-this: 1a1319c356331bbd744733a45548c41
+] 
+hash: 0000001487-313cd78a4824605e2c1634d9c30d305dbb6b2d7903bfc97b53a3ff5178fe63bb
+[Factored out common functionality between head and tail
+merehap@gmail.com**20100317034421
+ Ignore-this: fb7ef2b218c5f95e7d0493f4646d586b
+] 
+hash: 0000003687-5d13a85fecb1f7fc323f3f7223bb57ee8de5f97449b4437577d60d93a02436c3
+[Removed extraneous unnamed argument
+merehap@gmail.com**20100317040703
+ Ignore-this: 2fd367d82d492720151163b76a8730e3
+] 
+hash: 0000000257-b2b635aa441f240f0c3ae7fdf5689293ddf62730be349423c4cccd0f29ed08fe
+[Improved head and tail to work by lines rather than text
+merehap@gmail.com**20100317042250
+ Ignore-this: 54bd21898c1c660086ae978d03fda754
+] 
+hash: 0000001303-c297f8afabf40d3b2bee4d28d0b8880620fa7d0845edd0a499423034d45e54ef
+[Compressed concat $ map to concatMap in head and tail
+merehap@gmail.com**20100317042539
+ Ignore-this: 6898835485644b92f03c9cbc46aae5f0
+] 
+hash: 0000000353-f28b800184cb37081475ce7791fa4af2569994329c6314e1b63b8968b4274649
+[Added minimal shuf
+merehap@gmail.com**20100320085358
+ Ignore-this: 921d28692e686d409d0ba41f59a3f93a
+] 
+hash: 0000001901-9aac69e1d96a1ece4a38f67daa558260e1e707a8a0b5ff4e34fa8039d10fdf19
+[Packaged ParseArgs dependency behind Common.Arg
+merehap@gmail.com**20100320204115
+ Ignore-this: 5d3b836e96349a77d7932f867b7720b3
+] 
+hash: 0000004503-128d17a8103a8007ff434247a443d33c1f2aa7ceae98abccedfd4f0423d62701
+[Added cut skeleton
+merehap@gmail.com**20100320204444
+ Ignore-this: 1097d79424fc127bf5c0a5197a6df616
+] 
+hash: 0000000564-09b8297ebd55f9f464d8041e6eb394537603c412a870358f5652d31698c549f5
+[Added skeleton chcon
+merehap@gmail.com**20100320210428
+ Ignore-this: 5ac1e99348c117a393e80c5957c34ddf
+] 
+hash: 0000000459-687e36dad55e547ff34cd67774aa5d5884c407f30f5c52d649e979a69a2a7700
+[Removed hlint from build script due to template haskell incompatibility
+merehap@gmail.com**20100320212155
+ Ignore-this: 8016dcba4a5fc4ea3cdb129087bf764d
+] 
+hash: 0000000202-0325e9f6a9d8b0514c659a2c6295a55d2635727a649555e5e16f3d181e2a4907
+[Fixed hlint suggestions
+merehap@gmail.com**20100320213111
+ Ignore-this: d4b2cc1a730c5b83b4a64dfe452309ad
+] 
+hash: 0000000934-5d9e0ab48f2642e6eea6f72b0bd09da7697a666746cbb4be233c299fc00132d9
+[Added skeletons for remaining file utils
+merehap@gmail.com**20100320214013
+ Ignore-this: 3173fb0a9e9dd9a42b378e8ff00f13d1
+] 
+hash: 0000004765-f6ef66d620c49de4d4ac672bb44df4a362e822cf3f982309ca5561a3feaa6160
+[Added skeletons of remaining text utils
+merehap@gmail.com**20100320220140
+ Ignore-this: e15bfd8d83af631d82251b8ae06ce438
+] 
+hash: 0000003619-8c38993aecb3db0180edf7050d7b6844115136652f94ae30915e81d97a99af17
+[Added skeletons of remaining shell utils
+merehap@gmail.com**20100320220939
+ Ignore-this: 985952d78603eb2ce2e80c3247b84f52
+] 
+hash: 0000009003-dfa30c01581c873c59cd12e5d7045f85722f4509e3809151f7fef06b7d4a24e1
+[Hooked up remaining coreutils into husyhox.hs
+merehap@gmail.com**20100320232440
+ Ignore-this: c874e966b8bfdd80b6431f1068dcc1e2
+] 
+hash: 0000011132-f25d718d89ceb16144041f089f9647883add53877ca35c07a0444bbd1c7928f8
+[Added minimal cut
+merehap@gmail.com**20100322044245
+ Ignore-this: 7a869cef891b7acb88f3fedf1730e117
+] 
+hash: 0000003381-5caa1e3bc6ddcfe6a96fdb7e8eaea7b6a3bc75ea152157da03ff6415ef7ec7f2
+[Added test data creator
+merehap@gmail.com**20100323023425
+ Ignore-this: 18ae09ddd4d51a7f59c2b9363a3c6faa
+] 
+hash: 0000001812-d349b2869ff6d1508cfcfbe5790928321bad4ac3668802b42138016199c0e167
+[Added basic test files for each utility
+merehap@gmail.com**20100323024814
+ Ignore-this: 3df1775fed861ede4275f42128207bb3
+] 
+hash: 0000012934-e61181ffe057248da97d97cd5d3dcc6280736baf23952c27905604a440db7ea7
+[Improved husyhox usage message space usage
+merehap@gmail.com**20100324112600
+ Ignore-this: 958796faf3ecc2131954e85e2dc56b0e
+] 
+hash: 0000000292-a15db9b85d9bd9f2e3e618f4c55b7e2c9d43d1d4485430ac79bc521caa4f1f0a
+[Added partial runner with broken process running functionality
+merehap@gmail.com**20100328051847
+ Ignore-this: e92c048ecaa076d175aa774ec5c489ac
+] 
+hash: 0000006750-8ad762ec7d3445a1c5126a2b3596e3134055d094d520296b5950069634967edf
+[Test runner working for most text utils
+merehap@gmail.com**20100329235311
+ Ignore-this: a732152c5205e4102fdbe82a5aa16f2c
+] 
+hash: 0000003417-c9fa75729f9900d60f85fc33a6c9ef70802d45b2d5276a9e7146110636d1586d
+[Fixed spelling of csplit in husyhox
+merehap@gmail.com**20100329235428
+ Ignore-this: 8340fefb36f0a69259f04022d86a7f2f
+] 
+hash: 0000000209-ec03c600d62dbdb64e252a0724fc87668ebcbcedb7a72faa8d8e4cb244f91fec
+[Temporary fix to runner
+merehap@gmail.com**20100330110158
+ Ignore-this: b9605476326c83c6e06c6e1052db726b
+] 
+hash: 0000000272-4530cbac2b6f36947894039ef82d52bbf63bf670c16e604d673e9b39176d78e7
+[Added temp file removal as initial step of build script
+merehap@gmail.com**20100330110221
+ Ignore-this: 5e15966bc7bd410e12a286c4d2e13c26
+] 
+hash: 0000000189-8dec36e1d96e526e6f7196a5aa91922b1425aa3d1b9e194f5151ef5e15aa4c63
+[Updated runner code to run only on know switches/values
+merehap@gmail.com**20100331060850
+ Ignore-this: 7a47fdb8918fd3b90edca15ea910ac20
+] 
+hash: 0000002851-2773ef5d4e2ecfdc74c09159b70d4e9b9ab1cf137faf4bf87f602659cfe68851
+[Updated WC test file to new format
+merehap@gmail.com**20100331060939
+ Ignore-this: ea0604cd77daf9d6f6e415be3a5c5bc9
+] 
+hash: 0000000280-a277dc5c125d30916509f7f6c587eed622f944ee82dbe8957ba12426c24ea76b
+[Removed file name from outpus for just one file in wc
+merehap@gmail.com**20100331065322
+ Ignore-this: 7a6afccf0f1fcc96f282406695004511
+] 
+hash: 0000001010-eece8a2fc17e480cbd07562ed89b7cc71b3ee9aa328f2a8029a89cff6e238b42
+[Cleanup of wc
+merehap@gmail.com**20100331070000
+ Ignore-this: ec33db94774fe32b0d80c595b2627be6
+] 
+hash: 0000001480-c0105da33580661551d9cad586f7429876062bb7904045410e196c1b39759a8e
+[Shifted tabs from left to right, omitted tab for one stat runs
+merehap@gmail.com**20100331075713
+ Ignore-this: 30bcc75792f8281c73ab28a5ceb13645
+] 
+hash: 0000000787-4e469c48f8259f4f56b287dc42db5d2b2370a029cb2be8b43a299eb4a622ab80
+[Fixed line count totals
+merehap@gmail.com**20100331083835
+ Ignore-this: cf30af79c0c0571eddd6513bfc4e0b16
+ Now counts new line characters rather than lines in file.
+] 
+hash: 0000000450-d2ef534bbdeee1ac84a92c36238688da57caf7e1e66327cc0d66e4d91eeb2175
+[Added support for multiple test runs to runner
+merehap@gmail.com**20100331103407
+ Ignore-this: adbd3ef63a49e32709a0348fc794657
+] 
+hash: 0000001871-927c3464b08a9ca6a583360d0bb1a1cdfdad63d43fe05da61be53a8a462e59e5
+[Fixed lack of newline for single line wc output
+merehap@gmail.com**20100331104035
+ Ignore-this: ad012fe6e6a25061a774a06db896f25f
+] 
+hash: 0000000256-d722424ed4420d5e523bcfd55d5710eda2bfa8ddb62b6233505f886e7bd39e71
+[Many changes (took a while to copy my ssh key over after again after reformatting hard drive)
+merehap@gmail.com**20100503035918
+ Ignore-this: 10e7f7e289b479be99708a873e490c9a
+ 
+ Added/improved a few shell utilities.
+ Improved test code to allow testing multiple files in one test pass. Delays between runs used as temporary workaround to process handle issues.
+ Full argument lists supplied for each text util.
+ Improved compliance with reference for several text utils.
+ 
+] 
+hash: 0000023939-1671d6ec31189ae9577a9c5eceb04f632d5c1f4e8b825fac6dfb53a78bcf0f59
+[Changed extension for tests for stable text utils
+merehap@gmail.com**20100503055645
+ Ignore-this: b5aa46a945d64cdfd135bdc0b7161567
+] 
+hash: 0000001909-d7601ad1a629e1c7096552d2c90fe9952de3e585dfbd92fe111674b6822c2ef5
+[Corrected algorithm and added multi-file support to cksum
+merehap@gmail.com**20100503055813
+ Ignore-this: f25b2da9e71cd426c1178a341cd339f
+] 
+hash: 0000000968-fb46d77f5eb1a1475ee8730e4a4aa4c5833e66eb7ffef04b7656422532f579c4
+[cksum: moved core functionality from parse to core
+merehap@gmail.com**20100503062522
+ Ignore-this: ff94a4871c37ae94fd2a5aecf62651ff
+] 
+hash: 0000000931-e5381eb08ba555e09fc35dd24dfdac97a1768c2868b4ea5605160c6c9d4bbad5
+[cksum: cleaned up format
+merehap@gmail.com**20100503062928
+ Ignore-this: 9eb6e3684ab5d161bc30eaa62400cbb7
+] 
+hash: 0000000308-e0da31dc9ff5b58d7ead72f5d8004c7ad76094980971cf45045fa315c8a7f8d0
+[cksum, extra: pulled out format information in cksum and made formatSummary in extra
+merehap@gmail.com**20100503074011
+ Ignore-this: 2ceed675efdd303b08f432d296c2bbbd
+] 
+hash: 0000000765-5010e14dbe1fd1bd06f316ef780f24ecc2ced78fdfaf2b6d438e8ba012072a26
+[sum: added all functionality except the checksum algorithms
+merehap@gmail.com**20100503074315
+ Ignore-this: 2db7b9c53ffc12333c23bce12fe6cf56
+] 
+hash: 0000001627-c3b1057c0f62d64b42f25e762d9610b1c86e5fedda7d5dd10482bde2fcde1cf6
+[expand: Added arguments
+merehap@gmail.com**20100503093157
+ Ignore-this: 43080f0a0e45095c752ae193e400232d
+] 
+hash: 0000000313-9bf63b8767ce0624eb1acf95fe253808ee033b3a4dc8f19d5095a73f5f17bfac
+[shuf: fixed util args to be plural
+merehap@gmail.com**20100503093548
+ Ignore-this: 24cfd0a8e06f9383f341fe89cd404177
+] 
+hash: 0000000172-7236d78c7f53994fc51c71a0209c5fa904d556bf31a3ba3dc685e4aa19c3fa29
+[shuf: fixed utils args to be plural, removed shuf test due to random nature
+merehap@gmail.com**20100503093645
+ Ignore-this: 454f9f08d632a766b134aeb262e52b68
+] 
+hash: 0000000443-d0507474521eeba333584a552439823d1699c429f6e4a718b749a1dc6c482766
+[tsort: added most components other than the algorithm
+merehap@gmail.com**20100503095227
+ Ignore-this: 807c1c11742c8e5a01d59d672f00ba1f
+] 
+hash: 0000000772-bd6fd6f9f5b4bd29a4ac823ade9fd64cd9f0214d08524d8c590e241eb335d51e
+[uniq: added error case for -cD
+merehap@gmail.com**20100504104103
+ Ignore-this: 1461c172d18b746fb77c1fb1f63ca293
+] 
+hash: 0000002051-088f0cb0c26ca88ef292ae0d60b4206671f3499c6560645b50b4f2f25aafb746
+[sum: initial implementation of BSD checksum (untested)
+merehap@gmail.com**20100505112728
+ Ignore-this: be247f27a7193f61fe4a7cc876c01323
+] 
+hash: 0000001298-20a82d7e8fc82f20c550282a6d22c3a9c7ca8b277a0bd1943466c1e3538aa77c
+[sum: initial implementation of SysV checksum (untested)
+merehap@gmail.com**20100506042317
+ Ignore-this: d38b72b2a05e33aa4a4af2ef0a3e6b09
+] 
+hash: 0000000425-d10f68a5e47b627ef4442939b20765a67df851f4a750d2c18a4b55d2ccb1b3b8
+[od: added arguments
+merehap@gmail.com**20100506050342
+ Ignore-this: cf8b436c3a2035935175319b44013d7c
+] 
+hash: 0000001776-c90cfe4bb281b28c76affe55c822a7d556819cd507a9c493fcdbcd7630fe895c
+[Changed NoData arguments to be standard and formerly standard arguments to be Data (global change)
+merehap@gmail.com**20100506052021
+ Ignore-this: 41e28c7c1f180fbaa3b4aa5370308939
+] 
+hash: 0000019201-3ab17444d4cdc763caf4e14fb5bcabff00755b9c243e71562491508ad882375f
+[od: added interface data structures
+merehap@gmail.com**20100506081337
+ Ignore-this: a5e0ec78d61b13570aa35dd962bc9fbd
+] 
+hash: 0000001746-51183fd11a0b3416221cdba7e8ae5d11ccb628288052b6099411cf33e13dc90d
+[Revamp for re-architecture.
+merehap <>**20100506130456
+ Ignore-this: fb953749500decf096d2e715827f4280
+] 
+hash: 0000008405-9e6b8b826fb6505a955595f85424c1ce0ab5f5b825fb83d9d18ac1bb75521670
+[yes: corrected argDescs format
+merehap@gmail.com**20100506122643
+ Ignore-this: 1f08685b7ce03fb19b41521aed6e2973
+] 
+hash: 0000000339-0d8ee1dbb4e767613d033e882ce7312ea5904de21febe46e70499896a6e88982
+[tr: correct comment header from "Base Helpers" to "Parse Helpers"
+merehap@gmail.com**20100506131518
+ Ignore-this: d5483f56ea981892457a165d471d1709
+] 
+hash: 0000000336-c3f3eeeb85d20613493f25ab8ea4b1e8e05f760c0d0353b0b439d6e6dbbcf682
+[od: added FixedType to FormatType in order to better parallel SizedType
+merehap@gmail.com**20100507112624
+ Ignore-this: 7359833e170f4e32e3e193677a4d5a7b
+] 
+hash: 0000000338-05f8c86d68a4140b17281e2f92b816c003d115bb713f4cb341312bd2eba851d8
+[corrected output of core function to use fixed named rather than just named
+ike.fruusto@gmail.com**20100508125952
+ Ignore-this: bbc05eb6f7d3e14ff4f60956287749f1
+] 
+hash: 0000000262-d8a91d7c0681279a7d0e979e61f501b16dc693bcdf1cf7475b05b20cf7130815
+[Added handling for all different word types
+merehap@gmail.com**20100509000401
+ Ignore-this: c7d4c15027cadfbe44d375fd3477c02
+] 
+hash: 0000001940-7520fc77c6edc49a8edd80e46762f926661867388b1ba7f0b3d2133b90ff7106
+[od: refactored word8sToWordTypes
+merehap@gmail.com**20100509043108
+ Ignore-this: 6ed04bb8ba0aee98d9f02bc396c77ade
+] 
+hash: 0000000630-70a677394b82027c7f451e18ae273ee52b69da3fc2100bc906ac52e9b06fcdbf
+[od: added FormatType and Radix parse handling (fixed compile warnings)
+merehap@gmail.com**20100509080327
+ Ignore-this: 2ace2d74ff70fa21c57eb4ede25f78aa
+] 
+hash: 0000002248-21333ef20f1c1c4c2d7da7992f209a5f015c26a4960821ff5f5de0da8af159a3
+[paste: added arg descs
+merehap@gmail.com**20100510084129
+ Ignore-this: 6bdfc0f17ced97bfc76808f7624e03f8
+] 
+hash: 0000000374-b547e720663c6a9ad378410dae12e2f5b6bed2b3f5b78e07dc16bfadb2c834fe
+[paste: basic functionality
+merehap@gmail.com**20100511092654
+ Ignore-this: 68cb02e546eb9800da0426cee4049dc7
+] 
+hash: 0000000819-cecba9d8f28c23b3a7437df6e1f300152d31b458c3d4350e53adb4bd48cd1eb8
+[all: added input enable paramter to each utility in preparation for separating input functionality from parse
+merehap@gmail.com**20100511105802
+ Ignore-this: 9b92331676747dbc2608395d4b8b87bd
+] 
+hash: 0000013570-80d6ee65e38eaa026bc1924325adcdd96d76653aafc7540553cf47b6d3653105
+[all: separated input component from parse component
+merehap@gmail.com**20100604201644
+ Ignore-this: c46bc6f3a56b5090a1964a0a61153736
+] 
+hash: 0000044746-8936ad0b80b8dde6d39f01d8c077f5a3c022ffaf55e7de5c22f9c1084dcc0ad3
+[env: minor cleanup
+merehap@gmail.com**20100604203401
+ Ignore-this: 9075c7614a1356934a45c7a63fd2d774
+] 
+hash: 0000000252-7f063546d6f18712603c4a76b41da72d8fc5b2a4afe596f6f8ea739552120bce
+[wc: improved output formatting
+merehap@gmail.com**20100604203433
+ Ignore-this: 2914a741016f992a1267925189ed3a87
+] 
+hash: 0000000275-4aadb92c1a439f78165e24cfd460a5015d284f3136cda6b976f9afdeb8930893
+[template: centralized template function name storage
+merehap@gmail.com**20100606003027
+ Ignore-this: 7eb2f4891b9730d88c83410549d5d691
+] 
+hash: 0000005298-8bdae81c69e15e285e5d4fd766304e29efc5bab6286ab87bf27e26648375d10b
+[base64: added all CLI arguments
+merehap@gmail.com**20100606011431
+ Ignore-this: f43337460b95495d4a1c68c0fef1c9cc
+] 
+hash: 0000000469-c4f33a5812a986c4412bf7be714052241ba0a92ee6f801da7ef8be9bd3c9ae64
+[comm: complete argDescs
+merehap@gmail.com**20100606012621
+ Ignore-this: c934bb7d8da1ed467d1fa49b0085d33b
+] 
+hash: 0000001144-26941687dd0bd483141b83f41fe5ad4cf5b06f55055852d580bdbe30dcb2f0c9
+[csplit: almost complete argDescs
+merehap@gmail.com**20100606013312
+ Ignore-this: 6cf18f28033eee5fbea1e85b7a4174ba
+] 
+hash: 0000000651-dd47bbb2b35428b69bc9794a256c41c0330ad9dcaa63ef7f7715d99f7939b50d
+[fmt: complete argDescs
+merehap@gmail.com**20100606014029
+ Ignore-this: e2ed591c887aab4ad898a26505bf24a4
+] 
+hash: 0000000700-4e821a8a8e5c4951575df6086af9d5babb11286696bfc116b9ed7472aecf2d3c
+[comm: changed CommArg to CommSwitch
+merehap@gmail.com**20100606023025
+ Ignore-this: 48edf91b780330f4fa847caca0b9813c
+] 
+hash: 0000000433-21e073e306fdeeff27dd5be67059186c61bb29286f259d4008411cc9e72a18d7
+[pr: almost complete argDescs
+merehap@gmail.com**20100606023053
+ Ignore-this: 12e91b546ea62d70825028f9eaecff91
+] 
+hash: 0000003589-3eacd375be565fdfef376345f477f5d31dd272ac744c3973c76ef00f3e2c1141
+[ptx: all argDescs
+merehap@gmail.com**20100606030316
+ Ignore-this: 2a13e281f135bb430d35fedff2de9cbf
+] 
+hash: 0000001572-f871c664910be7a70c928ee131de4299622713ef4869520a21e23bce356d8739
+[sort: almost complete argDescs
+merehap@gmail.com**20100606053852
+ Ignore-this: ab1bd7d74b36ef18aadd7b58160476b0
+] 
+hash: 0000003248-fe2abf6b0b801e1910f90987f75e4741ebad8aa4afec9c94f259e3cdc3ac5e91
+[chcon: complete argDescs
+merehap@gmail.com**20100606055812
+ Ignore-this: a0eac2f10fe55a98daa46211d9fd38d8
+] 
+hash: 0000001436-2f4ccb7508e839afd9f2491abcb3e6d435a2e94faaae8e72fe3852bc7d280cd1
+[chgrp: almost full argDescs
+merehap@gmail.com**20100606091609
+ Ignore-this: 3876808cbb4aba968a10fc2aa60d01a0
+] 
+hash: 0000001852-14c2a2073b4c1843ced46e04a81935ed455ca83f65f4372d4f2ce7d6b471603b
+[chmod: almost all argDescs
+merehap@gmail.com**20100606093021
+ Ignore-this: c665a3d6cf5f6a3976f6d068544aac8c
+] 
+hash: 0000001241-5c39f53943bca4df4c91450eadb6bbed984f0fdab6a222c9321482b2bc9433b4
+[chown: almost complete argDescs
+merehap@gmail.com**20100607063009
+ Ignore-this: eeb850394a88decbf96545f79be4a37a
+] 
+hash: 0000002043-9f069f7b068ab7642dbd0b10772c3495ca4203b855ce20f698bef2006aef4cf7
+[cp: complete argDescs
+merehap@gmail.com**20100607070553
+ Ignore-this: eeb41ae29c4d5c547e996ca1dd13366a
+] 
+hash: 0000003218-6c867895f1b16894011eca6ddaa597fa137db2cf9f74d83925a1250d630bf3fd
+[df: complete argDescs
+merehap@gmail.com**20100607161953
+ Ignore-this: 29c6511dc2740246c15fcc361bcd40ac
+] 
+hash: 0000001391-4c178e9d75bf6f4dd17f814504a6dd9641626f6fb5611f4a7b78965508b26587
+[ls,dir: pulled out common functionality, creating basic dir in the process
+merehap@gmail.com**20100607171338
+ Ignore-this: cad1a58b9589d132136f0e42b7884c50
+] 
+hash: 0000007229-f2b6be407bbed221bf4504a11c1870c48be0821d091d3a6891a6f8e2ada6f237
+[install: complete argDescs
+merehap@gmail.com**20100608035237
+ Ignore-this: 3edc9ae5fdefad835ab02f774afd1da1
+] 
+hash: 0000002311-3d30d071508a0934017ade032663cc4536bfd9971d9d90e4eab06d856fc21880
+[ln: complete argDescs
+merehap@gmail.com**20100608043809
+ Ignore-this: 1f02f790f8386dfe2803d1620b749308
+] 
+hash: 0000001428-7cfde1c632f1ca237ef66d00f7acdc79151c8cde5b1a9fd1b76fdb64d2bb651f
+[mkdir: complete argDescs
+merehap@gmail.com**20100608044637
+ Ignore-this: 6d86ab363a69b90d3f4411a9fd8b0a61
+] 
+hash: 0000000567-5b8ef2f537be086149b02e2d3860784ba11b6774d1ae09e1e1124b6e72e5cb9e
+[mkfifo: complete argDescs
+merehap@gmail.com**20100608045610
+ Ignore-this: 7e7dd0e1768f2d5c19e7ebab6c395b35
+] 
+hash: 0000000368-5eea76beb7ca376d30b244b3c36d66f50a91fb14e97b4f92322a662966ef674e
+[mknod: complete argDescs
+merehap@gmail.com**20100608050416
+ Ignore-this: 78324d5dc9d8f491592ec818409db7f1
+] 
+hash: 0000000773-ff5d990ea694ac3b409d3542d6dca34afc6e4839d97d07c9e589987c8c5c41b8
+[mktemp: complete argDescs
+merehap@gmail.com**20100608052110
+ Ignore-this: 8b8f646ae9322bb267186da2115fb70b
+] 
+hash: 0000001542-7ea98c8df550dfb8e925f32cf85d0b0011daaafa69cec804374e75636cb13063
+[mv: almost complete argDescs
+merehap@gmail.com**20100608073528
+ Ignore-this: 3cbd43b225eec5d9eb02a762fff0c027
+] 
+hash: 0000001391-fe396ed53a89aea464569cf9483a0394620e97c4f828898ba34a15a09131cebe
+[rmdir: almost complete argDescs
+merehap@gmail.com**20100608074409
+ Ignore-this: df55910ce5392567150fefb82c74a93
+] 
+hash: 0000000762-9120ffcb9ce4ae6b29a957b613c1298b31bdbcb62043d6a2b54c01c5247c8be1
+[rmdir: removed unnecessary Directory argument
+merehap@gmail.com**20100608074549
+ Ignore-this: 9aada9062973b1ada2fe9418c83959bc
+] 
+hash: 0000000338-f104be234af7274051b0398ad4f8c1099de4ee8703f85e4c6cea6eb109216e39
+[rm: complete argDescs
+merehap@gmail.com**20100608075937
+ Ignore-this: 39b8ec8786d5c48f3f1de74aa6c0b3d8
+] 
+hash: 0000001482-e28611bec77fda2ffbfc4fb76e4e55347fd56a66b70ba2ef927ac6ce9949716e
+[shred: complete argDescs
+merehap@gmail.com**20100608080927
+ Ignore-this: d061ea95c6e9e0f1ed1158c6bfe0e836
+] 
+hash: 0000001100-92d114970765463d044216f4f20deb886ecdbec53d028c34c4801030532332e5
+[touch: complete argDescs
+merehap@gmail.com**20100608082033
+ Ignore-this: e53def8dc2f26fc67a8a1f1babe335ed
+] 
+hash: 0000001289-dd878c07ca97c7d795ee41a0213fb26622b6e4d90a103fdc9701aeb74251bec4
+[truncate: almost complete argDescs
+merehap@gmail.com**20100608082449
+ Ignore-this: 76fec75a538a83d300bcf3d857c5da1c
+] 
+hash: 0000000443-f1fedadbdf2811eeb19443787fcbaabba52e481844afe916a2ee0f1c28806a8e
+[vdir: minimal implementation
+merehap@gmail.com**20100608082640
+ Ignore-this: 26bb34a346af1dd518f96fbaf1108c2
+] 
+hash: 0000000617-d11fc44a19419bedc5e848aa05e968ab6f41599600deecf9d0f2eb5d36b8db8a
+[chroot: almost complete argDescs
+merehap@gmail.com**20100608161244
+ Ignore-this: 941a0b778ecdde6e15bf3e341de2123f
+] 
+hash: 0000000610-b01255fc4fc93f4a24e12937603c98c1764b6360c19f1ab6fbdf0b72c48be2d0
+[date: almost complete argDescs
+merehap@gmail.com**20100608163737
+ Ignore-this: b96e9f3760e8c1c8d9d033d0930dbe0a
+] 
+hash: 0000001152-a767d5e40d6bce407e854e44a80a62b82848832390c7bdc4806d49d1f5d8c4c0
+[du: almost complete argDescs
+merehap@gmail.com**20100608170425
+ Ignore-this: 1b0b94e59522cb99dbb42bacb6ed2a0d
+] 
+hash: 0000002899-a5240a5bef3aef8f61f52b0f04847ec562387d3b81beba0acaaee50fafd59197
+[env: almost complete argDescs
+merehap@gmail.com**20100608170814
+ Ignore-this: 81e862e4f0a8174a717aa21341f78dd4
+] 
+hash: 0000000583-ce50b6ea03da4a923a233a6f40009a7b5b7ba5dcd208779342ae083544c9c761
+[nice: almost complete argDescs
+merehap@gmail.com**20100608180846
+ Ignore-this: acef04edfcadc87875fd806edade0f28
+] 
+hash: 0000000264-aafbb9be4e9f544cec2ef45e2d11cdad13bea81401cc5056d115eb9da8990d25
+[pathchk: almost complete argDescs
+merehap@gmail.com**20100608181246
+ Ignore-this: e7b66a494302b664e813179dea8412a0
+] 
+hash: 0000000622-64d16701330aa8f1ed1454c3f8e1b46315f6631030ee5bf792cbb0fd4422544a
+[pinky: almost complete argDescs
+merehap@gmail.com**20100608181647
+ Ignore-this: 3e6ea20d5c411e2ba51ae1a2f738c41b
+] 
+hash: 0000000815-6ac05c2478b83fb847b597b45fe5153f3a1905a82b1c799065ceb8df083ecb2e
+[printenv: almost complete argDescs
+merehap@gmail.com**20100608181855
+ Ignore-this: a21d527a832c15a6b20403397c578910
+] 
+hash: 0000000260-8faf763e8886c819ca67f465a43b75d7159731b0a12ad8149dba2afc5a604834
+[printf: almost complete argDescs
+merehap@gmail.com**20100609084143
+ Ignore-this: 5ba35318048c37a7612bdb4119defccf
+] 
+hash: 0000000216-388bf0f4630223f8d8f9fe4d2d61127274e4909e3da6baf20dccf41089d3604f
+[readlink: almost complete argDescs
+merehap@gmail.com**20100609085048
+ Ignore-this: a4a27484b6f43b7c7bc01ae4c097482c
+] 
+hash: 0000001036-d2f7a735964291d0b45685c83b397065a7749fe6eb6f9e6bb29824dce8f8622e
+[runcon: almost complete argDescs
+merehap@gmail.com**20100609090436
+ Ignore-this: 717179403d466d89fa5f8e9ab056fd6e
+] 
+hash: 0000000481-8652a23a4c8c386e8a8f4ebf3fdd7d794c0253fa17508623dfcc86952a76d1b9
+[stat: almost complete argDescs
+merehap@gmail.com**20100610050322
+ Ignore-this: 124083ad8809e5d07d97bd0d0653c2af
+] 
+hash: 0000001004-1619171a678b248d7de0c5fa2f1d5d1b374032db6be26aeea19481255e21b052
+[su: almost complete argDescs
+merehap@gmail.com**20100610051001
+ Ignore-this: 93de6e02d083cf59339b4f34f82d4537
+] 
+hash: 0000000885-5e74a1d13cdda2c21c7e9a9a350440a5f0a04f0bc9c45fb2e1279d008399c512
+[timeout: almost complete argDescs
+merehap@gmail.com**20100610051520
+ Ignore-this: b6edca02dcdc538736e37484cf6f7732
+] 
+hash: 0000000567-c2081a1902c695f7655bcf51fb26a10ba369d8a69cc0a9a3d484cfc8ce35e153
+[tty: almost complete argDescs
+merehap@gmail.com**20100610051653
+ Ignore-this: daca0783aeb9631222c590aec2d5e5cb
+] 
+hash: 0000000238-fe75c7228995d388c97d622db792182a04493a76d2031df071ace5342d155a39
+[who: almost complete argDescs
+merehap@gmail.com**20100610052927
+ Ignore-this: 58d8a1fca21dff59c98fe5bbfd0baff2
+] 
+hash: 0000001431-f2ff1ee4aa6cc415f79a36f4cff05018400aa358288aed982cd69fa071f71460
+[base64: encode functionality
+merehap@gmail.com**20100610071715
+ Ignore-this: dcb3353c83bc9f0d3ed0e6561f11c3d4
+] 
+hash: 0000000735-93b201897635f5cbd4a77ab09c0b613ea78fc1d9ec24ff3801b80c9bd9720916
+[base64: added variable-length line support
+merehap@gmail.com**20100610074738
+ Ignore-this: 487c6ef7495945071e26166d6a0aa20
+] 
+hash: 0000001052-eee3744d0c99236e707955e3702221ed821ade8c4cbcc819b4278989886d783d
+[base64: added decode
+merehap@gmail.com**20100610170525
+ Ignore-this: 9087448eacfa0b50dc0c1bf845bc6b0e
+] 
+hash: 0000001432-bd3912dc3b9fb1461f8d062b157dab0bc48612325797b44d4ccd9effb1c8ee8f
+[base64: added garbage handling
+merehap@gmail.com**20100610185007
+ Ignore-this: 226baed4e69e5cc43c755e6b68b6970f
+] 
+hash: 0000000856-ec7296803de1e9d511fe6f7f9103ea59d0d9a836a446c21bfeeb59e843789f7e
+[csplit: added basic functionality
+merehap@gmail.com**20100615211521
+ Ignore-this: 706538be7ee7ae755dc817206f6e5db5
+] 
+hash: 0000003135-aa5fb283a5585a02f1a55af26949c9643b861213bb0dc830b481f734b965fdf5
+[whoami: added new line ending char
+merehap@gmail.com**20100619215829
+ Ignore-this: 686bdeb04ee4a9847189ffbc2aa51e9c
+] 
+hash: 0000000346-91ff60d3af287b52b31e77a293767f3b695d2ee5c26bc55fb9293b3bc753a82f
+[seq: removed -w from parse as it was causing a runtime pattern matching error
+merehap@gmail.com**20100619222049
+ Ignore-this: e57a1443a93c9c70653bd6b34363370c
+] 
+hash: 0000000308-218b17dfe9cb66188e5f43e668da656d3b8f4ec58084e7faccf1480ccad7d5fd
+[seq: added additional separator at end of format result
+merehap@gmail.com**20100619222139
+ Ignore-this: 93fe2e37f84d85f9377234b0c849de85
+] 
+hash: 0000000255-5d07cd8f12cdfec7f05c82e0a9849046a10a6e69149347ff378cb3e0093d2a95
+[id: added formatting
+merehap@gmail.com**20100718071105
+ Ignore-this: 78adcee6ae66f00df44ccf65d2896899
+] 
+hash: 0000000314-f3d180f87c62dab6944a21eb18bf22035570513dfbf36e6c511aa0d6fd892f31
+[seq: fixed standard functionality 
+merehap@gmail.com**20100718074928
+ Ignore-this: 2ea12058e1262eac5bbecbc6b9fe99e0
+] 
+hash: 0000001483-2b5f7195af09c7e9695a1e782a73020a8acbaaff0fff11f6f19e579089d647b7
+[logname: conformed error condition, added line break
+merehap@gmail.com**20100719080311
+ Ignore-this: fb5b3f68843d292e512d3a82c6dd1308
+] 
+hash: 0000000493-c447428b6643ad3caeba61168e4ab356346fa691d9202756e1120e29da1102b5
+[dirname: added trailing newline to format
+merehap@gmail.com**20100721065025
+ Ignore-this: 10a38643df3e539ea87d15b8cbf68b63
+] 
+hash: 0000000355-ea59f2b0beb90f12fe879406fa749774b6ee3e0c554cc2a80f8aba14b8617c13
+[uptime: added unparsed uptime information
+merehap@gmail.com**20100723183400
+ Ignore-this: 7b0c734376227c140f058fa66d9b67af
+] 
+hash: 0000000336-8117075a8f8788749abdbb960de2814e1c794f32881dade7323dfc5d4f0ea40f
+[fileinfo: added more command line arg descriptions
+merehap@gmail.com**20100725100054
+ Ignore-this: c0e3a60f5cf98bfc69cac6115a894df
+] 
+hash: 0000003579-c5fba7fe3796e4187fea1b572e771943becb1933ae31d897daa8062d68bc9891
+[expand: all functionality implemented, command line options not hooked up
+merehap@gmail.com**20100831020040
+ Ignore-this: dcd8a975da5b81ca43bb3e036a3e09e8
+] 
+hash: 0000001717-d51cd6bb1ac3ce704656816a4cb567f10fb4cf2a38cb1d8747bdb2aea80ce170
+[expand: hooked up -t
+merehap@gmail.com**20100831175845
+ Ignore-this: 479d20c8460fa6023b23154250b64a61
+] 
+hash: 0000001496-56f9212bcea490b06bd0fdcd81ec9123bd2a88bd7228ed85241bf1f5fa6e7e2f
+[Helper section change
+merehap@gmail.com**20101107032203
+ Ignore-this: 6dd658976411e52898bb47625afe5dd4
+] 
+hash: 0000000296-fc7f08a2672359aa7750a74d2d685d651dd53fd08f8f271e0346c2195eb2b592
+[pr: enabled text passthrough
+merehap@gmail.com**20101107032257
+ Ignore-this: 108d2d06e0c32e1181be44ff7d37a205
+] 
+hash: 0000000348-f91c4c43cb2857432ffcb15da1fe903fbf01a23b90ec42a923c3511419700a15
+[pr: basic page splitting
+merehap@gmail.com**20101107040828
+ Ignore-this: 9db5db45cc7bc3cf8206f5380e8d862a
+] 
+hash: 0000001207-766c6c35416c79e8ea917f110a553b540ffdefbee564c4541819238efb775d20
+[fmt: basis text passthrough
+merehap@gmail.com**20101107045717
+ Ignore-this: 3c3c403b8d73afd268b13f4048c318b2
+] 
+hash: 0000000312-b4bacabe14c8a41099e3b30ea3088eeebd99ede91b1bdfcaeb2e83fbbfbba7b1
+[fmt: added multiple/file input
+merehap@gmail.com**20101108093543
+ Ignore-this: a15a3aff51cc6a587d88f3c6dfe32a51
+] 
+hash: 0000000660-ff9781a36d17c042ef08ad8299d87929c2ec46637afe2788ea2af35c2dc7f6a3
+[fmt: partial line consolidation logic
+merehap@gmail.com**20101108195714
+ Ignore-this: 20351e3c44391aff281f83f7e4b824be
+] 
+hash: 0000000637-d79a4e385b166b1ef856b98322ce19cc1f6d2eacc5d257d012ad50c680a8ba91
+[fmt: splitting based upon words instead of chars
+merehap@gmail.com**20101115050528
+ Ignore-this: a896078447ca1f1ae1ad9eac19ad962c
+] 
+hash: 0000001695-53167345d8bb07743aa4851184256f35b70cfe2ab7fb4a16af63d615691b458d
+[fmt: made concatWords tail recursive
+merehap@gmail.com**20101115053547
+ Ignore-this: 9a5b7574edb6074595385839461106d0
+] 
+hash: 0000000647-121a7289ee0d65fcadd2cdcbc6a21f3dbbde2281df9f9f367403b2cd1be1ff85
+[fmt: fixed last line word order reversal
+merehap@gmail.com**20101115054122
+ Ignore-this: 8eb8e49ce6d0d6ba22f52423b8fac134
+] 
+hash: 0000000377-657c640ccc2374f3e0182e3a95461c26b9695596cc9c286f7876610f080cae6a
+[fmt: added proper lengths of whitespace
+merehap@gmail.com**20101115082231
+ Ignore-this: b5b634a06945e54c24ca1c9502992b43
+] 
+hash: 0000000672-77d2ecc9ada0480099704f034539df1a26f9d56f651dcfd7d9839bb3366ef4af
+[tsort: Chris Johnson's code adapted
+merehap@gmail.com**20101222060330
+ Ignore-this: 5ea1842ab046b493f2e8bfc84c55c30e
+] 
+hash: 0000001404-b3b2e451fc51207fdab9d2515880cf0b83adc941792d61523e7493c0c178c732
+[du: adapted from jmillikan's code
+merehap@gmail.com**20101222065129
+ Ignore-this: e693a14ea7626977053b50d4e9a18fcb
+] 
+hash: 0000001879-8674c23c90fcfb139066344b841fb8f4c7a6a557f5ed6c88f6765f532657351a
+[Added "input" function. Cleaned up a little.
+merehap <>**20101222073749
+ Ignore-this: 1d5c3994e6e2be2aa2150b91b3f6aff5
+] 
+hash: 0000001280-dc6a4ff2077aeeb6c34c235251206affa5a4ee0f49114744f56593e29a1a2bac
+[Clarified roles
+merehap <>**20101222082032
+ Ignore-this: 742482267bd5943975227d67e7f8dd4d
+] 
+hash: 0000000996-a2286ef751d868b1510012c8226c1ba9378388e550765f030f8ca98f0bb4e319
+[Grammar
+merehap <>**20101222082327
+ Ignore-this: 5e50030aa557dce85631294252387b93
+] 
+hash: 0000000306-15c992c68ff3e71f838933da83d078577737c3e7b4f865fa4a835fc097a33ba6
+[Grammar
+merehap <>**20101222082425
+ Ignore-this: 38cec9cf308950edb6144cf5deaf1051
+] 
+hash: 0000000402-61c6c81a80be47258578973395503883fe5d06a663fc01a18d2087f166b5909b
+[Fixed link to tee.hs
+merehap <>**20101222084254
+ Ignore-this: 9d874010f2e2c27dba88b56a32b36ac0
+] 
+hash: 0000000297-9d0603c9696650aa81894e6708fd23baa2e4e52a2beb4bbf3919e2648b34556d
+[Made subsections to get around lack of ability to make paragraphs.
+merehap <>**20101222175327
+ Ignore-this: 2355a87ba8362afc058300ba1e77080b
+] 
+hash: 0000000470-4cda589e09bbdfeefd0aa5a034965a521c3d6ffc535b26397721ba0104889fdb
+[Made title a section so that it is bolded
+merehap <>**20101222175445
+ Ignore-this: 61b8559ab7f4c2cb18c479b90ec77420
+] 
+hash: 0000000302-512136f852e444df02fdce0aaf83482ce05d758a648b6f5ab080935bcff34bf4
+[Created subsections in lieu of paragraphs
+merehap <>**20101222182012
+ Ignore-this: d79cd074cfb689c47791ac292557b17e
+] 
+hash: 0000000165-7af73a5bd312b627a0965685e617c124ed63c5ca5fe5c4b40658138f2bc0fba0
+[Modernized
+merehap <>**20101222182158
+ Ignore-this: f5647260bd58b367840bba04dcc7243d
+] 
+hash: 0000000416-1e376f8e0e27c946e657e4631af395a60a019fbd974782328fa60d8da9a4ee74
+[du: separated helper functions
+merehap@gmail.com**20101222072006
+ Ignore-this: 16056394cbae090e83768941aa4d739d
+] 
+hash: 0000000223-a063d91b70cf626803f4eaa5b73511eb0a064476308246839c4048248ff7782a
+[husyhox: labeled utils by type
+merehap@gmail.com**20101222082928
+ Ignore-this: b8b65a0314f2c6627320b28f85537949
+] 
+hash: 0000000250-182454076f749ac8bd01b244ffa2b3c270b50b99a886c7ed3a2ecaae720ac19d
+[du: more logical order for helper functions
+merehap@gmail.com**20101222182130
+ Ignore-this: 5eeec4ae563f8b65088d32dce225a20d
+] 
+hash: 0000000513-5ca852167b96af2f8664c8b1f0c0946a652c0c01415a20446f0e80365e2a7444
+[Separated build statements
+merehap <>**20101222183450
+ Ignore-this: 275ff0a05b4497264d2d84b4bf8343cb
+] 
+hash: 0000000308-359a724619c037ed6a663bd87722a4d580ea706f2157eabf0b7dfbd1d74ccad4
+[od: hooked up formatter
+merehap@gmail.com**20101222190834
+ Ignore-this: 6c14d9d24838131ae2cb1ddde05f4a93
+] 
+hash: 0000000859-a08ce572a4189384f492aa7b18bb9aa6484f7b9ad88825c9de81bd0d39014b70
+[Partial fix of patch-tag's broken formatting
+merehap <>**20101222192101
+ Ignore-this: eda05d0720584215a086d9d5b67854b1
+] 
+hash: 0000002666-04f70981ca535dfffdda17fb065740b87b060d15b568602d5415dbe57d03c7fc
+[cabalized project
+merehap@gmail.com**20101222215739
+ Ignore-this: ff16462fa59f540c9b400fbc934fd48f
+] 
+hash: 0000011011-f7f713fd9faa9858a5bb159e15333414e0d911b2869b788327e1e30eac4a69e2
+[du: temporary hack to allow compilation
+merehap@gmail.com**20101222220831
+ Ignore-this: 9c54ce59c9fd494c583eee3873fe326c
+] 
+hash: 0000000246-79401d1cf477017ed02d2adefce7b6f6896d4457d130ba62e6c219f021bbd1d6
+[decremented version number
+merehap@gmail.com**20101222221134
+ Ignore-this: 4ee02c71641a2b6fa346534bc7a83a95
+] 
+hash: 0000000173-e5e7c2699e84ec60974fb83a82879c8fc4456aa4d27330adab059b88e520f0fe
+[removed pre-cabal build script
+merehap@gmail.com**20101222221359
+ Ignore-this: cdee7041b8f7a1af3d7fae2f81a142c6
+] 
+hash: 0000000277-add963725dd0736f5e048430e5e8f7731c1468226cb02865cee75926c36d66c8
+[forced base to be version 4 or greater
+merehap@gmail.com**20101222230150
+ Ignore-this: a64599997ecd4c7b01e7b98f64663bd2
+] 
+hash: 0000000295-e12fff489b0dddaf687bbc570b0b931a3be493a4fcd0780a411d34e57bdc92a9
+[du: changed to extensible exceptions to fix du
+merehap@gmail.com**20101222230256
+ Ignore-this: 54d853d4359c554a5213bed1c7d11e0d
+] 
+hash: 0000000607-5ff13c5ea926c793c6f457cbc38bf6e008c035bc73e28e7f9e7be054cef2e9ad
+[Fixed links to utilities
+merehap <>**20101223034328
+ Ignore-this: 9db91cfd413150fd5c506dfd5de2b0a5
+] 
+hash: 0000000962-808ff67bf1048dadc6ba2c14581af929bf2b8dbb9c861a695e8b3894970c45a4
+[Updated flag descriptions
+merehap <>**20101223040653
+ Ignore-this: 2665d51736b60500be6357a352b4e5ed
+] 
+hash: 0000000989-923ad6da05d0f8894924d04511a88cbc665209de0d12d8ac6c5ddc061dd4733d
+[du: cleaned formatting
+merehap@gmail.com**20101222232115
+ Ignore-this: e9ad98d421a948242c254988fb047a6c
+] 
+hash: 0000000391-2bb52988effa6ca640e684607958c084b717a41db33a0ede220174fd9fbc03d7
+[Fixed attribution, moved source to default location
+merehap@gmail.com**20101223090151
+ Ignore-this: c09927c05198a72df4a22d94999a579e
+] 
+hash: 0000009964-2bce9542656f883dcbb43f55397094199b252de3da45354e709e8373e3c2d5bc
+[Fixed utility links
+merehap <>**20110207222206
+ Ignore-this: 220c38449e0c6617c01987f3620c4a17
+] 
+hash: 0000000977-6d582347b33dc8a83029f90aeff6577b110f87e028468b8c5a5ebf46ff27c11f
+[Replaced template haskell with standard Haskell typeclass
+merehap@gmail.com**20110208113345
+ Ignore-this: efa575b9424c9829a12cf37c828cbc12
+] 
+hash: 0000128187-f62c9183b65a2d2f6f7f9f27f3c643f7d72dbf9bdfbf3794a7953bac39c41907
+[Turned warnings on as errors and removed orphaned instances
+merehap@gmail.com**20110208225158
+ Ignore-this: a45a327fa69cdc5467dce56e57d8e06f
+] 
+hash: 0000002526-8901f3f69e70da7d253087d6213bc8db2d4c589443ae7ea4310699fc9eac7d28
+[Fixed hlint suggestions
+merehap@gmail.com**20110208232351
+ Ignore-this: 69ec289a654fcad8724facb42b303b11
+] 
+hash: 0000004283-64015c97ae2850c459429b56ac8d169ab6a2f942f0b82af2ca6b7daccd34ec31
+[Fix warnings triggered by hlint suggestions
+merehap@gmail.com**20110209002409
+ Ignore-this: c75198b966dd6f75970fcc77909a9235
+] 
+hash: 0000002505-f24982b27521847eb7cb02c045c4a085c861fcbd07c547f3c1d1f73daa1f8d53
+[wc: brought indentation behavior closer to target
+merehap@gmail.com**20110209064144
+ Ignore-this: d7ad9942a6a8c7e686cfe6f9f8fe367d
+] 
+hash: 0000001434-4bd99746689b55d8b135878f6ac866dfc908c70edbd00e83eef2464dbd10fd66
+[arch: moved formatting from output to format
+merehap@gmail.com**20110209223044
+ Ignore-this: 389517414272561722667eeaaea715d5
+] 
+hash: 0000000277-9ca0787899e478174792caa93ebd77fa56a04bfff83a77211ce16c5188555fed
+[basename: fixed new line formatting
+merehap@gmail.com**20110209225220
+ Ignore-this: aea1e4184b4eb6b7f5ab19b03dda2b9e
+] 
+hash: 0000000196-5742db2dd1defc82be85b8f0b16683dd07a7e2f7274cab8b43c8b9bb535f74c4
+[Fixed link to source code
+merehap <>**20110211000046
+ Ignore-this: 754f6e0cf70a7ae3a5f6cc4f7780086e
+] 
+hash: 0000000333-bcb3dbef2d65d63c79f4a111408be46ce3d81a3231aff5a0d2b3d593a9354118
+[printf: fixed argDescs order
+merehap@gmail.com**20110210230248
+ Ignore-this: 1724c77ea7226a1e3dbfcdf1b0b8b371
+] 
+hash: 0000000608-439bfc5c1b2edacf48e66f1991225196471fe7ac9c73ef18ce83d0a630ac76a2
+[printf: removed invalid help and version arguments
+merehap@gmail.com**20110210233018
+ Ignore-this: fdbb4c33322af808faa8faaaa15c2c3a
+] 
+hash: 0000000285-27a3e01976ab3bc44da1d87323d4adc7b2b31515c73b844fa0a2ee61a7b7bc35
+[printf: basic argument passthrough
+merehap@gmail.com**20110211001622
+ Ignore-this: f1725b288945e4d0d7e14a256e1cc352
+] 
+hash: 0000000346-99470b034ca5143b50c4026641a40f40f36505d46449dba28405827600263138
+[pwd: removed help and version
+merehap@gmail.com**20110211002107
+ Ignore-this: b2eb7b50cfb5d144a492a5e73ad6799e
+] 
+hash: 0000000477-7260fa37223f7510b999498aafec2508749099c4eda2cf66ccaa4a8df6662c10
+[id: added uid and gid
+merehap@gmail.com**20110211003710
+ Ignore-this: 23c5f119185ae58a2f95e1ad5e3da154
+] 
+hash: 0000001166-ed26f45272f5ae916d7681491f043ac66755e3670f84e2670bbcda666bd10c16
+[uname: added kernelName
+merehap@gmail.com**20110211012535
+ Ignore-this: 685fea8f01634df43e704709002e17b5
+] 
+hash: 0000000862-2044a22d6f946c107cb034a171e2245ec4fd8dac20cdc0fda6cfa107d2aaef00
+[uname: added nodename
+merehap@gmail.com**20110211014647
+ Ignore-this: 42ddaeaaad42afa9ac7bd9753f2aa3dc
+] 
+hash: 0000001632-ce700f89ae2093634e1cc9eb6d06c20e4edd20efd31cbe64760edd36fc66a431
+[link: full functionality
+merehap@gmail.com**20110211111304
+ Ignore-this: 6c7f63a0a8d3fa3b994a1aa1b9b3c796
+] 
+hash: 0000000963-9d768ad08462b90d16abe17d81324aab40f650f04a5fed8fea9213eec8194584
+[ln: simple hardlinking functionality
+merehap@gmail.com**20110211120634
+ Ignore-this: 36a3b5ac88849793d86dfb70783e35d6
+] 
+hash: 0000001323-f0d903b78d1296502f9a3722b6fbf9b91ad82165c284d768ccf7dcd7b20aab3a
+[ln: added fourth targets/directory combo
+merehap@gmail.com**20110212230429
+ Ignore-this: 979325a7af81ebfda7e908f6d59a8876
+] 
+hash: 0000001445-dfb261b8d7623cf77650a3170348cda19cba0348ebb2cee220d5a67fbcb899f4
+[rmdir: added option to ignore non-empty directories
+merehap@gmail.com**20110214070405
+ Ignore-this: ea3f765baf29369d030e453b698cea02
+] 
+hash: 0000000848-7de9e0e3638d1460dadda0fde6b197ea6426a755bcf004687628ef49cfbbbd6f
+[pinky: added cli argument parsing
+merehap@gmail.com**20110215061801
+ Ignore-this: e5f04060dc5a6a3fe079cdd0627012ed
+] 
+hash: 0000000727-893dda765bf99c1ac8293d50d0f7273fb91006fa1e08a808ef90e072cc8c0461
+[test: added standard form arg descs
+merehap@gmail.com**20110215214610
+ Ignore-this: 290df92d326f7d35732423c2f677c5a3
+] 
+hash: 0000002182-0b23899ec98c27c89a3f4ea9c95604c63044eb6410163f71738d4eaebd030816
+[added "[" synonym for test
+merehap@gmail.com**20110216204933
+ Ignore-this: 659f4b1254885a329d80852eef8228ee
+] 
+hash: 0000000164-5051a804ebe154fcbfeab265c36483dcde960bfdea30dc4fa627d7f7638eb4ea
+[fold: added default width
+merehap@gmail.com**20110218040758
+ Ignore-this: 2ff48026c69cdab02fe2a4d46e91031f
+] 
+hash: 0000000329-1473d87b1cb87a6c9b640894368347f81993e0a98f5c3df7108bbe3e45c0de87
+[tail: named constants
+merehap@gmail.com**20110218041226
+ Ignore-this: 28c712a5bb3c141d94a014cb016dee01
+] 
+hash: 0000000615-7cb43217342b5d23271010c5be5466e5c8a335b6259677b11ecbf996d3de8291
+[head and tail: named constants
+merehap@gmail.com**20110218044114
+ Ignore-this: a17edaa48689c70584247574ffbfd834
+] 
+hash: 0000002085-b160eff8e004c08c3057a60b26ffe9890ed7ee26b08ebe514201ffd712762c71
+[fixed orphaned instances a bit inconsistently, cleaned up new compiler warnings, ensured compatibility with new parseargs
+merehap@gmail.com**20110404212546
+ Ignore-this: 6d9805f40d56aa23a5c28b6e2c8585c9
+] 
+hash: 0000011720-627284038a759b391b403f1785a7a65908a972fcce200bf24e7bcc56f94eff2b
+[cut: fixed hlint suggestion
+merehap@gmail.com**20110404212807
+ Ignore-this: 6559912d587224d87e80f2f6c8d72ee9
+] 
+hash: 0000000245-4d0d3cf72cacd2477078db0446d3056220660bc8b29bdd519150878394feb8cc
+[mktemp: default functionality
+merehap@gmail.com**20110405235729
+ Ignore-this: 2c4791131ddbf2eff665b6ae84ee2bf8
+] 
+hash: 0000002027-06ed16982cc0558e497a1487d3b6f3bcaa7b8bab1c2d4de77a82b25458eb1b95
+[mktemp: fixed ordering of argDescs
+merehap@gmail.com**20110405235951
+ Ignore-this: 33a54286d09758e120551e549b537e8f
+] 
+hash: 0000000404-c690659d479a341188092bbccf3c6a2ce46ada00e44a5ec426071f21f5c6a4bc
+[mktemp: added console feedback on tmp file path
+merehap@gmail.com**20110406000328
+ Ignore-this: 7d1ae6df1c668f07c5e0be715991a9cf
+] 
+hash: 0000000268-1bb1026448048208fbe5663a6df2f675a0636101150f71ae7400f2a4f7e02646
+[mktemp: added support for -d
+merehap@gmail.com**20110406215358
+ Ignore-this: f196f6e4771878f18b29bb551e826e61
+] 
+hash: 0000001018-95c48a85254edb98d29f6b9fa5a838d1f52aa884b86a1cdb58caaf9e992d65a4
+[mktemp: added dry run
+merehap@gmail.com**20110408183000
+ Ignore-this: 9c34af95fd5d318963ac6376be5599ae
+] 
+hash: 0000001205-99fd00551631d9f807b3b83adcd20ed0dec0a30c2afa4b9faf5821aefa541a30
+[mktemp: added suffix
+merehap@gmail.com**20110408184252
+ Ignore-this: c9db1ec1394db58e52d0fba5ae7eff70
+] 
+hash: 0000000686-db22e247fd0887a8f906b8d1269a0a6f91ec7daeb29110451a105e3a00de59ed
+[mktemp: moved core functionality from parse to core
+merehap@gmail.com**20110408184947
+ Ignore-this: cb9fdb6a4bc27a8eeaa316459924f3f9
+] 
+hash: 0000000485-49c874e91111b5c20c8c04220977fd592cfceb6bfbff260a87e47c638095f970
+[mktemp: fixed compile errors
+merehap@gmail.com**20110408185424
+ Ignore-this: cac79fac7bad05fd7203e3ec85b19dfb
+] 
+hash: 0000000506-859760789947f2ba34fe0fe8f9ee9c8c0a55e2fa19e9965353252ba646c1361b
+[mktemp: generalized temp path generating helper function
+merehap@gmail.com**20110408194152
+ Ignore-this: 20c833b5fc1f58a57b4c2e3f69b6af3c
+] 
+hash: 0000000881-00273ecb8cbb00e5218d95138e8350a349cb622e0b8f78cee4da067670082afb
+[mktemp: directory, template, and suffix are now hooked up as arguments
+merehap@gmail.com**20110408201109
+ Ignore-this: 5a31079b1e8a7ec269726048ff5c9ce5
+] 
+hash: 0000001034-6f6af3a7fea83088912b7c6f4b0b4d8607fcd935461345f3bc17055bfe6200cc
+[mktemp: added support for -p
+merehap@gmail.com**20110410003516
+ Ignore-this: 2fc47976652dbb6a8789d1c7fac0673
+] 
+hash: 0000000989-408b62d346b19e5737a905b3de0f6d1f751378332602cadc260b0011e6f5b830
+[split list of utilities out from HusyHox.hs into HusyHox/Utils.hs
+merehap@gmail.com**20110410010734
+ Ignore-this: a7380dc4b64da62d3ec3a08a35843d52
+] 
+hash: 0000008058-3d7eda220173910db17c7e881d387eb68424c9114d321ff1f2499c988cd60a9a
+[added list of utils
+merehap@gmail.com**20110410011152
+ Ignore-this: fb48ddb76a53b804bbdcc66f8f29f4e0
+] 
+hash: 0000007927-a9da2a3d3a09c660654731080b9ab08f70b1b5b54bff04c4a8147ec0d77a3b03
+[removed old useless test files
+merehap@gmail.com**20110410012458
+ Ignore-this: 378522fff7c96da4d83549047afa1848
+] 
+hash: 0000014147-e3f185794ca3efca7f31bc173ab667eb6eb19b7d9cee433eb36cff8f3e17f2b2
+[changed switch from a class to data
+merehap@gmail.com**20110414201554
+ Ignore-this: bbfd27324b76ee9ee60ebde4aa1a4703
+] 
+hash: 0000032134-7ac39018558136bc887bf93af644eda607a2d7fa88ee4eedf264ac77384e9e13
+[made switch types bounded and enumerable
+merehap@gmail.com**20110416224225
+ Ignore-this: f4c3705699766df3418966efbd0c9663
+] 
+hash: 0000009972-4f3c76b1ae00cd61a812c7be779449bda05aa885f879368c2403c7a0ed57a467
+[added list of utilities
+merehap@gmail.com**20111015224728
+ Ignore-this: f531022e0366c360964c5c1b12e2f3fa
+ 
+ Utilities harnesses are now derived from utilities through use of existential typing. All utilities must have each of their components with unique types so that a full utility may be inferred from the type of its argDescs.
+] 
+hash: 0000105278-33d8d9d27743c40141d9380024e9be9efd54be8c64db6acd9a01b0a1cf69eb64
+[adding common.format
+merehap@gmail.com**20111028073224
+ Ignore-this: 9a596210861d3c001e41666c8f360007
+] 
+hash: 0000000442-36e2f0fb787c2544a5c6575071fa2437b86b6c001b2255bf9f62164914924ff4
+[cleanup
+merehap@gmail.com**20120101073742
+ Ignore-this: e8bde1cd78c496cc0d6f6ce2d0521cc4
+] 
+hash: 0000001006-4884996ed5c457739b62be81e5710ffde553513569e622670c5e98fa15cf675e
+[tail: added final new line
+merehap@gmail.com**20120101080410
+ Ignore-this: 5a7ac5b4c078c012d39f6deaf8e41b80
+] 
+hash: 0000000267-062848761ed135e82689385e5339858a10edc94d8e5370d0e751a076c861db0b
+[factored out formatting for head and tail
+merehap@gmail.com**20120101082555
+ Ignore-this: 1cbac868dcb0f77f1ec6d3dab0511804
+] 
+hash: 0000000877-6a7775d47e38008bd15233d119c02031082bf1322ab2653a09ebc6e2ce880fbd
+[chown: standardized arguments
+merehap@gmail.com**20120101083900
+ Ignore-this: b567ad7beca48e277da28c99ed047030
+] 
+hash: 0000001150-29686578dc2730d7da5f291316a3887d4572daf717cd9a5f42c4c125e40e89c3
+[date: moved terminal IO detail from formatting to IO
+merehap@gmail.com**20120103064327
+ Ignore-this: b218b5000a6e516c59c5ed398e11050c
+] 
+hash: 0000000348-9552791b1dc379cd77697cfc17604c2c04f7d57dba9b65bcf54324ac925dbd16
+[uptime: fixed Int to Double
+merehap@gmail.com**20120103064419
+ Ignore-this: 2e8e9985a0a899fb875706fdb689a35f
+] 
+hash: 0000000756-fc2d6f2dd2ee461faa9f1fe0b69bda56a9b57f1f4e32f5e23373dfc19150a5e3
+[uptime: fixed integral defaulting
+merehap@gmail.com**20120103073449
+ Ignore-this: afc02dc91b793bb9e1b9ce895357b2e
+] 
+hash: 0000000332-b3af21b1acb56a9356ed9cb8bb26564addbb9f1149ee882606cacc8203ed35b5
+[date: cleanup
+merehap@gmail.com**20120103073541
+ Ignore-this: 244cf10efbc8ec9741d853b5949869ff
+] 
+hash: 0000000779-f85ad1d46ad964560d1d4d86b015479159c3ff60e6cfe0f878497d4db4bf1dfa
+[factored out common date handling
+merehap@gmail.com**20120103081208
+ Ignore-this: f2a8e57d3cb89e588dcc413f95ec0229
+] 
+hash: 0000001274-a59116a4f0a65b85ec3723b28d620baa7d04b01987f78fbb907b15073ecc97f0
+[uptime: added current time
+merehap@gmail.com**20120104080107
+ Ignore-this: 8567af8d568e46de8d4aa4ff3986a765
+] 
+hash: 0000002292-16be5d050b1b6127eb1b5a8502114c638619e83a7701343f965445d7162b5022
+[uptime: added dummies and day-plus  uptime handling
+merehap@gmail.com**20120106072324
+ Ignore-this: f3e3bd015af7995f4fcf03c5c029ba91
+] 
+hash: 0000001066-ede0fdefc07a81be7c4a65f91763836cc96da164fd00e68343c2ea974f0793d4
+[od: cleanup
+merehap@gmail.com**20120106081353
+ Ignore-this: 82d90739c53fe910661ad91965bcb266
+] 
+hash: 0000000377-b3d73825a44e36ca56021a95498ab3b0ca0b4455aa61e6a61816629d370b7fee
+[stat: prints file names
+merehap@gmail.com**20120106084428
+ Ignore-this: 461b2285b578f18793e515c55f23bd3d
+] 
+hash: 0000000859-c46138d224a77be414053f0b7fc6bd6ad5c31a4fb0c2959394567bd2a25b0418
+[id: full basic functionality
+merehap@gmail.com**20120107071331
+ Ignore-this: 5f9c057951a2344c9d1d49249dd3faa0
+] 
+hash: 0000001618-d9823aa601fa010005fe5e3830869313ecd23ec01f0f7c9c8e7f4133e94fcc5a
+[id: cleaned up input
+merehap@gmail.com**20120107072751
+ Ignore-this: 7ce0df221696a33d7da1b432eec05011
+] 
+hash: 0000000446-c59cf72c95627eec9ebada621849a7718e3ef0e03fce87fbeade49122c0462a9
+[fixed hlint suggestions
+merehap@gmail.com**20120107074703
+ Ignore-this: 8c6d1727608fd22762f262fb085b9ae3
+] 
+hash: 0000000625-75755b4b0e910457716bef84ddf52c01e99ca2104795198bdc01a653fcbab7bf
+[id: partial username argument support
+merehap@gmail.com**20120107090040
+ Ignore-this: 6ef8de4034f3472db906637aec9dc73e
+] 
+hash: 0000000992-22578b653201cdae9dbaf01aeb9c4edcbca931c8c2f302c3bd4764165ef9cf60
+[od: added zeroes padding
+merehap@gmail.com**20120107093737
+ Ignore-this: 62633662b91796dc3bc95c2c5e2d35b8
+] 
+hash: 0000000442-306100cf298aac4d4cba8294a0e14b1ad17f7316ff2997416df83828705c651f
+[od: line labeling
+merehap@gmail.com**20120107200923
+ Ignore-this: 2186baa1fd50fb3c4315332053573525
+] 
+hash: 0000000778-4ad89178fcab0924f25055eb02fd446cdaa8f8d8c0eda91f146c2915c4213e90
+[stat: fileinfo completed along with most formatting
+merehap@gmail.com**20120109055528
+ Ignore-this: 1f6ec6b2a542f39f64fab9a1d94d0732
+] 
+hash: 0000003641-06283975ac7e2739ef8c77b51dfabc23db44d69f4e1f7bbc93ac19c0b139f937
+[factored out user info from id
+merehap@gmail.com**20120109073548
+ Ignore-this: b3e974e336ace4ef9112b70b27b46fad
+] 
+hash: 0000002556-5bfd48f7eb652538abe05e1894c429232a759c60bcbd10d5a05cf104c192d272
+[stat: added user info and improved UserInfo
+merehap@gmail.com**20120109082234
+ Ignore-this: f248f813f1dd9b9e41cbf53af3078735
+] 
+hash: 0000002401-18280d39da9e8f875d10ae876c947acd40f30d15afbc16befb30301d0f5dd342
+[partial common file permission functionality
+merehap@gmail.com**20120109091710
+ Ignore-this: 1f026943eb772c57f3a0bb8142fb9ae8
+] 
+hash: 0000001576-4b506d27587097900b88e2a19b843f25f6ee1c6b38bb4cd668b85aa39bdb48b1
+[filepermissions: file user permissions for text
+merehap@gmail.com**20120109094722
+ Ignore-this: df5013399b808c77a4a58f8b8a9c129d
+] 
+hash: 0000000902-7b38f58f3c7d3e48fdd95cbf91fd6d3c8e294a10d46b1519d0e96ab53f7895f5
+[stat: actual times and most attributes
+merehap@gmail.com**20120110074944
+ Ignore-this: af2c3803f65d5877d1b1ff0dfaad8c9b
+] 
+hash: 0000002535-2f7c52db28748b2e7e5d51f2b47d5fc0ec505c6c65e9dcddaad118c7fe849b3e
+[stat: increased name readability, added inode
+merehap@gmail.com**20120110082642
+ Ignore-this: cf1017f08e72f25ea1f08ad44654c341
+] 
+hash: 0000001432-7fd4df788aa20105456a015b5441c0ba05fcccd70d2561a3886915ac55a5d7f9
+[stty: baudrate
+merehap@gmail.com**20120111085603
+ Ignore-this: 3e06e3d5540512f0dd849369132f85c1
+] 
+hash: 0000001810-0ea3633323f914ef262e02cb036257f91aba458a2d07bc6cb68b20e50b0ba005
+[stty: changed from stdout to stdin
+merehap@gmail.com**20120111085933
+ Ignore-this: bd53e22d66717e93ad24da4dd6fc366b
+] 
+hash: 0000000361-740c83d6c3f00c61b13c3723b0580fdb869ed8c11b631979fda31d8d372c4ebb
+[tty: full functionality
+merehap@gmail.com**20120111092610
+ Ignore-this: de3cfeadf1944bba7cf2622ac114a2f2
+] 
+hash: 0000000693-b111bdeb526475578e835250fc26936461f11db8ede4ff5d712e8a5d7a5b5868
+[comm: added unnamed arguments
+merehap@gmail.com**20120113075248
+ Ignore-this: b1fbc01b47851c9ddd6bc667821c961
+] 
+hash: 0000000225-b57cab916c3bb00313440ae9f1f8e7fb09726408f548d6701f7e1a924f4f2174
+[comm: additional unnamed arg handling
+merehap@gmail.com**20120113081123
+ Ignore-this: 8a59649f736f14ec6082d226f97d9978
+] 
+hash: 0000001060-3d291264a9efcaaff26c5da36ae10bef416e983c946867e8dccbaa1a47b737e8
+[basename: cleanup
+merehap@gmail.com**20120115065841
+ Ignore-this: 6019b03a8dd742bafbcb05bdefa6774c
+] 
+hash: 0000000440-123b9325ad0f2b67b55f9c9875361de7ca7982ad575a10d953c5baf929fd5e9f
+[who: basic functionality
+merehap@gmail.com**20120115065909
+ Ignore-this: ad30bcc0c91a40dddfea275b5122a146
+] 
+hash: 0000002297-2a8f34aa1513e679ce930d51b65c60bb29c7047dde7e359ecc3f397078f6d3e0
+[who: displaying user name rather that user ID
+merehap@gmail.com**20120115235236
+ Ignore-this: 31a144181c2e5d3121575d8b608b9b65
+] 
+hash: 0000001205-1b1254680891b467a22ff8e19c7d9ee479a3f661308cebee40774fe6a95899cd
+[hostid: default value (same for all Ubuntu machines?)
+merehap@gmail.com**20120117072241
+ Ignore-this: ff7add906f607f5b66dba51a5119adf5
+] 
+hash: 0000000239-75dc65416f2013b6629d6a2bf04b4063c7f801e3bb2247c61037a1e415d3ed02
+[pinky: column headers
+merehap@gmail.com**20120117075301
+ Ignore-this: 6d1f3bd1aa4b9a9b8e00a703e33675d6
+] 
+hash: 0000000324-53cfe4f8f3c9efc0b35f75a6c64d66193babf7c8e563e2f1ec4159d26a16ef62
+[factored out pts info retrieval from who
+merehap@gmail.com**20120117092309
+ Ignore-this: 86f7394d5c3e8f3e21123bc9df976dfa
+] 
+hash: 0000003405-d37ccf79ee2387fee75e84bdee89ca706fca422e4c5f9f2c606d7d2047d29c5e
+[pinky: basic functionality
+merehap@gmail.com**20120118070030
+ Ignore-this: 449cafa6f8183f71aabd8bb237ce4d55
+] 
+hash: 0000001698-d17b2c8e02c02f7c29f832e644da1ac6db77d3c85ef156aec303f907b5c5e698
+[who: cleanup
+merehap@gmail.com**20120118070120
+ Ignore-this: 1b47d16a120f031d8108ae367d0049c9
+] 
+hash: 0000000889-2ddc06e6e1f5013bb6f980bfddaaca2eaf4db57035143c2b55cd533486a9c26d
+[tty: hlint suggestion
+merehap@gmail.com**20120118075126
+ Ignore-this: 73bf221abd588d6583d5bc1b296fd979
+] 
+hash: 0000000352-ecafb6bcb030f5859db389e30b9641efb4a96ba4379828590f7972d9d24ce57b
+[expr: basic functionality
+merehap@gmail.com**20120118102435
+ Ignore-this: cf8c40f6f9ea0ae42a71cf657252e789
+] 
+hash: 0000002560-00fde92b0a253c6651cf8dde603225023af1c625ad3bedb47f8d24b21a51a758
+[expr: all expressions implemented
+merehap@gmail.com**20120118224913
+ Ignore-this: 7fdc24351ae0177fcf2d20da75417ccc
+] 
+hash: 0000001962-565b68f3eb4b09e0acc2d194190238692e5d75ba67ec52bc558ec699a43e9359
+[expr: added parenthesis handling
+merehap@gmail.com**20120118231123
+ Ignore-this: d0d28eb19ac5bbf07b0163b3dd8980fb
+] 
+hash: 0000000318-2058fa91fa4162bfc9b3d6f2d91920cc6a9c369a61cdffb5829c6f8f2265fdd9
+[test: spelling errors
+merehap@gmail.com**20120118234555
+ Ignore-this: 5225b733bf74cfa262412bd8375b7a38
+] 
+hash: 0000000492-7184b1dbe3526d3a301c37338823cc0a7a5f07d60387acf7561f7abfa00e9b54
+[touch: switch to suppress file creation
+merehap@gmail.com**20120119000338
+ Ignore-this: 9e20a64697e30bfe158fdcf0edbccadf
+] 
+hash: 0000001054-1d0860d1ea439e42208826f6a187d1c17cefc267d50c3be260262a0d98b36d8d
+[users: full implementation
+merehap@gmail.com**20120119003108
+ Ignore-this: 1cee474a22e518ed21c57413e38df7d4
+] 
+hash: 0000000858-14025d061c7f621e96a4e73e36300b7c86814b6723f2903dc87f2c0980ac8d19
+[truncate: file creation and resizing
+merehap@gmail.com**20120119020319
+ Ignore-this: 59957224f622eefa6453dc6bbe15dd59
+] 
+hash: 0000002085-2e2f73ec24c1fce336ee3afb5a64bbfc800cab031a91b22fb1e26039ddc21e02
+[HusyHox.cabal: removed common packages from other-modules
+merehap@gmail.com**20120119021948
+ Ignore-this: 7952ef1ca8cc103d7bcd750e0cac0e1b
+] 
+hash: 0000000380-41252c6516cb9015154170ac136467723f45315f0f0c5940dd76938189910102
+[added status of all utils
+merehap@gmail.com**20120119040542
+ Ignore-this: d117541c3268fa15f30e135cf45acd58
+] 
+hash: 0000000987-c19c3be903b504a88a27fd3971d46750d74ba78a9e340096d534568e952bb01a
+[factored out escape character logic from echo
+merehap@gmail.com**20120119045816
+ Ignore-this: 506434cfd675cb49f709aff6c85f2e58
+] 
+hash: 0000003887-39c9b17cba6b3462f2589d4995a010486677991c682d4735454324b2cd5a3c36
+[printf: escape characters
+merehap@gmail.com**20120119051635
+ Ignore-this: 48581e25e2c5df36a49aafa55ea170e9
+] 
+hash: 0000000494-cc4d78fc66545a52bb8a317c9c537ffea7139e09784720f6ca322abadadb1056
+[link: fixed from soft to hard link
+merehap@gmail.com**20120119052254
+ Ignore-this: 5297055076591e66b12540db7d33d73f
+] 
+hash: 0000000413-1d01c8d89a194ff8af76e2c4a225641b02fdee50feada66528ecb93106929ae3
+[unlink: full functionality
+merehap@gmail.com**20120119053552
+ Ignore-this: d9310b891f3acfe15636c36caee56214
+] 
+hash: 0000000961-0069779ded7948cc7daa122a8a2149387159de8e4e1659e875c0e4cba183a5d8
+[promoted unlink's status
+merehap@gmail.com**20120119053651
+ Ignore-this: 825977fd477bc5624a8f7a46360072bf
+] 
+hash: 0000000159-dc930891eabaf20aa069aeb31715a8ee3207c3182b2c8794c4a0cb5a337d6ceb
+[arch: fixed, completed
+merehap@gmail.com**20120119063622
+ Ignore-this: dfaf73490518e036f769d4e4db9bf143
+] 
+hash: 0000001088-f9439eaf69f148fcec3a42789e4102bab905d0a7fbd67093c77928fcfb23550e
+[updated arch's status
+merehap@gmail.com**20120119063843
+ Ignore-this: 691fd86519814c6cd7a18c7dffdc37de
+] 
+hash: 0000000150-a1135fb378ae8257434f9f5404230d05759d11456736207fd0ae3c97daaaa2ab
+[uname: full functionality except operating system hard-coded
+merehap@gmail.com**20120119071829
+ Ignore-this: 1871e5b5062abfe6822df562a9bc6aeb
+] 
+hash: 0000002166-f0d95a6f666155b88053363370721d459a98ce0a0b0b11f9a11fbd25720dfe3c
+[dircolors: most functionality
+merehap@gmail.com**20120119081015
+ Ignore-this: a4ac36d9bb951a40c23693c9f9f69d46
+] 
+hash: 0000001237-dd50fb9095d422ea272c098e96e96d08693a3d64edd6c28d8118c7dbbd3f2e2f
+[sum: fixed block count measurement
+merehap@gmail.com**20120120081544
+ Ignore-this: 261c5da0ea698d692983a5b628bf10f8
+] 
+hash: 0000000798-91c2b706c6c5e3ad9d3301b8e40a02bdf07873e8e9c54989be5567846c3eb797
+[hostid: true hostid but decimal form
+merehap@gmail.com**20120122065939
+ Ignore-this: 664a3cf4b849c2a120d05d6540338147
+] 
+hash: 0000000833-efdcda393960851aa439b5c62fe749585c6bcd3fbb02676dbe6f54144eac97f3
+[hostid: completed
+merehap@gmail.com**20120122092041
+ Ignore-this: a6746431c26c99f081b3c078d9b4887
+] 
+hash: 0000000926-a752842322ee7710972a01d6b8a2312d2f7e0b24af7b671c4fdb965e4da9648d
+[test: expression parsing
+merehap@gmail.com**20120124072139
+ Ignore-this: 8176483292353c650cc4f9e12b5edefe
+] 
+hash: 0000001978-c5bd2580ebc955567b89c19f3c8d5a441e86f1f713c90b18cbf3acf9f0727763
+[test: expression evaluation, but need looser parseargs parsing rules so that usage isn't hit
+merehap@gmail.com**20120124074323
+ Ignore-this: d6dc6f8f83682258eef9405d46702e21
+] 
+hash: 0000001657-b39f17daa52b52012edafa166902090fe82cad05f2ede4de116f8e59c74df73b
+[nl: full arg desc list
+merehap@gmail.com**20120125071029
+ Ignore-this: 1350cbe1d98db5903873707168c581d5
+] 
+hash: 0000001246-cbdbef07237c5d8a1732978b017bb3b7037ba3add08a145c0b4a70b807f582be
+[nl: variably-sized increment added
+merehap@gmail.com**20120125074747
+ Ignore-this: fb41c00156327eb54b72aa36fe739dab
+] 
+hash: 0000002101-d91f4c1172c92bd8c4b7c0c8737d8dc20db2d917f1cd8010c9a788946baa970e
+[shared arg value defaulting
+merehap@gmail.com**20120125080107
+ Ignore-this: 35efbc49d13138eab907269c6e479d3
+] 
+hash: 0000001963-71b9199d557c304e2b0ba31b2aacae37b5ad25d490ea8e16d13fd80d5c70dbec
+[updated FileInfo naming to a more appropriate scheme
+merehap@gmail.com**20120127071116
+ Ignore-this: c52148388296bc29b05d142a2aa31cfe
+] 
+hash: 0000009004-8508dc8130ffc764ece8c3c6d4a4ae6e9ad6016dbf571e294057889d45643b29
+[test: added basic filetype type and hookup
+merehap@gmail.com**20120128075801
+ Ignore-this: 1e2f81ca305dea565c9aac8540cdecc3
+] 
+hash: 0000001198-025a7759c5c94918baf8055b7a4b7750cce48c176c0f7a653112ae75626567d1
+[test: file type handling, still a bit broken though
+merehap@gmail.com**20120129031357
+ Ignore-this: aa8655de9552ca3f3f0a8c7e69dcdf06
+] 
+hash: 0000003823-9e6decd4145cca80d305a09cc313e01adc3a3c5ae4d345a62371ab7b210206a7
+[promoted test
+merehap@gmail.com**20120131044426
+ Ignore-this: 1b10aef28e63adbc2f90447aac95a69a
+] 
+hash: 0000000144-53371a8092e1f8a4074164fa057219760582926ca25ab4220ca8eefd41831170
+[uniq: proper location for CoreArgs
+merehap@gmail.com**20120131044840
+ Ignore-this: e108324fb54aee59edd0411674dc1d3e
+] 
+hash: 0000001132-2cc8e83a95fa187559f858f85f4e62e104a4a61326071648254984a4010f097d
+[uniq: optional zero byte delimeter
+merehap@gmail.com**20120131045512
+ Ignore-this: 62fe5103225aa5f92f1d7e6d5c4d8c59
+] 
+hash: 0000000799-4d7b27e2686da3d3e852f06a3232f93784174d4ee963dde135a4043e7732bdf4
+[tail: added arg descs
+merehap@gmail.com**20120131074847
+ Ignore-this: a39a7275af1c990d11c25b5de5329511
+] 
+hash: 0000002118-bf1247159840504bb3766df8ba7f240043f2f8073e634529c770cc38a8e1730c
+[head: arg descs
+merehap@gmail.com**20120201055945
+ Ignore-this: 844d3faf13654bd74d8ee9a92ba3dba8
+] 
+hash: 0000000621-144bd8ea294f9cc2e896e921692cb51e4bceecb780037393168d9e988262f9e2
+[touch: access and modification time updates
+merehap@gmail.com**20120202080153
+ Ignore-this: b68fcaf11889526bd8fe51594297810e
+] 
+hash: 0000001293-a43e4e18d1e9e13c5ddcf959332e58e0e18d1e1bf7a0c4ad4271e7990a6044de
+[properly classified mktemp
+merehap@gmail.com**20120203073225
+ Ignore-this: 54f25c682bbe8a59735a845f00fae1af
+] 
+hash: 0000000159-3be1b1981b4ee9454dbd326e648cbdca26805da24c8852e5b7c0b04d7f3868bb
+[rmdir: fixed
+merehap@gmail.com**20120203075128
+ Ignore-this: ef1aeb6246301cf9bf54bdaa9f553a57
+] 
+hash: 0000000402-cdfa13d53078499e790b629c1a80ea5ffd1822e066093ded2061f36a02fe70c1
+[rmdir: added helper header
+merehap@gmail.com**20120218174849
+ Ignore-this: e5465d7b30f07b57fbbe11198a980153
+] 
+hash: 0000000225-50e5cf06b9e9bdb7cd8bee4175c6e8aa95246a8586f529a598685794ec1f46c0
+[readlink: basic functionality
+merehap@gmail.com**20120218175104
+ Ignore-this: 293f5d332dca0ac6e56833190df3cacf
+] 
+hash: 0000000531-55e001de126401cba347a9d72696e17f01a771602b3b96b98b80206a0b73242e
+[readlink: now doesn't fail on non-symboliclinks and broken symbolic links
+merehap@gmail.com**20120218182234
+ Ignore-this: 9eff6401005b6c11ba3e38b06307908b
+] 
+hash: 0000000798-d03cbe3533a4c62b0e95015dabe328e1f3f0fc552074ba8bd939fa2c1cec0d37
+[removed haskell98 dependency
+merehap@gmail.com**20120509025308
+ Ignore-this: 86ea0a1dd642e7fd9f1209798ecfd553
+] 
+hash: 0000000404-765b0507daf41ebfa82adaef3f482654b55f8c3f2ddf0af4b60f1363d2f58f73
+[fixed hlint suggestions
+merehap@gmail.com**20120617155913
+ Ignore-this: 86b0a691d2383e2b49a7685a0f0c26b3
+] 
+hash: 0000003146-90829d8bc9d589a728f94076d93c01700543bf0d59891cb8c57f3ba0882f8b1a
+[seq: simplified optional values logic
+merehap@gmail.com**20120617165916
+ Ignore-this: 2b52e58a2deaa58284c08b7ae5e35018
+] 
+hash: 0000000373-c5ea4891716ad94a1eac3abf3aecb41f4f27599a873effb69dd2b659553c755c
+[uptime: proper padding
+merehap@gmail.com**20120623065538
+ Ignore-this: 2556ddaa1a49b6e1fe36cad3f0e6b55f
+] 
+hash: 0000000824-a1baf91b6bc9fbbffca5fa1fff2e92910293336bd08bb6def2dc39c8a0601ab6
+[uptime: simplified input
+merehap@gmail.com**20120623070301
+ Ignore-this: 4bfb17c68c15352bbcfa5dca980dba7a
+] 
+hash: 0000000424-935fe0c35511340e806cd1a12e5d7fed294be0ff45de8c09dc15ddec8d30f0bc
+[uptime: added user count
+merehap@gmail.com**20120623071737
+ Ignore-this: 96640419a51633c670ab336a3523c9b0
+] 
+hash: 0000001792-fa8f75ebd2850915591466c7ba9acb303933f63f8b28fafb1b4349f60b397137
+[groups: added user group
+merehap@gmail.com**20120624061518
+ Ignore-this: 9ee8990e3a7bb6f00d49755e08df8f7a
+] 
+hash: 0000001409-1385d070a3e9aac1030dfd7825134a583a15bbbe981e2fde781c7a3ae461b8e1
+[users: move parse logic from input to parse
+merehap@gmail.com**20120625052317
+ Ignore-this: 4542a7125b0f3c0a79dfb037d9686f3
+] 
+hash: 0000000574-8df746df2b0b8e5c1b290b5c2b5350b99822d0bbb9d8f786a360a4b68a30a81a
+[upgraded groups status
+merehap@gmail.com**20120625052342
+ Ignore-this: 1f1187c687a1e5a8fa0efe9fdd55ebef
+] 
+hash: 0000000156-1da19447167661a4d6bae0944670ca0086200eb86985b0e8872fc6b02165f0e5
+[removed root from pts users list
+merehap@gmail.com**20120625053001
+ Ignore-this: 38792339d1ebc04fa58d05c1e66435be
+] 
+hash: 0000000374-1faf356f1a060728975061c4a859bbc20402cb5e08008d6f30f383f1843b8a31
+[upgraded users
+merehap@gmail.com**20120625053208
+ Ignore-this: 81ff51f02da0a1705556d2295376e440
+] 
+hash: 0000000146-b478f1eb7da466849291d3b532db59734ebbbd17f6965be5658d21036d5519cb
+[rmdir: cleanup
+merehap@gmail.com**20120707045438
+ Ignore-this: 7ff80cdd09c7c14d373e1e10e95760fb
+] 
+hash: 0000000520-5b9e8a463519ab6ccb3428771d5090e72deee7178e758cc88d7f2a1f3d5e4ada
+[rmdir: fixing build failure
+merehap@gmail.com**20120807075546
+ Ignore-this: 4aabe3c62060ac6ae59ceaf6b46faf3c
+] 
+hash: 0000001025-8ad2648b14de44661171f525f259aef47554f2af8e757a0557916de587e752e3
+[switched from a class for Utility over to a data representation of Utility
+merehap@gmail.com**20120808044720
+ Ignore-this: aa3a5cda7d16f7e2f07075001ffa50f0
+] 
+hash: 0000041597-f0b359ea08e3d7d6802f11cae5860984d16022526ef74e7df1708210439d322b
+[removed unnecessary ghc extensions
+merehap@gmail.com**20120808051431
+ Ignore-this: a9a57b0f4488f745c1ce0e443359680f
+] 
+hash: 0000000877-06d23421cabf60439d25f3c81387326a67d5b8a35f1970c1a115e6a1ebe83db9
+[removed unnecessary warning suppressions
+merehap@gmail.com**20120808053016
+ Ignore-this: ee809de96a0925b11f827cb87d0048cb
+] 
+hash: 0000000261-8436742b4863c47a97dd5d8aca5ea5406558a02d51d3cc41ef02b993426501b0
+[added show patterns for more arguments
+merehap@gmail.com**20120808054857
+ Ignore-this: 5dd1b9f364da1f94ede2ec1c07cd4047
+] 
+hash: 0000000275-353252f7a1fa5b56a2893f7f520f1f4bcaf9a3cfb0f7534ba0ce867acef0191d
+[fixed orphaned instance
+merehap@gmail.com**20120808054944
+ Ignore-this: 2f33dcc504022c3ea84bfdf6bca6cb78
+] 
+hash: 0000000364-722de8ca4595249e3898252cfa7dd8daeb9280e578d9e93841e1a8703bd068f7
+[fixed hlint suggestion
+merehap@gmail.com**20120808055054
+ Ignore-this: 3521db01ba485eaa193dde5db1e6515d
+] 
+hash: 0000000391-419823d062fe577032d7e163377d4b7aa9424fdb26f2acaf7ea85dcd24bab8f0
+[simplified list directory contents utilities, removed unnecessary phantom typing
+merehap@gmail.com**20120808062701
+ Ignore-this: 8bb941ad38bdab3312f13437f5883853
+] 
+hash: 0000005770-c36d710794f700d5b8bced70a7ff4ca4b9a5186e8eb2357d565a108aefc418af
+[removed phatom types and pulled more functionality into crypto base class
+merehap@gmail.com**20120809072043
+ Ignore-this: 964c014f484141f6284253acf35c5ecb
+] 
+hash: 0000008649-3f796149620931d968e01954daff41e853f2522fde898ec4b944569be53ae6be

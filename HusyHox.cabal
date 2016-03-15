@@ -1,0 +1,55 @@
+Name:          HusyHox
+Version:       0.0
+Cabal-Version: >= 1.2
+License:       BSD3
+License-File:  LICENSE
+Author:        Sean Erle Johnson
+Homepage:      http://www.patch-tag.com/r/merehap/HusyHox/wiki/
+Synopsis:      A Haskell clone of BusyBox
+Build-Type:    Simple
+
+Executable husyhox
+  Build-Depends:
+    base >= 4, parseargs, split, template-haskell, regex-compat,
+    bytestring, SHA, old-time, pureMD5, either-unwrap, MissingH, dataenc,
+    unix, directory, Numbers, filepath, old-locale, containers,
+    extensible-exceptions, network, random
+
+  Main-Is:        HusyHox.hs
+  other-modules:
+    HusyHox.File.Chcon HusyHox.File.Chgrp HusyHox.File.Chmod HusyHox.File.Chown
+    HusyHox.File.CP HusyHox.File.DD HusyHox.File.DF HusyHox.File.Dircolors
+    HusyHox.File.Dir HusyHox.File.Install HusyHox.File.LN HusyHox.File.LS
+    HusyHox.File.Mkdir HusyHox.File.Mkfifo HusyHox.File.Mknod
+    HusyHox.File.Mktemp HusyHox.File.MV HusyHox.File.Rmdir HusyHox.File.RM
+    HusyHox.File.Shred HusyHox.File.Sync HusyHox.File.Touch
+    HusyHox.File.Truncate HusyHox.File.Vdir
+
+    HusyHox.Shell.Arch HusyHox.Shell.Basename HusyHox.Shell.Chroot
+    HusyHox.Shell.Date HusyHox.Shell.Dirname HusyHox.Shell.DU
+    HusyHox.Shell.Echo HusyHox.Shell.Env HusyHox.Shell.Expr HusyHox.Shell.Expr
+    HusyHox.Shell.Factor HusyHox.Shell.False HusyHox.Shell.Groups
+    HusyHox.Shell.Hostid HusyHox.Shell.ID HusyHox.Shell.Link
+    HusyHox.Shell.Logname HusyHox.Shell.Nice HusyHox.Shell.Nohup
+    HusyHox.Shell.Pathchk HusyHox.Shell.Pinky HusyHox.Shell.Printenv
+    HusyHox.Shell.Printenv HusyHox.Shell.Printf HusyHox.Shell.Printf
+    HusyHox.Shell.Pwd HusyHox.Shell.Readlink HusyHox.Shell.Runcon
+    HusyHox.Shell.Seq HusyHox.Shell.Sleep HusyHox.Shell.Stat HusyHox.Shell.Stty
+    HusyHox.Shell.SU HusyHox.Shell.Tee HusyHox.Shell.Test HusyHox.Shell.Timeout
+    HusyHox.Shell.True HusyHox.Shell.Tty HusyHox.Shell.Uname
+    HusyHox.Shell.Unlink HusyHox.Shell.Uptime HusyHox.Shell.Users
+    HusyHox.Shell.Whoami HusyHox.Shell.Who HusyHox.Shell.Yes
+
+    HusyHox.Text.Base64 HusyHox.Text.Cat HusyHox.Text.Cksum HusyHox.Text.Comm
+    HusyHox.Text.Csplit HusyHox.Text.Cut HusyHox.Text.Expand HusyHox.Text.Fmt
+    HusyHox.Text.Fold HusyHox.Text.Head HusyHox.Text.Join HusyHox.Text.MD5sum
+    HusyHox.Text.NL HusyHox.Text.OD HusyHox.Text.Paste HusyHox.Text.PR
+    HusyHox.Text.Ptx HusyHox.Text.Sha1sum HusyHox.Text.Sha224sum
+    HusyHox.Text.Sha256sum HusyHox.Text.Sha384sum HusyHox.Text.Sha512sum
+    HusyHox.Text.Shasum HusyHox.Text.Shuf HusyHox.Text.Sort HusyHox.Text.Split
+    HusyHox.Text.Sum HusyHox.Text.Tac HusyHox.Text.Tail HusyHox.Text.TR
+    HusyHox.Text.Tsort HusyHox.Text.Unexpand HusyHox.Text.Uniq HusyHox.Text.WC
+
+  Extensions: TypeSynonymInstances EmptyDataDecls StandaloneDeriving
+              ExistentialQuantification
+  GHC-Options: -Wall -Werror -O2

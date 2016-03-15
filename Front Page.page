@@ -1,0 +1,30 @@
+# HusyHox - A [BusyBox](http://busybox.net/) Clone in Haskell
+
+The purpose of this project is what you make of it: benchmarking Haskell performance and executable size against C, demonstrating "Real World" Haskell code, learning Haskell, learning Linux and the GNU utilities, the beginnings of a Haskell-based Linux distribution, or whatever else you may fancy. At this point, the intention is not to overtake BusyBox (which has a considerable headstart), though this isn't out of the question for the distant future...
+
+##
+The 0.1 release of HusyHox will consist of simple, but relatively full implementations of the GNU Core Utilities. These will be buildable as separate binaries, or as a combined binary, BusyBox style.
+
+##
+Other 0.x releases will consist of performance optimizations, bug fixes and ensuring a full feature set. Future releases will expand the scope to cover find utils (like grep) and other utility types that are included in BusyBox. Eventually light-weight versions of the utils (with reduced functionality) will be added to match BusyBox. 
+
+##
+For each release, HusyHox will be benchmarked against BusyBox and the GNU core utils in speed, memory usage, and binary size. As mentioned, these measures are not expected to match existing implementations within early versions.
+
+##
+The [Milestones](Milestones) page associates each goal with its release version.
+
+##
+The code for each utility may be seen [here](http://www.patch-tag.com/r/merehap/HusyHox/wiki/HusyHox/).
+
+##
+In order to build HusyHox as a whole or as separate utilities, check the [Build](Build) page.
+
+##
+Each utility shares a basic [architecture](Architecture). Please try to maintain this when creating new utilities or when making bug fixes to existing utilities. Also, make sure any submissions have no GHC warnings and pass hlint (with a default configuration). These are both triggered by the build script mentioned on the build page.
+
+##
+Please refer to the list of [GNU Core Utilities](http://en.wikipedia.org/wiki/GNU_Core_Utilities) when deciding what utility to work on.
+
+##
+Run "info coreutils '(utility) invocation'" to get the full documentation on the utility you are working on.

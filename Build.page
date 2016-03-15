@@ -1,0 +1,12 @@
+In order to build HusyHox, browse to the husyhox/src directory and run:
+
+> ./build.sh
+
+This will run ghc with failure on any warning.
+
+##
+In order to build an individual utility, you will need to specify its module name (in addition to its file name) along with common.hs which contains code shared between the utilities.
+
+To build just the [echo](echo.hs) utility, for example, as a stand-alone binary, use the following while in the src/shell directory:
+
+> ghc --make -O2 -main-is HusyHox.Shell.Echo ../common/*.hs echo.hs

@@ -1,0 +1,2408 @@
+
+New patches:
+
+[unrevert
+anon**20120808044232
+ Ignore-this: 5dc2551d1ac0ebac1ac6e9791ce87673
+] hunk ./HusyHox/Shell/Expr.hs 31
+ 
+ data Result = String String | Bool Bool | Int64 Int64
+ 
+-instance Show Result where
++expr :: Show Result
++expr = Utility "expr" argDescs input parse core format output where
+     show (String s) = s
+     show (Bool b)   = if' b "1" "0"
+     show (Int64 i)  = show i
+hunk ./HusyHox/Shell/Expr.hs 41
+ 
+ data OutputArgs = OA String
+ 
+-instance Utility ExprSwitch IOArgs CoreArgs FormatArgs OutputArgs where
++argDescs :: Utility ExprSwitch IOArgs CoreArgs FormatArgs OutputArgs
++argDescs = Utility "argDescs" argDescs input parse core format output where
+     input _ = return $ IA ()
+ 
+     parse args _ = (CA . tokenize . argsRest) args
+hunk ./HusyHox/Shell/Expr.hs 53
+ 
+     output (OA text) = putStrLn text
+ 
+-expr :: [Arg (Switch ExprSwitch)]
+-expr =
++argDescs :: [Arg (Switch ExprSwitch)]
++argDescs =
+     [ mkHelp
+     , mkVersion
+     ]
+
+Context:
+
+[rmdir: fixing build failure
+merehap@gmail.com**20120807075546
+ Ignore-this: 4aabe3c62060ac6ae59ceaf6b46faf3c
+] 
+[rmdir: cleanup
+merehap@gmail.com**20120707045438
+ Ignore-this: 7ff80cdd09c7c14d373e1e10e95760fb
+] 
+[upgraded users
+merehap@gmail.com**20120625053208
+ Ignore-this: 81ff51f02da0a1705556d2295376e440
+] 
+[removed root from pts users list
+merehap@gmail.com**20120625053001
+ Ignore-this: 38792339d1ebc04fa58d05c1e66435be
+] 
+[upgraded groups status
+merehap@gmail.com**20120625052342
+ Ignore-this: 1f1187c687a1e5a8fa0efe9fdd55ebef
+] 
+[users: move parse logic from input to parse
+merehap@gmail.com**20120625052317
+ Ignore-this: 4542a7125b0f3c0a79dfb037d9686f3
+] 
+[groups: added user group
+merehap@gmail.com**20120624061518
+ Ignore-this: 9ee8990e3a7bb6f00d49755e08df8f7a
+] 
+[uptime: added user count
+merehap@gmail.com**20120623071737
+ Ignore-this: 96640419a51633c670ab336a3523c9b0
+] 
+[uptime: simplified input
+merehap@gmail.com**20120623070301
+ Ignore-this: 4bfb17c68c15352bbcfa5dca980dba7a
+] 
+[uptime: proper padding
+merehap@gmail.com**20120623065538
+ Ignore-this: 2556ddaa1a49b6e1fe36cad3f0e6b55f
+] 
+[seq: simplified optional values logic
+merehap@gmail.com**20120617165916
+ Ignore-this: 2b52e58a2deaa58284c08b7ae5e35018
+] 
+[fixed hlint suggestions
+merehap@gmail.com**20120617155913
+ Ignore-this: 86b0a691d2383e2b49a7685a0f0c26b3
+] 
+[removed haskell98 dependency
+merehap@gmail.com**20120509025308
+ Ignore-this: 86ea0a1dd642e7fd9f1209798ecfd553
+] 
+[readlink: now doesn't fail on non-symboliclinks and broken symbolic links
+merehap@gmail.com**20120218182234
+ Ignore-this: 9eff6401005b6c11ba3e38b06307908b
+] 
+[readlink: basic functionality
+merehap@gmail.com**20120218175104
+ Ignore-this: 293f5d332dca0ac6e56833190df3cacf
+] 
+[rmdir: added helper header
+merehap@gmail.com**20120218174849
+ Ignore-this: e5465d7b30f07b57fbbe11198a980153
+] 
+[rmdir: fixed
+merehap@gmail.com**20120203075128
+ Ignore-this: ef1aeb6246301cf9bf54bdaa9f553a57
+] 
+[properly classified mktemp
+merehap@gmail.com**20120203073225
+ Ignore-this: 54f25c682bbe8a59735a845f00fae1af
+] 
+[touch: access and modification time updates
+merehap@gmail.com**20120202080153
+ Ignore-this: b68fcaf11889526bd8fe51594297810e
+] 
+[head: arg descs
+merehap@gmail.com**20120201055945
+ Ignore-this: 844d3faf13654bd74d8ee9a92ba3dba8
+] 
+[tail: added arg descs
+merehap@gmail.com**20120131074847
+ Ignore-this: a39a7275af1c990d11c25b5de5329511
+] 
+[uniq: optional zero byte delimeter
+merehap@gmail.com**20120131045512
+ Ignore-this: 62fe5103225aa5f92f1d7e6d5c4d8c59
+] 
+[uniq: proper location for CoreArgs
+merehap@gmail.com**20120131044840
+ Ignore-this: e108324fb54aee59edd0411674dc1d3e
+] 
+[promoted test
+merehap@gmail.com**20120131044426
+ Ignore-this: 1b10aef28e63adbc2f90447aac95a69a
+] 
+[test: file type handling, still a bit broken though
+merehap@gmail.com**20120129031357
+ Ignore-this: aa8655de9552ca3f3f0a8c7e69dcdf06
+] 
+[test: added basic filetype type and hookup
+merehap@gmail.com**20120128075801
+ Ignore-this: 1e2f81ca305dea565c9aac8540cdecc3
+] 
+[updated FileInfo naming to a more appropriate scheme
+merehap@gmail.com**20120127071116
+ Ignore-this: c52148388296bc29b05d142a2aa31cfe
+] 
+[shared arg value defaulting
+merehap@gmail.com**20120125080107
+ Ignore-this: 35efbc49d13138eab907269c6e479d3
+] 
+[nl: variably-sized increment added
+merehap@gmail.com**20120125074747
+ Ignore-this: fb41c00156327eb54b72aa36fe739dab
+] 
+[nl: full arg desc list
+merehap@gmail.com**20120125071029
+ Ignore-this: 1350cbe1d98db5903873707168c581d5
+] 
+[test: expression evaluation, but need looser parseargs parsing rules so that usage isn't hit
+merehap@gmail.com**20120124074323
+ Ignore-this: d6dc6f8f83682258eef9405d46702e21
+] 
+[test: expression parsing
+merehap@gmail.com**20120124072139
+ Ignore-this: 8176483292353c650cc4f9e12b5edefe
+] 
+[hostid: completed
+merehap@gmail.com**20120122092041
+ Ignore-this: a6746431c26c99f081b3c078d9b4887
+] 
+[hostid: true hostid but decimal form
+merehap@gmail.com**20120122065939
+ Ignore-this: 664a3cf4b849c2a120d05d6540338147
+] 
+[sum: fixed block count measurement
+merehap@gmail.com**20120120081544
+ Ignore-this: 261c5da0ea698d692983a5b628bf10f8
+] 
+[dircolors: most functionality
+merehap@gmail.com**20120119081015
+ Ignore-this: a4ac36d9bb951a40c23693c9f9f69d46
+] 
+[uname: full functionality except operating system hard-coded
+merehap@gmail.com**20120119071829
+ Ignore-this: 1871e5b5062abfe6822df562a9bc6aeb
+] 
+[updated arch's status
+merehap@gmail.com**20120119063843
+ Ignore-this: 691fd86519814c6cd7a18c7dffdc37de
+] 
+[arch: fixed, completed
+merehap@gmail.com**20120119063622
+ Ignore-this: dfaf73490518e036f769d4e4db9bf143
+] 
+[promoted unlink's status
+merehap@gmail.com**20120119053651
+ Ignore-this: 825977fd477bc5624a8f7a46360072bf
+] 
+[unlink: full functionality
+merehap@gmail.com**20120119053552
+ Ignore-this: d9310b891f3acfe15636c36caee56214
+] 
+[link: fixed from soft to hard link
+merehap@gmail.com**20120119052254
+ Ignore-this: 5297055076591e66b12540db7d33d73f
+] 
+[printf: escape characters
+merehap@gmail.com**20120119051635
+ Ignore-this: 48581e25e2c5df36a49aafa55ea170e9
+] 
+[factored out escape character logic from echo
+merehap@gmail.com**20120119045816
+ Ignore-this: 506434cfd675cb49f709aff6c85f2e58
+] 
+[added status of all utils
+merehap@gmail.com**20120119040542
+ Ignore-this: d117541c3268fa15f30e135cf45acd58
+] 
+[HusyHox.cabal: removed common packages from other-modules
+merehap@gmail.com**20120119021948
+ Ignore-this: 7952ef1ca8cc103d7bcd750e0cac0e1b
+] 
+[truncate: file creation and resizing
+merehap@gmail.com**20120119020319
+ Ignore-this: 59957224f622eefa6453dc6bbe15dd59
+] 
+[users: full implementation
+merehap@gmail.com**20120119003108
+ Ignore-this: 1cee474a22e518ed21c57413e38df7d4
+] 
+[touch: switch to suppress file creation
+merehap@gmail.com**20120119000338
+ Ignore-this: 9e20a64697e30bfe158fdcf0edbccadf
+] 
+[test: spelling errors
+merehap@gmail.com**20120118234555
+ Ignore-this: 5225b733bf74cfa262412bd8375b7a38
+] 
+[expr: added parenthesis handling
+merehap@gmail.com**20120118231123
+ Ignore-this: d0d28eb19ac5bbf07b0163b3dd8980fb
+] 
+[expr: all expressions implemented
+merehap@gmail.com**20120118224913
+ Ignore-this: 7fdc24351ae0177fcf2d20da75417ccc
+] 
+[expr: basic functionality
+merehap@gmail.com**20120118102435
+ Ignore-this: cf8c40f6f9ea0ae42a71cf657252e789
+] 
+[tty: hlint suggestion
+merehap@gmail.com**20120118075126
+ Ignore-this: 73bf221abd588d6583d5bc1b296fd979
+] 
+[who: cleanup
+merehap@gmail.com**20120118070120
+ Ignore-this: 1b47d16a120f031d8108ae367d0049c9
+] 
+[pinky: basic functionality
+merehap@gmail.com**20120118070030
+ Ignore-this: 449cafa6f8183f71aabd8bb237ce4d55
+] 
+[factored out pts info retrieval from who
+merehap@gmail.com**20120117092309
+ Ignore-this: 86f7394d5c3e8f3e21123bc9df976dfa
+] 
+[pinky: column headers
+merehap@gmail.com**20120117075301
+ Ignore-this: 6d1f3bd1aa4b9a9b8e00a703e33675d6
+] 
+[hostid: default value (same for all Ubuntu machines?)
+merehap@gmail.com**20120117072241
+ Ignore-this: ff7add906f607f5b66dba51a5119adf5
+] 
+[who: displaying user name rather that user ID
+merehap@gmail.com**20120115235236
+ Ignore-this: 31a144181c2e5d3121575d8b608b9b65
+] 
+[who: basic functionality
+merehap@gmail.com**20120115065909
+ Ignore-this: ad30bcc0c91a40dddfea275b5122a146
+] 
+[basename: cleanup
+merehap@gmail.com**20120115065841
+ Ignore-this: 6019b03a8dd742bafbcb05bdefa6774c
+] 
+[comm: additional unnamed arg handling
+merehap@gmail.com**20120113081123
+ Ignore-this: 8a59649f736f14ec6082d226f97d9978
+] 
+[comm: added unnamed arguments
+merehap@gmail.com**20120113075248
+ Ignore-this: b1fbc01b47851c9ddd6bc667821c961
+] 
+[tty: full functionality
+merehap@gmail.com**20120111092610
+ Ignore-this: de3cfeadf1944bba7cf2622ac114a2f2
+] 
+[stty: changed from stdout to stdin
+merehap@gmail.com**20120111085933
+ Ignore-this: bd53e22d66717e93ad24da4dd6fc366b
+] 
+[stty: baudrate
+merehap@gmail.com**20120111085603
+ Ignore-this: 3e06e3d5540512f0dd849369132f85c1
+] 
+[stat: increased name readability, added inode
+merehap@gmail.com**20120110082642
+ Ignore-this: cf1017f08e72f25ea1f08ad44654c341
+] 
+[stat: actual times and most attributes
+merehap@gmail.com**20120110074944
+ Ignore-this: af2c3803f65d5877d1b1ff0dfaad8c9b
+] 
+[filepermissions: file user permissions for text
+merehap@gmail.com**20120109094722
+ Ignore-this: df5013399b808c77a4a58f8b8a9c129d
+] 
+[partial common file permission functionality
+merehap@gmail.com**20120109091710
+ Ignore-this: 1f026943eb772c57f3a0bb8142fb9ae8
+] 
+[stat: added user info and improved UserInfo
+merehap@gmail.com**20120109082234
+ Ignore-this: f248f813f1dd9b9e41cbf53af3078735
+] 
+[factored out user info from id
+merehap@gmail.com**20120109073548
+ Ignore-this: b3e974e336ace4ef9112b70b27b46fad
+] 
+[stat: fileinfo completed along with most formatting
+merehap@gmail.com**20120109055528
+ Ignore-this: 1f6ec6b2a542f39f64fab9a1d94d0732
+] 
+[od: line labeling
+merehap@gmail.com**20120107200923
+ Ignore-this: 2186baa1fd50fb3c4315332053573525
+] 
+[od: added zeroes padding
+merehap@gmail.com**20120107093737
+ Ignore-this: 62633662b91796dc3bc95c2c5e2d35b8
+] 
+[id: partial username argument support
+merehap@gmail.com**20120107090040
+ Ignore-this: 6ef8de4034f3472db906637aec9dc73e
+] 
+[fixed hlint suggestions
+merehap@gmail.com**20120107074703
+ Ignore-this: 8c6d1727608fd22762f262fb085b9ae3
+] 
+[id: cleaned up input
+merehap@gmail.com**20120107072751
+ Ignore-this: 7ce0df221696a33d7da1b432eec05011
+] 
+[id: full basic functionality
+merehap@gmail.com**20120107071331
+ Ignore-this: 5f9c057951a2344c9d1d49249dd3faa0
+] 
+[stat: prints file names
+merehap@gmail.com**20120106084428
+ Ignore-this: 461b2285b578f18793e515c55f23bd3d
+] 
+[od: cleanup
+merehap@gmail.com**20120106081353
+ Ignore-this: 82d90739c53fe910661ad91965bcb266
+] 
+[uptime: added dummies and day-plus  uptime handling
+merehap@gmail.com**20120106072324
+ Ignore-this: f3e3bd015af7995f4fcf03c5c029ba91
+] 
+[uptime: added current time
+merehap@gmail.com**20120104080107
+ Ignore-this: 8567af8d568e46de8d4aa4ff3986a765
+] 
+[factored out common date handling
+merehap@gmail.com**20120103081208
+ Ignore-this: f2a8e57d3cb89e588dcc413f95ec0229
+] 
+[date: cleanup
+merehap@gmail.com**20120103073541
+ Ignore-this: 244cf10efbc8ec9741d853b5949869ff
+] 
+[uptime: fixed integral defaulting
+merehap@gmail.com**20120103073449
+ Ignore-this: afc02dc91b793bb9e1b9ce895357b2e
+] 
+[uptime: fixed Int to Double
+merehap@gmail.com**20120103064419
+ Ignore-this: 2e8e9985a0a899fb875706fdb689a35f
+] 
+[date: moved terminal IO detail from formatting to IO
+merehap@gmail.com**20120103064327
+ Ignore-this: b218b5000a6e516c59c5ed398e11050c
+] 
+[chown: standardized arguments
+merehap@gmail.com**20120101083900
+ Ignore-this: b567ad7beca48e277da28c99ed047030
+] 
+[factored out formatting for head and tail
+merehap@gmail.com**20120101082555
+ Ignore-this: 1cbac868dcb0f77f1ec6d3dab0511804
+] 
+[tail: added final new line
+merehap@gmail.com**20120101080410
+ Ignore-this: 5a7ac5b4c078c012d39f6deaf8e41b80
+] 
+[cleanup
+merehap@gmail.com**20120101073742
+ Ignore-this: e8bde1cd78c496cc0d6f6ce2d0521cc4
+] 
+[adding common.format
+merehap@gmail.com**20111028073224
+ Ignore-this: 9a596210861d3c001e41666c8f360007
+] 
+[added list of utilities
+merehap@gmail.com**20111015224728
+ Ignore-this: f531022e0366c360964c5c1b12e2f3fa
+ 
+ Utilities harnesses are now derived from utilities through use of existential typing. All utilities must have each of their components with unique types so that a full utility may be inferred from the type of its argDescs.
+] 
+[made switch types bounded and enumerable
+merehap@gmail.com**20110416224225
+ Ignore-this: f4c3705699766df3418966efbd0c9663
+] 
+[changed switch from a class to data
+merehap@gmail.com**20110414201554
+ Ignore-this: bbfd27324b76ee9ee60ebde4aa1a4703
+] 
+[removed old useless test files
+merehap@gmail.com**20110410012458
+ Ignore-this: 378522fff7c96da4d83549047afa1848
+] 
+[added list of utils
+merehap@gmail.com**20110410011152
+ Ignore-this: fb48ddb76a53b804bbdcc66f8f29f4e0
+] 
+[split list of utilities out from HusyHox.hs into HusyHox/Utils.hs
+merehap@gmail.com**20110410010734
+ Ignore-this: a7380dc4b64da62d3ec3a08a35843d52
+] 
+[mktemp: added support for -p
+merehap@gmail.com**20110410003516
+ Ignore-this: 2fc47976652dbb6a8789d1c7fac0673
+] 
+[mktemp: directory, template, and suffix are now hooked up as arguments
+merehap@gmail.com**20110408201109
+ Ignore-this: 5a31079b1e8a7ec269726048ff5c9ce5
+] 
+[mktemp: generalized temp path generating helper function
+merehap@gmail.com**20110408194152
+ Ignore-this: 20c833b5fc1f58a57b4c2e3f69b6af3c
+] 
+[mktemp: fixed compile errors
+merehap@gmail.com**20110408185424
+ Ignore-this: cac79fac7bad05fd7203e3ec85b19dfb
+] 
+[mktemp: moved core functionality from parse to core
+merehap@gmail.com**20110408184947
+ Ignore-this: cb9fdb6a4bc27a8eeaa316459924f3f9
+] 
+[mktemp: added suffix
+merehap@gmail.com**20110408184252
+ Ignore-this: c9db1ec1394db58e52d0fba5ae7eff70
+] 
+[mktemp: added dry run
+merehap@gmail.com**20110408183000
+ Ignore-this: 9c34af95fd5d318963ac6376be5599ae
+] 
+[mktemp: added support for -d
+merehap@gmail.com**20110406215358
+ Ignore-this: f196f6e4771878f18b29bb551e826e61
+] 
+[mktemp: added console feedback on tmp file path
+merehap@gmail.com**20110406000328
+ Ignore-this: 7d1ae6df1c668f07c5e0be715991a9cf
+] 
+[mktemp: fixed ordering of argDescs
+merehap@gmail.com**20110405235951
+ Ignore-this: 33a54286d09758e120551e549b537e8f
+] 
+[mktemp: default functionality
+merehap@gmail.com**20110405235729
+ Ignore-this: 2c4791131ddbf2eff665b6ae84ee2bf8
+] 
+[cut: fixed hlint suggestion
+merehap@gmail.com**20110404212807
+ Ignore-this: 6559912d587224d87e80f2f6c8d72ee9
+] 
+[fixed orphaned instances a bit inconsistently, cleaned up new compiler warnings, ensured compatibility with new parseargs
+merehap@gmail.com**20110404212546
+ Ignore-this: 6d9805f40d56aa23a5c28b6e2c8585c9
+] 
+[head and tail: named constants
+merehap@gmail.com**20110218044114
+ Ignore-this: a17edaa48689c70584247574ffbfd834
+] 
+[tail: named constants
+merehap@gmail.com**20110218041226
+ Ignore-this: 28c712a5bb3c141d94a014cb016dee01
+] 
+[fold: added default width
+merehap@gmail.com**20110218040758
+ Ignore-this: 2ff48026c69cdab02fe2a4d46e91031f
+] 
+[added "[" synonym for test
+merehap@gmail.com**20110216204933
+ Ignore-this: 659f4b1254885a329d80852eef8228ee
+] 
+[test: added standard form arg descs
+merehap@gmail.com**20110215214610
+ Ignore-this: 290df92d326f7d35732423c2f677c5a3
+] 
+[pinky: added cli argument parsing
+merehap@gmail.com**20110215061801
+ Ignore-this: e5f04060dc5a6a3fe079cdd0627012ed
+] 
+[rmdir: added option to ignore non-empty directories
+merehap@gmail.com**20110214070405
+ Ignore-this: ea3f765baf29369d030e453b698cea02
+] 
+[ln: added fourth targets/directory combo
+merehap@gmail.com**20110212230429
+ Ignore-this: 979325a7af81ebfda7e908f6d59a8876
+] 
+[ln: simple hardlinking functionality
+merehap@gmail.com**20110211120634
+ Ignore-this: 36a3b5ac88849793d86dfb70783e35d6
+] 
+[link: full functionality
+merehap@gmail.com**20110211111304
+ Ignore-this: 6c7f63a0a8d3fa3b994a1aa1b9b3c796
+] 
+[uname: added nodename
+merehap@gmail.com**20110211014647
+ Ignore-this: 42ddaeaaad42afa9ac7bd9753f2aa3dc
+] 
+[uname: added kernelName
+merehap@gmail.com**20110211012535
+ Ignore-this: 685fea8f01634df43e704709002e17b5
+] 
+[id: added uid and gid
+merehap@gmail.com**20110211003710
+ Ignore-this: 23c5f119185ae58a2f95e1ad5e3da154
+] 
+[pwd: removed help and version
+merehap@gmail.com**20110211002107
+ Ignore-this: b2eb7b50cfb5d144a492a5e73ad6799e
+] 
+[printf: basic argument passthrough
+merehap@gmail.com**20110211001622
+ Ignore-this: f1725b288945e4d0d7e14a256e1cc352
+] 
+[printf: removed invalid help and version arguments
+merehap@gmail.com**20110210233018
+ Ignore-this: fdbb4c33322af808faa8faaaa15c2c3a
+] 
+[printf: fixed argDescs order
+merehap@gmail.com**20110210230248
+ Ignore-this: 1724c77ea7226a1e3dbfcdf1b0b8b371
+] 
+[Fixed link to source code
+merehap <>**20110211000046
+ Ignore-this: 754f6e0cf70a7ae3a5f6cc4f7780086e
+] 
+[basename: fixed new line formatting
+merehap@gmail.com**20110209225220
+ Ignore-this: aea1e4184b4eb6b7f5ab19b03dda2b9e
+] 
+[arch: moved formatting from output to format
+merehap@gmail.com**20110209223044
+ Ignore-this: 389517414272561722667eeaaea715d5
+] 
+[wc: brought indentation behavior closer to target
+merehap@gmail.com**20110209064144
+ Ignore-this: d7ad9942a6a8c7e686cfe6f9f8fe367d
+] 
+[Fix warnings triggered by hlint suggestions
+merehap@gmail.com**20110209002409
+ Ignore-this: c75198b966dd6f75970fcc77909a9235
+] 
+[Fixed hlint suggestions
+merehap@gmail.com**20110208232351
+ Ignore-this: 69ec289a654fcad8724facb42b303b11
+] 
+[Turned warnings on as errors and removed orphaned instances
+merehap@gmail.com**20110208225158
+ Ignore-this: a45a327fa69cdc5467dce56e57d8e06f
+] 
+[Replaced template haskell with standard Haskell typeclass
+merehap@gmail.com**20110208113345
+ Ignore-this: efa575b9424c9829a12cf37c828cbc12
+] 
+[Fixed utility links
+merehap <>**20110207222206
+ Ignore-this: 220c38449e0c6617c01987f3620c4a17
+] 
+[Fixed attribution, moved source to default location
+merehap@gmail.com**20101223090151
+ Ignore-this: c09927c05198a72df4a22d94999a579e
+] 
+[du: cleaned formatting
+merehap@gmail.com**20101222232115
+ Ignore-this: e9ad98d421a948242c254988fb047a6c
+] 
+[Updated flag descriptions
+merehap <>**20101223040653
+ Ignore-this: 2665d51736b60500be6357a352b4e5ed
+] 
+[Fixed links to utilities
+merehap <>**20101223034328
+ Ignore-this: 9db91cfd413150fd5c506dfd5de2b0a5
+] 
+[du: changed to extensible exceptions to fix du
+merehap@gmail.com**20101222230256
+ Ignore-this: 54d853d4359c554a5213bed1c7d11e0d
+] 
+[forced base to be version 4 or greater
+merehap@gmail.com**20101222230150
+ Ignore-this: a64599997ecd4c7b01e7b98f64663bd2
+] 
+[removed pre-cabal build script
+merehap@gmail.com**20101222221359
+ Ignore-this: cdee7041b8f7a1af3d7fae2f81a142c6
+] 
+[decremented version number
+merehap@gmail.com**20101222221134
+ Ignore-this: 4ee02c71641a2b6fa346534bc7a83a95
+] 
+[du: temporary hack to allow compilation
+merehap@gmail.com**20101222220831
+ Ignore-this: 9c54ce59c9fd494c583eee3873fe326c
+] 
+[cabalized project
+merehap@gmail.com**20101222215739
+ Ignore-this: ff16462fa59f540c9b400fbc934fd48f
+] 
+[Partial fix of patch-tag's broken formatting
+merehap <>**20101222192101
+ Ignore-this: eda05d0720584215a086d9d5b67854b1
+] 
+[od: hooked up formatter
+merehap@gmail.com**20101222190834
+ Ignore-this: 6c14d9d24838131ae2cb1ddde05f4a93
+] 
+[Separated build statements
+merehap <>**20101222183450
+ Ignore-this: 275ff0a05b4497264d2d84b4bf8343cb
+] 
+[du: more logical order for helper functions
+merehap@gmail.com**20101222182130
+ Ignore-this: 5eeec4ae563f8b65088d32dce225a20d
+] 
+[husyhox: labeled utils by type
+merehap@gmail.com**20101222082928
+ Ignore-this: b8b65a0314f2c6627320b28f85537949
+] 
+[du: separated helper functions
+merehap@gmail.com**20101222072006
+ Ignore-this: 16056394cbae090e83768941aa4d739d
+] 
+[Modernized
+merehap <>**20101222182158
+ Ignore-this: f5647260bd58b367840bba04dcc7243d
+] 
+[Created subsections in lieu of paragraphs
+merehap <>**20101222182012
+ Ignore-this: d79cd074cfb689c47791ac292557b17e
+] 
+[Made title a section so that it is bolded
+merehap <>**20101222175445
+ Ignore-this: 61b8559ab7f4c2cb18c479b90ec77420
+] 
+[Made subsections to get around lack of ability to make paragraphs.
+merehap <>**20101222175327
+ Ignore-this: 2355a87ba8362afc058300ba1e77080b
+] 
+[Fixed link to tee.hs
+merehap <>**20101222084254
+ Ignore-this: 9d874010f2e2c27dba88b56a32b36ac0
+] 
+[Grammar
+merehap <>**20101222082425
+ Ignore-this: 38cec9cf308950edb6144cf5deaf1051
+] 
+[Grammar
+merehap <>**20101222082327
+ Ignore-this: 5e50030aa557dce85631294252387b93
+] 
+[Clarified roles
+merehap <>**20101222082032
+ Ignore-this: 742482267bd5943975227d67e7f8dd4d
+] 
+[Added "input" function. Cleaned up a little.
+merehap <>**20101222073749
+ Ignore-this: 1d5c3994e6e2be2aa2150b91b3f6aff5
+] 
+[du: adapted from jmillikan's code
+merehap@gmail.com**20101222065129
+ Ignore-this: e693a14ea7626977053b50d4e9a18fcb
+] 
+[tsort: Chris Johnson's code adapted
+merehap@gmail.com**20101222060330
+ Ignore-this: 5ea1842ab046b493f2e8bfc84c55c30e
+] 
+[fmt: added proper lengths of whitespace
+merehap@gmail.com**20101115082231
+ Ignore-this: b5b634a06945e54c24ca1c9502992b43
+] 
+[fmt: fixed last line word order reversal
+merehap@gmail.com**20101115054122
+ Ignore-this: 8eb8e49ce6d0d6ba22f52423b8fac134
+] 
+[fmt: made concatWords tail recursive
+merehap@gmail.com**20101115053547
+ Ignore-this: 9a5b7574edb6074595385839461106d0
+] 
+[fmt: splitting based upon words instead of chars
+merehap@gmail.com**20101115050528
+ Ignore-this: a896078447ca1f1ae1ad9eac19ad962c
+] 
+[fmt: partial line consolidation logic
+merehap@gmail.com**20101108195714
+ Ignore-this: 20351e3c44391aff281f83f7e4b824be
+] 
+[fmt: added multiple/file input
+merehap@gmail.com**20101108093543
+ Ignore-this: a15a3aff51cc6a587d88f3c6dfe32a51
+] 
+[fmt: basis text passthrough
+merehap@gmail.com**20101107045717
+ Ignore-this: 3c3c403b8d73afd268b13f4048c318b2
+] 
+[pr: basic page splitting
+merehap@gmail.com**20101107040828
+ Ignore-this: 9db5db45cc7bc3cf8206f5380e8d862a
+] 
+[pr: enabled text passthrough
+merehap@gmail.com**20101107032257
+ Ignore-this: 108d2d06e0c32e1181be44ff7d37a205
+] 
+[Helper section change
+merehap@gmail.com**20101107032203
+ Ignore-this: 6dd658976411e52898bb47625afe5dd4
+] 
+[expand: hooked up -t
+merehap@gmail.com**20100831175845
+ Ignore-this: 479d20c8460fa6023b23154250b64a61
+] 
+[expand: all functionality implemented, command line options not hooked up
+merehap@gmail.com**20100831020040
+ Ignore-this: dcd8a975da5b81ca43bb3e036a3e09e8
+] 
+[fileinfo: added more command line arg descriptions
+merehap@gmail.com**20100725100054
+ Ignore-this: c0e3a60f5cf98bfc69cac6115a894df
+] 
+[uptime: added unparsed uptime information
+merehap@gmail.com**20100723183400
+ Ignore-this: 7b0c734376227c140f058fa66d9b67af
+] 
+[dirname: added trailing newline to format
+merehap@gmail.com**20100721065025
+ Ignore-this: 10a38643df3e539ea87d15b8cbf68b63
+] 
+[logname: conformed error condition, added line break
+merehap@gmail.com**20100719080311
+ Ignore-this: fb5b3f68843d292e512d3a82c6dd1308
+] 
+[seq: fixed standard functionality 
+merehap@gmail.com**20100718074928
+ Ignore-this: 2ea12058e1262eac5bbecbc6b9fe99e0
+] 
+[id: added formatting
+merehap@gmail.com**20100718071105
+ Ignore-this: 78adcee6ae66f00df44ccf65d2896899
+] 
+[seq: added additional separator at end of format result
+merehap@gmail.com**20100619222139
+ Ignore-this: 93fe2e37f84d85f9377234b0c849de85
+] 
+[seq: removed -w from parse as it was causing a runtime pattern matching error
+merehap@gmail.com**20100619222049
+ Ignore-this: e57a1443a93c9c70653bd6b34363370c
+] 
+[whoami: added new line ending char
+merehap@gmail.com**20100619215829
+ Ignore-this: 686bdeb04ee4a9847189ffbc2aa51e9c
+] 
+[csplit: added basic functionality
+merehap@gmail.com**20100615211521
+ Ignore-this: 706538be7ee7ae755dc817206f6e5db5
+] 
+[base64: added garbage handling
+merehap@gmail.com**20100610185007
+ Ignore-this: 226baed4e69e5cc43c755e6b68b6970f
+] 
+[base64: added decode
+merehap@gmail.com**20100610170525
+ Ignore-this: 9087448eacfa0b50dc0c1bf845bc6b0e
+] 
+[base64: added variable-length line support
+merehap@gmail.com**20100610074738
+ Ignore-this: 487c6ef7495945071e26166d6a0aa20
+] 
+[base64: encode functionality
+merehap@gmail.com**20100610071715
+ Ignore-this: dcb3353c83bc9f0d3ed0e6561f11c3d4
+] 
+[who: almost complete argDescs
+merehap@gmail.com**20100610052927
+ Ignore-this: 58d8a1fca21dff59c98fe5bbfd0baff2
+] 
+[tty: almost complete argDescs
+merehap@gmail.com**20100610051653
+ Ignore-this: daca0783aeb9631222c590aec2d5e5cb
+] 
+[timeout: almost complete argDescs
+merehap@gmail.com**20100610051520
+ Ignore-this: b6edca02dcdc538736e37484cf6f7732
+] 
+[su: almost complete argDescs
+merehap@gmail.com**20100610051001
+ Ignore-this: 93de6e02d083cf59339b4f34f82d4537
+] 
+[stat: almost complete argDescs
+merehap@gmail.com**20100610050322
+ Ignore-this: 124083ad8809e5d07d97bd0d0653c2af
+] 
+[runcon: almost complete argDescs
+merehap@gmail.com**20100609090436
+ Ignore-this: 717179403d466d89fa5f8e9ab056fd6e
+] 
+[readlink: almost complete argDescs
+merehap@gmail.com**20100609085048
+ Ignore-this: a4a27484b6f43b7c7bc01ae4c097482c
+] 
+[printf: almost complete argDescs
+merehap@gmail.com**20100609084143
+ Ignore-this: 5ba35318048c37a7612bdb4119defccf
+] 
+[printenv: almost complete argDescs
+merehap@gmail.com**20100608181855
+ Ignore-this: a21d527a832c15a6b20403397c578910
+] 
+[pinky: almost complete argDescs
+merehap@gmail.com**20100608181647
+ Ignore-this: 3e6ea20d5c411e2ba51ae1a2f738c41b
+] 
+[pathchk: almost complete argDescs
+merehap@gmail.com**20100608181246
+ Ignore-this: e7b66a494302b664e813179dea8412a0
+] 
+[nice: almost complete argDescs
+merehap@gmail.com**20100608180846
+ Ignore-this: acef04edfcadc87875fd806edade0f28
+] 
+[env: almost complete argDescs
+merehap@gmail.com**20100608170814
+ Ignore-this: 81e862e4f0a8174a717aa21341f78dd4
+] 
+[du: almost complete argDescs
+merehap@gmail.com**20100608170425
+ Ignore-this: 1b0b94e59522cb99dbb42bacb6ed2a0d
+] 
+[date: almost complete argDescs
+merehap@gmail.com**20100608163737
+ Ignore-this: b96e9f3760e8c1c8d9d033d0930dbe0a
+] 
+[chroot: almost complete argDescs
+merehap@gmail.com**20100608161244
+ Ignore-this: 941a0b778ecdde6e15bf3e341de2123f
+] 
+[vdir: minimal implementation
+merehap@gmail.com**20100608082640
+ Ignore-this: 26bb34a346af1dd518f96fbaf1108c2
+] 
+[truncate: almost complete argDescs
+merehap@gmail.com**20100608082449
+ Ignore-this: 76fec75a538a83d300bcf3d857c5da1c
+] 
+[touch: complete argDescs
+merehap@gmail.com**20100608082033
+ Ignore-this: e53def8dc2f26fc67a8a1f1babe335ed
+] 
+[shred: complete argDescs
+merehap@gmail.com**20100608080927
+ Ignore-this: d061ea95c6e9e0f1ed1158c6bfe0e836
+] 
+[rm: complete argDescs
+merehap@gmail.com**20100608075937
+ Ignore-this: 39b8ec8786d5c48f3f1de74aa6c0b3d8
+] 
+[rmdir: removed unnecessary Directory argument
+merehap@gmail.com**20100608074549
+ Ignore-this: 9aada9062973b1ada2fe9418c83959bc
+] 
+[rmdir: almost complete argDescs
+merehap@gmail.com**20100608074409
+ Ignore-this: df55910ce5392567150fefb82c74a93
+] 
+[mv: almost complete argDescs
+merehap@gmail.com**20100608073528
+ Ignore-this: 3cbd43b225eec5d9eb02a762fff0c027
+] 
+[mktemp: complete argDescs
+merehap@gmail.com**20100608052110
+ Ignore-this: 8b8f646ae9322bb267186da2115fb70b
+] 
+[mknod: complete argDescs
+merehap@gmail.com**20100608050416
+ Ignore-this: 78324d5dc9d8f491592ec818409db7f1
+] 
+[mkfifo: complete argDescs
+merehap@gmail.com**20100608045610
+ Ignore-this: 7e7dd0e1768f2d5c19e7ebab6c395b35
+] 
+[mkdir: complete argDescs
+merehap@gmail.com**20100608044637
+ Ignore-this: 6d86ab363a69b90d3f4411a9fd8b0a61
+] 
+[ln: complete argDescs
+merehap@gmail.com**20100608043809
+ Ignore-this: 1f02f790f8386dfe2803d1620b749308
+] 
+[install: complete argDescs
+merehap@gmail.com**20100608035237
+ Ignore-this: 3edc9ae5fdefad835ab02f774afd1da1
+] 
+[ls,dir: pulled out common functionality, creating basic dir in the process
+merehap@gmail.com**20100607171338
+ Ignore-this: cad1a58b9589d132136f0e42b7884c50
+] 
+[df: complete argDescs
+merehap@gmail.com**20100607161953
+ Ignore-this: 29c6511dc2740246c15fcc361bcd40ac
+] 
+[cp: complete argDescs
+merehap@gmail.com**20100607070553
+ Ignore-this: eeb41ae29c4d5c547e996ca1dd13366a
+] 
+[chown: almost complete argDescs
+merehap@gmail.com**20100607063009
+ Ignore-this: eeb850394a88decbf96545f79be4a37a
+] 
+[chmod: almost all argDescs
+merehap@gmail.com**20100606093021
+ Ignore-this: c665a3d6cf5f6a3976f6d068544aac8c
+] 
+[chgrp: almost full argDescs
+merehap@gmail.com**20100606091609
+ Ignore-this: 3876808cbb4aba968a10fc2aa60d01a0
+] 
+[chcon: complete argDescs
+merehap@gmail.com**20100606055812
+ Ignore-this: a0eac2f10fe55a98daa46211d9fd38d8
+] 
+[sort: almost complete argDescs
+merehap@gmail.com**20100606053852
+ Ignore-this: ab1bd7d74b36ef18aadd7b58160476b0
+] 
+[ptx: all argDescs
+merehap@gmail.com**20100606030316
+ Ignore-this: 2a13e281f135bb430d35fedff2de9cbf
+] 
+[pr: almost complete argDescs
+merehap@gmail.com**20100606023053
+ Ignore-this: 12e91b546ea62d70825028f9eaecff91
+] 
+[comm: changed CommArg to CommSwitch
+merehap@gmail.com**20100606023025
+ Ignore-this: 48edf91b780330f4fa847caca0b9813c
+] 
+[fmt: complete argDescs
+merehap@gmail.com**20100606014029
+ Ignore-this: e2ed591c887aab4ad898a26505bf24a4
+] 
+[csplit: almost complete argDescs
+merehap@gmail.com**20100606013312
+ Ignore-this: 6cf18f28033eee5fbea1e85b7a4174ba
+] 
+[comm: complete argDescs
+merehap@gmail.com**20100606012621
+ Ignore-this: c934bb7d8da1ed467d1fa49b0085d33b
+] 
+[base64: added all CLI arguments
+merehap@gmail.com**20100606011431
+ Ignore-this: f43337460b95495d4a1c68c0fef1c9cc
+] 
+[template: centralized template function name storage
+merehap@gmail.com**20100606003027
+ Ignore-this: 7eb2f4891b9730d88c83410549d5d691
+] 
+[wc: improved output formatting
+merehap@gmail.com**20100604203433
+ Ignore-this: 2914a741016f992a1267925189ed3a87
+] 
+[env: minor cleanup
+merehap@gmail.com**20100604203401
+ Ignore-this: 9075c7614a1356934a45c7a63fd2d774
+] 
+[all: separated input component from parse component
+merehap@gmail.com**20100604201644
+ Ignore-this: c46bc6f3a56b5090a1964a0a61153736
+] 
+[all: added input enable paramter to each utility in preparation for separating input functionality from parse
+merehap@gmail.com**20100511105802
+ Ignore-this: 9b92331676747dbc2608395d4b8b87bd
+] 
+[paste: basic functionality
+merehap@gmail.com**20100511092654
+ Ignore-this: 68cb02e546eb9800da0426cee4049dc7
+] 
+[paste: added arg descs
+merehap@gmail.com**20100510084129
+ Ignore-this: 6bdfc0f17ced97bfc76808f7624e03f8
+] 
+[od: added FormatType and Radix parse handling (fixed compile warnings)
+merehap@gmail.com**20100509080327
+ Ignore-this: 2ace2d74ff70fa21c57eb4ede25f78aa
+] 
+[od: refactored word8sToWordTypes
+merehap@gmail.com**20100509043108
+ Ignore-this: 6ed04bb8ba0aee98d9f02bc396c77ade
+] 
+[Added handling for all different word types
+merehap@gmail.com**20100509000401
+ Ignore-this: c7d4c15027cadfbe44d375fd3477c02
+] 
+[corrected output of core function to use fixed named rather than just named
+ike.fruusto@gmail.com**20100508125952
+ Ignore-this: bbc05eb6f7d3e14ff4f60956287749f1
+] 
+[od: added FixedType to FormatType in order to better parallel SizedType
+merehap@gmail.com**20100507112624
+ Ignore-this: 7359833e170f4e32e3e193677a4d5a7b
+] 
+[tr: correct comment header from "Base Helpers" to "Parse Helpers"
+merehap@gmail.com**20100506131518
+ Ignore-this: d5483f56ea981892457a165d471d1709
+] 
+[yes: corrected argDescs format
+merehap@gmail.com**20100506122643
+ Ignore-this: 1f08685b7ce03fb19b41521aed6e2973
+] 
+[Revamp for re-architecture.
+merehap <>**20100506130456
+ Ignore-this: fb953749500decf096d2e715827f4280
+] 
+[od: added interface data structures
+merehap@gmail.com**20100506081337
+ Ignore-this: a5e0ec78d61b13570aa35dd962bc9fbd
+] 
+[Changed NoData arguments to be standard and formerly standard arguments to be Data (global change)
+merehap@gmail.com**20100506052021
+ Ignore-this: 41e28c7c1f180fbaa3b4aa5370308939
+] 
+[od: added arguments
+merehap@gmail.com**20100506050342
+ Ignore-this: cf8b436c3a2035935175319b44013d7c
+] 
+[sum: initial implementation of SysV checksum (untested)
+merehap@gmail.com**20100506042317
+ Ignore-this: d38b72b2a05e33aa4a4af2ef0a3e6b09
+] 
+[sum: initial implementation of BSD checksum (untested)
+merehap@gmail.com**20100505112728
+ Ignore-this: be247f27a7193f61fe4a7cc876c01323
+] 
+[uniq: added error case for -cD
+merehap@gmail.com**20100504104103
+ Ignore-this: 1461c172d18b746fb77c1fb1f63ca293
+] 
+[tsort: added most components other than the algorithm
+merehap@gmail.com**20100503095227
+ Ignore-this: 807c1c11742c8e5a01d59d672f00ba1f
+] 
+[shuf: fixed utils args to be plural, removed shuf test due to random nature
+merehap@gmail.com**20100503093645
+ Ignore-this: 454f9f08d632a766b134aeb262e52b68
+] 
+[shuf: fixed util args to be plural
+merehap@gmail.com**20100503093548
+ Ignore-this: 24cfd0a8e06f9383f341fe89cd404177
+] 
+[expand: Added arguments
+merehap@gmail.com**20100503093157
+ Ignore-this: 43080f0a0e45095c752ae193e400232d
+] 
+[sum: added all functionality except the checksum algorithms
+merehap@gmail.com**20100503074315
+ Ignore-this: 2db7b9c53ffc12333c23bce12fe6cf56
+] 
+[cksum, extra: pulled out format information in cksum and made formatSummary in extra
+merehap@gmail.com**20100503074011
+ Ignore-this: 2ceed675efdd303b08f432d296c2bbbd
+] 
+[cksum: cleaned up format
+merehap@gmail.com**20100503062928
+ Ignore-this: 9eb6e3684ab5d161bc30eaa62400cbb7
+] 
+[cksum: moved core functionality from parse to core
+merehap@gmail.com**20100503062522
+ Ignore-this: ff94a4871c37ae94fd2a5aecf62651ff
+] 
+[Corrected algorithm and added multi-file support to cksum
+merehap@gmail.com**20100503055813
+ Ignore-this: f25b2da9e71cd426c1178a341cd339f
+] 
+[Changed extension for tests for stable text utils
+merehap@gmail.com**20100503055645
+ Ignore-this: b5aa46a945d64cdfd135bdc0b7161567
+] 
+[Many changes (took a while to copy my ssh key over after again after reformatting hard drive)
+merehap@gmail.com**20100503035918
+ Ignore-this: 10e7f7e289b479be99708a873e490c9a
+ 
+ Added/improved a few shell utilities.
+ Improved test code to allow testing multiple files in one test pass. Delays between runs used as temporary workaround to process handle issues.
+ Full argument lists supplied for each text util.
+ Improved compliance with reference for several text utils.
+ 
+] 
+[Fixed lack of newline for single line wc output
+merehap@gmail.com**20100331104035
+ Ignore-this: ad012fe6e6a25061a774a06db896f25f
+] 
+[Added support for multiple test runs to runner
+merehap@gmail.com**20100331103407
+ Ignore-this: adbd3ef63a49e32709a0348fc794657
+] 
+[Fixed line count totals
+merehap@gmail.com**20100331083835
+ Ignore-this: cf30af79c0c0571eddd6513bfc4e0b16
+ Now counts new line characters rather than lines in file.
+] 
+[Shifted tabs from left to right, omitted tab for one stat runs
+merehap@gmail.com**20100331075713
+ Ignore-this: 30bcc75792f8281c73ab28a5ceb13645
+] 
+[Cleanup of wc
+merehap@gmail.com**20100331070000
+ Ignore-this: ec33db94774fe32b0d80c595b2627be6
+] 
+[Removed file name from outpus for just one file in wc
+merehap@gmail.com**20100331065322
+ Ignore-this: 7a6afccf0f1fcc96f282406695004511
+] 
+[Updated WC test file to new format
+merehap@gmail.com**20100331060939
+ Ignore-this: ea0604cd77daf9d6f6e415be3a5c5bc9
+] 
+[Updated runner code to run only on know switches/values
+merehap@gmail.com**20100331060850
+ Ignore-this: 7a47fdb8918fd3b90edca15ea910ac20
+] 
+[Added temp file removal as initial step of build script
+merehap@gmail.com**20100330110221
+ Ignore-this: 5e15966bc7bd410e12a286c4d2e13c26
+] 
+[Temporary fix to runner
+merehap@gmail.com**20100330110158
+ Ignore-this: b9605476326c83c6e06c6e1052db726b
+] 
+[Fixed spelling of csplit in husyhox
+merehap@gmail.com**20100329235428
+ Ignore-this: 8340fefb36f0a69259f04022d86a7f2f
+] 
+[Test runner working for most text utils
+merehap@gmail.com**20100329235311
+ Ignore-this: a732152c5205e4102fdbe82a5aa16f2c
+] 
+[Added partial runner with broken process running functionality
+merehap@gmail.com**20100328051847
+ Ignore-this: e92c048ecaa076d175aa774ec5c489ac
+] 
+[Improved husyhox usage message space usage
+merehap@gmail.com**20100324112600
+ Ignore-this: 958796faf3ecc2131954e85e2dc56b0e
+] 
+[Added basic test files for each utility
+merehap@gmail.com**20100323024814
+ Ignore-this: 3df1775fed861ede4275f42128207bb3
+] 
+[Added test data creator
+merehap@gmail.com**20100323023425
+ Ignore-this: 18ae09ddd4d51a7f59c2b9363a3c6faa
+] 
+[Added minimal cut
+merehap@gmail.com**20100322044245
+ Ignore-this: 7a869cef891b7acb88f3fedf1730e117
+] 
+[Hooked up remaining coreutils into husyhox.hs
+merehap@gmail.com**20100320232440
+ Ignore-this: c874e966b8bfdd80b6431f1068dcc1e2
+] 
+[Added skeletons of remaining shell utils
+merehap@gmail.com**20100320220939
+ Ignore-this: 985952d78603eb2ce2e80c3247b84f52
+] 
+[Added skeletons of remaining text utils
+merehap@gmail.com**20100320220140
+ Ignore-this: e15bfd8d83af631d82251b8ae06ce438
+] 
+[Added skeletons for remaining file utils
+merehap@gmail.com**20100320214013
+ Ignore-this: 3173fb0a9e9dd9a42b378e8ff00f13d1
+] 
+[Fixed hlint suggestions
+merehap@gmail.com**20100320213111
+ Ignore-this: d4b2cc1a730c5b83b4a64dfe452309ad
+] 
+[Removed hlint from build script due to template haskell incompatibility
+merehap@gmail.com**20100320212155
+ Ignore-this: 8016dcba4a5fc4ea3cdb129087bf764d
+] 
+[Added skeleton chcon
+merehap@gmail.com**20100320210428
+ Ignore-this: 5ac1e99348c117a393e80c5957c34ddf
+] 
+[Added cut skeleton
+merehap@gmail.com**20100320204444
+ Ignore-this: 1097d79424fc127bf5c0a5197a6df616
+] 
+[Packaged ParseArgs dependency behind Common.Arg
+merehap@gmail.com**20100320204115
+ Ignore-this: 5d3b836e96349a77d7932f867b7720b3
+] 
+[Added minimal shuf
+merehap@gmail.com**20100320085358
+ Ignore-this: 921d28692e686d409d0ba41f59a3f93a
+] 
+[Compressed concat $ map to concatMap in head and tail
+merehap@gmail.com**20100317042539
+ Ignore-this: 6898835485644b92f03c9cbc46aae5f0
+] 
+[Improved head and tail to work by lines rather than text
+merehap@gmail.com**20100317042250
+ Ignore-this: 54bd21898c1c660086ae978d03fda754
+] 
+[Removed extraneous unnamed argument
+merehap@gmail.com**20100317040703
+ Ignore-this: 2fd367d82d492720151163b76a8730e3
+] 
+[Factored out common functionality between head and tail
+merehap@gmail.com**20100317034421
+ Ignore-this: fb7ef2b218c5f95e7d0493f4646d586b
+] 
+[Generalized line count for head, also allowing for counting from the end
+merehap@gmail.com**20100317010137
+ Ignore-this: 1a1319c356331bbd744733a45548c41
+] 
+[Added multiarg support to ls
+merehap@gmail.com**20100316133809
+ Ignore-this: 2dd4cea6f5d4270b09963a0abc75b84e
+] 
+[Added reverse option to ls
+merehap@gmail.com**20100316130049
+ Ignore-this: a51d9c07d53a607a3ce5beb4284e40e9
+] 
+[Added options for omission of hidden files
+merehap@gmail.com**20100316124322
+ Ignore-this: 44e9508ae4343eb6134bee6b7aa4acea
+] 
+[Changed core from full text based to line based
+merehap@gmail.com**20100313003421
+ Ignore-this: db560fe2bed5946df526aa39bd7ff7e
+] 
+[Added split
+merehap@gmail.com**20100312224436
+ Ignore-this: 23138af37ec11b661e357c643d361891
+] 
+[Added fold
+merehap@gmail.com**20100311132138
+ Ignore-this: e5b2fdfe92fd306feb2797c8f5d13e6f
+] 
+[Relatively complete templatization work
+merehap@gmail.com**20100311102142
+ Ignore-this: d89b55102fd3992e1f42e9d55b14bf92
+] 
+[Partially complete retemplatization (doesn't compile)
+merehap@gmail.com**20100311062302
+ Ignore-this: 61ef3da41c1d5257887c52f404fb5ee
+] 
+[Templatized date
+merehap@gmail.com**20100308223817
+ Ignore-this: 1f8a158797f61b22d74c66b80c0415a5
+] 
+[Removed grep as it isn't a coreutil
+merehap@gmail.com**20100308213920
+ Ignore-this: b424a923ac27f5a60bf2132aa0c996a1
+] 
+[Templatized dirname
+merehap@gmail.com**20100308213421
+ Ignore-this: 5e52108fde893e1329bf335405b76a
+] 
+[Templatized tee
+merehap@gmail.com**20100308213134
+ Ignore-this: 3ad603e9e51b6829fe3b9583572ca502
+] 
+[Templatized sleep
+merehap@gmail.com**20100308212906
+ Ignore-this: b00f3e8183a5fc374c8037bb1e806fc1
+] 
+[Templatized sha512sum
+merehap@gmail.com**20100308101205
+ Ignore-this: 85d2d0b25cee759c6a5685291035829d
+] 
+[Templatized sha384
+merehap@gmail.com**20100308101007
+ Ignore-this: 72ae6c22c5703171efc1edb65aba693a
+] 
+[Templatized sha256
+merehap@gmail.com**20100308100847
+ Ignore-this: bda8eea2d406bf44eb666578e7771729
+] 
+[Templatized sha224
+merehap@gmail.com**20100308100629
+ Ignore-this: 66123b8beba58a3b2ac0cea28dcab56f
+] 
+[Templatized sha1sum
+merehap@gmail.com**20100308100305
+ Ignore-this: 62481eda6ec6660bd71a553a691b8d7e
+] 
+[Templatized shasum
+merehap@gmail.com**20100308042003
+ Ignore-this: 99a37338916e6d1f4bcce0e925d75b06
+] 
+[Templatized wc
+merehap@gmail.com**20100308025405
+ Ignore-this: 380871d1b8fe4a336b566a11955d5f94
+] 
+[Replaces ioParseNewLineHook with ioParseHook
+merehap@gmail.com**20100308025034
+ Ignore-this: 486d345a5087fe28018b9aa74afe4774
+] 
+[Templatized uniq and cleaned up template arg orders
+merehap@gmail.com**20100307212604
+ Ignore-this: 8e1b9aa64337ea70bff550e175029e3
+] 
+[Added pcfoUtil and improved template naming convention
+merehap@gmail.com**20100307205145
+ Ignore-this: 6f2077c396def2a7fc183972896bef92
+] 
+[Template cleanup
+merehap@gmail.com**20100307155006
+ Ignore-this: e667de48efe869533a8c2aa6130c559e
+] 
+[Factored out common util template components
+merehap@gmail.com**20100307140347
+ Ignore-this: b9d2e68aac00d2fc5efd248e53842a42
+] 
+[Templatized touch
+merehap@gmail.com**20100307134608
+ Ignore-this: 9800ac45fb85f935f326b36d73a8c2b1
+] 
+[Templatized rm
+merehap@gmail.com**20100307134451
+ Ignore-this: a60116c5885ac22ed15afbd9cf2a806a
+] 
+[Templatized rmdir
+merehap@gmail.com**20100307134346
+ Ignore-this: 5c7c2ed87ec267d5182257fd4458fcfe
+] 
+[Templatized mv
+merehap@gmail.com**20100307134127
+ Ignore-this: ff057a39e2e901c788eb8dbbd48f324d
+] 
+[Templatized mkdir
+merehap@gmail.com**20100307133954
+ Ignore-this: 75c3da86b8b495ed6a122fcdee9eb6e3
+] 
+[Templatized ls
+merehap@gmail.com**20100307133804
+ Ignore-this: cf30f1d23399940423db195dfe18cfb1
+] 
+[Templatized cp
+merehap@gmail.com**20100307133538
+ Ignore-this: fe896d848a4ea5d6d1f0ed3ba8c6b8ae
+] 
+[Templatized chown
+merehap@gmail.com**20100307133408
+ Ignore-this: 7fede402a1996013da6c6289ac9ea572
+] 
+[Templatized chmod
+merehap@gmail.com**20100307133153
+ Ignore-this: 2477a4d4ac065ac3a815693ee114fff8
+] 
+[Templatized chgrp
+merehap@gmail.com**20100307133048
+ Ignore-this: 96c8dc61269529ed7846e3cf2a97e5a0
+] 
+[Added customOutputHookUtil template
+merehap@gmail.com**20100307132840
+ Ignore-this: 8a9e7e4f1161ebac2ba4ce99041e35d8
+] 
+[Templatized unexpand
+merehap@gmail.com**20100307125832
+ Ignore-this: f1252a95da42ea7e62c3b486b235b9bc
+] 
+[Templatized tr
+merehap@gmail.com**20100307125655
+ Ignore-this: 67e1182a7413f7c66ab340f631e44784
+] 
+[Templatized tail
+merehap@gmail.com**20100307125454
+ Ignore-this: 2cdd3b4f1655f0f41e8672fa10a986c3
+] 
+[Templatized tac
+merehap@gmail.com**20100307125343
+ Ignore-this: f1ddacb678ce2f553d49cc231b7930dc
+] 
+[Templatized sort
+merehap@gmail.com**20100307125226
+ Ignore-this: b21af874d966ae82f6cf1d90ece40885
+] 
+[Templatized nl
+merehap@gmail.com**20100307125036
+ Ignore-this: d51b3e406b9ac26fa4c5df1a03624323
+] 
+[Templatized join
+merehap@gmail.com**20100307124645
+ Ignore-this: abc0e3cebe2f8679aa44bc8f6facd80a
+] 
+[Templatized head
+merehap@gmail.com**20100307124023
+ Ignore-this: 6b527762cb10214da4a88213dd14ffd5
+] 
+[Templatized factor
+merehap@gmail.com**20100307123853
+ Ignore-this: 43c0db682504d4bff43093f4edb35b5e
+] 
+[Templatized expand
+merehap@gmail.com**20100307123642
+ Ignore-this: 81469f883bb22af5d323ef99abdf9d21
+] 
+[Templatized cksum
+merehap@gmail.com**20100307123443
+ Ignore-this: 313c2592e83102df81c8bb14382947cb
+] 
+[Templatized cat
+merehap@gmail.com**20100307122131
+ Ignore-this: 1281914caacb5f16b73af3dcc1e81744
+] 
+[Templatized yes
+merehap@gmail.com**20100307121517
+ Ignore-this: f9e70bcdb0ce2da63e3766a29c18334a
+] 
+[Templatized seq
+merehap@gmail.com**20100307121234
+ Ignore-this: d3472fa45a293a1d312611b6c23bb0e1
+] 
+[Templatized groups
+merehap@gmail.com**20100307121017
+ Ignore-this: 302d297e17b0d8dc1c735696cdb99fb4
+] 
+[Templatized printenv
+merehap@gmail.com**20100307120800
+ Ignore-this: 6ed66e9f8c7204ae8508fa2c10262330
+] 
+[Templatized env
+merehap@gmail.com**20100307120618
+ Ignore-this: b63d95c0384e7726b19125a30ff92b86
+] 
+[Removed noArgHook
+merehap@gmail.com**20100307120450
+ Ignore-this: 23a7bc6a663439bdaf0214354010f5e3
+] 
+[Removed noFormatHook
+merehap@gmail.com**20100307115316
+ Ignore-this: 65cda7113e4fdc668b4b4ad9d09d9473
+] 
+[Templatized basename
+merehap@gmail.com**20100307114708
+ Ignore-this: c2c0fa17fc573eed2f5d10ceebc3cde0
+] 
+[Templatized echo
+merehap@gmail.com**20100307113219
+ Ignore-this: 38fe23ddc37eba4e734b60102afb48d4
+] 
+[Cleaned up ioParseOnlyUtil arg order
+merehap@gmail.com**20100307112847
+ Ignore-this: e77b56e3bd6c4f5fac4a97509ff2340f
+] 
+[Added full hook util, finished generalizing switch type
+merehap@gmail.com**20100307112312
+ Ignore-this: 4d4cdbe6d2375b036eb716097daa3ebe
+] 
+[Improved templates to allow ExtSwitches
+merehap@gmail.com**20100307011235
+ Ignore-this: 5abf641bd28bb0a9425bf732e7e77bac
+] 
+[Moved dependencies from templatized utils to templates
+merehap@gmail.com**20100306212108
+ Ignore-this: 2f65f99a9d74aff202272b5e8602f167
+] 
+[Removed Common.Util dependency from templatized utils
+merehap@gmail.com**20100306205906
+ Ignore-this: c80566cad371c145918c2d4df219fdfa
+] 
+[Templatized pwd
+merehap@gmail.com**20100306204115
+ Ignore-this: e1d4aca3fed0fa09e5f239086525aa01
+] 
+[Templatized whoami
+merehap@gmail.com**20100306203204
+ Ignore-this: fed9f2b1b9239e7058a5f323487b13d9
+] 
+[Templatized logname
+merehap@gmail.com**20100306202109
+ Ignore-this: e36f49e56b704b4df9baebf16f1fc3f7
+] 
+[Added template support for io parse only utilities
+merehap@gmail.com**20100306201447
+ Ignore-this: 75d0b56ca05fa8816ce8514bba5c541f
+] 
+[Templatized true
+merehap@gmail.com**20100305053440
+ Ignore-this: 342ae56c0f326f2e66537a1b1b375277
+] 
+[Templatized false
+merehap@gmail.com**20100305053342
+ Ignore-this: 4cefde151ed01d5bac1eb76b31576fab
+] 
+[Added simple template haskell helpers for removal of redundant syntax
+merehap@gmail.com**20100305053131
+ Ignore-this: b4fd0790a194acf7606f1a1efe315525
+] 
+[Added multiarg support to touch
+merehap@gmail.com**20100302224516
+ Ignore-this: 1ff3c60a81022b523cf9c5d3785670f6
+] 
+[Added multiarg support to rmdir
+merehap@gmail.com**20100302223914
+ Ignore-this: 7ba2ab7eddfd48f276b4c1f11b2ed8f7
+] 
+[Added multiarg support to rm
+merehap@gmail.com**20100302222612
+ Ignore-this: de466774efc7d4e1b26e4bb14c82f8c4
+] 
+[Pulled out common functionality between cp and mv
+merehap@gmail.com**20100302221620
+ Ignore-this: ccab21a40949087e13355403accef88
+] 
+[Cleaned up mv
+merehap@gmail.com**20100302220320
+ Ignore-this: bd8e1c43579531a63e5522c7b5d9cce1
+] 
+[Added multiarg support to cp
+merehap@gmail.com**20100302220151
+ Ignore-this: 9bf8f482c1fc83cbe4f6caa88d206b3c
+] 
+[Added multiarg support to mv
+merehap@gmail.com**20100302215142
+ Ignore-this: 13072a6d3443beb79602a6760cee7b3a
+] 
+[Added multiarg support to mkdir
+merehap@gmail.com**20100302212642
+ Ignore-this: 46cc58e6797a7053d1bd33eaab17e799
+] 
+[Improved ls architecture
+merehap@gmail.com**20100302211447
+ Ignore-this: d02a748032131af93df0e32d3ed47d40
+] 
+[Improved cp architecture
+merehap@gmail.com**20100302210026
+ Ignore-this: 731cdf06a8d89d57fad7df386b004da6
+] 
+[Improved chown architecture
+merehap@gmail.com**20100302205119
+ Ignore-this: 56f4ba8f0406bce00457160944df8550
+] 
+[Improved chmod architecture
+merehap@gmail.com**20100302204334
+ Ignore-this: dd451e967f96debd751d9b89ba3414ea
+] 
+[Improved chgrp architecture
+merehap@gmail.com**20100302203538
+ Ignore-this: 5de01a13f4e3095c6dc716c5207bf16d
+] 
+[Improved yes architecture
+merehap@gmail.com**20100302202404
+ Ignore-this: b8f36e458f08d6b0c1745fcada0bf231
+] 
+[Improved whoami architecture
+merehap@gmail.com**20100302201533
+ Ignore-this: 78fa286dafb90dd0e1cd2bf7bdca3c58
+] 
+[Removed sleep core
+merehap@gmail.com**20100302201042
+ Ignore-this: e13c60d514e25881470d984d19f797e4
+] 
+[Removed core from pwd
+merehap@gmail.com**20100302195740
+ Ignore-this: ecc298abd2e4b2760c712c68f40e9c91
+] 
+[Removed core from logname
+merehap@gmail.com**20100302194509
+ Ignore-this: 46c16902ab604108fcac0be7f6867e4c
+] 
+[Improved tee architecture
+merehap@gmail.com**20100302193143
+ Ignore-this: b6f16ec0a4279a3b69d5119540b92a0b
+] 
+[Improved shell architecture
+merehap@gmail.com**20100302055320
+ Ignore-this: cf6ab7ec59a41b6e1e405a34509bebae
+] 
+[Improved shell architecture
+merehap@gmail.com**20100302050958
+ Ignore-this: e0f7c92f72fc57bbf9e9db62a6539705
+] 
+[Improved pwd architecture
+merehap@gmail.com**20100302045832
+ Ignore-this: 7534afb8d81616072cf9b4aa2e9ca43d
+] 
+[Improved logname architecture
+merehap@gmail.com**20100302045232
+ Ignore-this: 91074e558975014dc2277f2377d77634
+] 
+[Improved groups architecture
+merehap@gmail.com**20100302044307
+ Ignore-this: 5152ccd660c49265110083ea2e7de0c8
+] 
+[Improved env and printenv architecture
+merehap@gmail.com**20100302042049
+ Ignore-this: 19766906d1bfdb70940934ed1e58b261
+] 
+[Improved echo architecture
+merehap@gmail.com**20100302012451
+ Ignore-this: 261c696775e264fe84a4a62e5a4dca09
+] 
+[Improved dirname architecture
+merehap@gmail.com**20100302003141
+ Ignore-this: c40cb8b45692d80eeae3041029a7522e
+] 
+[Changed common libraries to use singular form rather than plural
+merehap@gmail.com**20100302001850
+ Ignore-this: 728a5692ae3489b0fcbde9fc4e09b2b
+] 
+[Split util helpers out of args into separate file
+merehap@gmail.com**20100302001312
+ Ignore-this: 6759431080f841e5b63c58dd0b505571
+] 
+[Split parse hooks into separate module
+merehap@gmail.com**20100301230717
+ Ignore-this: 858ccad118b47a47804c1222d89367c2
+] 
+[Improved date architecture
+merehap@gmail.com**20100301225002
+ Ignore-this: fc6c5a8562d54e24666e3e9ebb6b8645
+] 
+[Improved basename architecture
+merehap@gmail.com**20100301212112
+ Ignore-this: 705bc6f173d8a18d25391d1b5ae98f02
+] 
+[Improved uniq architecture
+merehap@gmail.com**20100301114328
+ Ignore-this: 6a05a94b28ee9e3a5b7fa075ce047cd1
+] 
+[Added multiarg support to unexpand
+merehap@gmail.com**20100301105512
+ Ignore-this: eb4e46c3b19f17e5e49e9d5e3de388c7
+] 
+[Cleaned up tr architecture
+merehap@gmail.com**20100301104216
+ Ignore-this: ca52eb6878f802beeb20f769e2c143e4
+] 
+[Added multiarg support to tail
+merehap@gmail.com**20100301102519
+ Ignore-this: 899f2cdf78039584682834811d5e0f40
+] 
+[Added multiarg support to tac
+merehap@gmail.com**20100301095451
+ Ignore-this: aa871d0bfeb1a27170436be8b2ed7d26
+] 
+[Fixed sort arg descriptions
+merehap@gmail.com**20100301092716
+ Ignore-this: c924d320320b9d1e360c0444b9b26ea3
+] 
+[Improved format responsibilities
+merehap@gmail.com**20100301092549
+ Ignore-this: ec023a80e62c9ae980b6efa03934542d
+] 
+[Added multiarg support to sort
+merehap@gmail.com**20100301091913
+ Ignore-this: 8853a47fa6fab4478c048761ac88179d
+] 
+[Added multiarg support to nl
+merehap@gmail.com**20100301090332
+ Ignore-this: 9effc54d1c789fede9349b6f55a998f
+] 
+[Added common crypto functions
+merehap@gmail.com**20100301083518
+ Ignore-this: ff5858823d4f9da3281f06bce8936f4c
+] 
+[Upgraded crypto tools architecture (md5 and sha*)
+merehap@gmail.com**20100301062353
+ Ignore-this: 3a54e124b8a8445f8dd8a3e35ceba149
+] 
+[Upgraded join architecture
+merehap@gmail.com**20100301040843
+ Ignore-this: 8f95178b6c01563db26e5c1b7bf9dff3
+] 
+[Enabled multiarg in head
+merehap@gmail.com**20100301040222
+ Ignore-this: 292261547ea4cf8fbfd288eedf656a30
+] 
+[Enabled multiarg for expand
+merehap@gmail.com**20100301034806
+ Ignore-this: 629c0e77a1e1c3df114b9de3db526999
+] 
+[Added multiple input ability to cat
+merehap@gmail.com**20100301022044
+ Ignore-this: afdebf8f95a6f98199f9c2d1fdfb963c
+] 
+[Simplified standard hook names
+merehap@gmail.com**20100301020343
+ Ignore-this: fb2bd452b739c09fbc4ca37abe552c13
+] 
+[Enabled multiple arguments for factor
+merehap@gmail.com**20100301015540
+ Ignore-this: 8f64d4f7697f8b2b603643c3d1421c9
+] 
+[Improved factor to use library rather than custom factoring
+merehap@gmail.com**20100301014105
+ Ignore-this: d743422a4b2a2e1527a15072d3a5fbc5
+] 
+[Conformed factor to standard hook
+merehap@gmail.com**20100301005644
+ Ignore-this: ef4a6b22579915d7e109a7df099a02f2
+] 
+[Modified wc to not print total when less than two files are specified
+merehap@gmail.com**20100301002930
+ Ignore-this: 97f1a1e71bff40e327536c850ba9ed4
+] 
+[Refactored cat for standard hook
+merehap@gmail.com**20100301000217
+ Ignore-this: 28837615cd902b8d69747c3ee1e82f28
+] 
+[Updated name of standard hook that wc calls
+merehap@gmail.com**20100228235758
+ Ignore-this: 2b6fcadfefda7d5624118cc1949c5c58
+] 
+[Pulled common hook functionality out of wc
+merehap@gmail.com**20100228040246
+ Ignore-this: 20ebffe998500f3d037cd8841c19de00
+] 
+[Globally renamed base to hook and pure to core
+merehap@gmail.com**20100228033126
+ Ignore-this: 6e68b89db20d03137239768183e38bcc
+] 
+[Renamed UtilBase to UtilHook
+merehap@gmail.com**20100228031843
+ Ignore-this: a51de498ba2853b466aedee5bc948c8b
+] 
+[Further tightened wc architecture
+merehap@gmail.com**20100228030923
+ Ignore-this: 1883b21d8974414de79d575c4e988fce
+] 
+[Added multiarg functionality to wc and cleaned up. Changed global default mode to ArgsTrailing.
+merehap@gmail.com**20100226224545
+ Ignore-this: f117776f165cc9991449b4a7f35a0e82
+] 
+[Added pressing cross cutting concerns.
+merehap <>**20100226105947
+ Ignore-this: 9e839c1a87f0414cfbc9a36ceb7360f9
+] 
+[Added minimal pwd
+merehap@gmail.com**20100226080515
+ Ignore-this: d31131ef2440ca61accc6f2ab2b164d3
+] 
+[Added complete logname
+merehap@gmail.com**20100226075610
+ Ignore-this: d18c483a19c59d1ed6f855e28f039468
+] 
+[Fixed whoami to use effective user name rather than login name
+merehap@gmail.com**20100226074946
+ Ignore-this: 660319355b7379a1ad6c14d3a165c8f4
+] 
+[Added minimal printenv
+merehap@gmail.com**20100226074352
+ Ignore-this: fe643ca12082ed053d2917f8eb5af951
+] 
+[Pulled out common functionality from env.hs into common/environment.hs
+merehap@gmail.com**20100226073439
+ Ignore-this: f17df8c202fdd098d7e89cbc5cd72ed4
+] 
+[Added minimal env
+merehap@gmail.com**20100226072345
+ Ignore-this: 644dbb363144c2f7ef659d917ca2ce1e
+] 
+[Added relatively complete dirname
+merehap@gmail.com**20100226065735
+ Ignore-this: 88f9ef2ac1e6a20a4f7955988a7f037f
+] 
+[Added relatively complete groups
+merehap@gmail.com**20100226062614
+ Ignore-this: 94c5bf54da8d4ceba5cd7f648054cb74
+] 
+[Added seq without formatting option
+merehap@gmail.com**20100226032325
+ Ignore-this: 7eab09856c93f93f7bd2d39233b615da
+] 
+[Added minimal date
+merehap@gmail.com**20100225192904
+ Ignore-this: 8fa698477c48e6e39b7283937c8d4c61
+] 
+[Added full basename
+merehap@gmail.com**20100225175532
+ Ignore-this: d71e29cd62d5bace5f7277a0744d5c54
+] 
+[Added minimal chgrp
+merehap@gmail.com**20100225072055
+ Ignore-this: e8582d3ea5a08028079262031e24b52b
+] 
+[Initial project roadmap.
+merehap <>**20100225003646
+ Ignore-this: 15b372f9d2d5c6da5f05e67fa2c5552
+] 
+[Added link to milestones page.
+merehap <>**20100225001440
+ Ignore-this: c4d8370a1c3baa9d1b0d84e25718f17c
+] 
+[Added help and version argument descriptions to several file utils
+merehap@gmail.com**20100224095740
+ Ignore-this: 5cec4a30d4a03dbee328437519da34ee
+] 
+[Minimal chmod
+merehap@gmail.com**20100224025232
+ Ignore-this: fa42cdf66c1859161a8e366b0760f88a
+] 
+[Removing util template as it hasn't been used
+merehap@gmail.com**20100224025144
+ Ignore-this: 4d19e9178c17dead16cb53ac2786c727
+] 
+[Added minimal chown (was in incorrect file chmod)
+merehap@gmail.com**20100219003619
+ Ignore-this: e328c48cedc52624004f260bd5127947
+] 
+[Added minimal chmod
+merehap@gmail.com**20100219002911
+ Ignore-this: a4f5f8781fc420c719296997393e4e55
+] 
+[Minimal mkdir
+merehap@gmail.com**20100218234820
+ Ignore-this: 5fd0d583f158410d6f0e9a4f303e32f9
+] 
+[Added complete factor
+merehap@gmail.com**20100218125143
+ Ignore-this: 5509f129259bb7868463b8ea8c60b8a8
+] 
+[Fixed arg description for rm
+merehap@gmail.com**20100218080545
+ Ignore-this: ece5303f52ed3c18ef9da38750b8a3ff
+] 
+[Added minimal rmdir
+merehap@gmail.com**20100218080440
+ Ignore-this: 703f02ce8da94092a8ca414116b68854
+] 
+[Simplified minimal cp
+merehap@gmail.com**20100218074713
+ Ignore-this: d61fcb771b1fe59aef3b99d4cd3389ed
+] 
+[Added minimal rm
+merehap@gmail.com**20100218074241
+ Ignore-this: 9904d23422538ac2e95673f50fc58e33
+] 
+[Removed unused rev utility
+merehap@gmail.com**20100218073227
+ Ignore-this: 641220a918a5ee633511f237fc25a069
+] 
+[Minimal mv
+merehap@gmail.com**20100218072940
+ Ignore-this: 5c52f7359abeb79f263d066bc9b42175
+] 
+[Updated template
+merehap@gmail.com**20100218071020
+ Ignore-this: 60c8c234fe1fafb21596b890cc674720
+] 
+[Minimal cp
+merehap@gmail.com**20100218070558
+ Ignore-this: 13c30e09f20648b1920ed10be905cb9
+] 
+[Fixed husyhox
+merehap@gmail.com**20100218070201
+ Ignore-this: 693ad3a98d1f39fe720ae4db42d0a008
+] 
+[Updated template
+merehap@gmail.com**20100218064319
+ Ignore-this: eaeaea3572405ab6f8b841c471c28d30
+] 
+[Cleaned up main function in husyhox
+merehap@gmail.com**20100218063716
+ Ignore-this: ff6a36b792b0af624f3b7bcaccb07c72
+] 
+[Removed TODO files (TODO discovery will be automated in the future)
+merehap@gmail.com**20100218061609
+ Ignore-this: 7de094918d10490a301d9ac5f2608352
+] 
+[Minimal touch
+merehap@gmail.com**20100218061226
+ Ignore-this: 5c84a2819999962861d6727335b01c18
+] 
+[Renamed template.hs to template to avoid confusion
+merehap@gmail.com**20100218055511
+ Ignore-this: d84e1f9cec5304a06e155e229aa4751f
+] 
+[Added utility template
+merehap@gmail.com**20100218055413
+ Ignore-this: 66f5b8d5f4fa7d3f2c71ccb9f268639f
+] 
+[Fixed md5 name for usage
+merehap@gmail.com**20100218045741
+ Ignore-this: 9940122f7b8418ff8d61e95c51faa8e2
+] 
+[Refactored md5 to use crypto common
+merehap@gmail.com**20100218045425
+ Ignore-this: 935204b31f47a3d7c67e27d8cddadf95
+] 
+[Pulled out common functionality from and upgraded sha utils
+merehap@gmail.com**20100218044423
+ Ignore-this: 493b9c50179575e3b11eceb5f51b27e5
+] 
+[Complete argDescs and pure args for sha1sum (breaks shasum)
+merehap@gmail.com**20100218024028
+ Ignore-this: 4a39ba55ef2f4a73909c0e550dffb345
+] 
+[Echo cleanup
+merehap@gmail.com**20100218010610
+ Ignore-this: 728445a423d19a60789e2eab0dd93e7c
+] 
+[Hook up and minor cleanup of ls
+merehap@gmail.com**20100218005416
+ Ignore-this: 9b126064a06b22134d75aa3cce11256b
+] 
+[Added tee without ignore-interrupts
+merehap@gmail.com**20100218004745
+ Ignore-this: 128476d2db9574cde1957388a27502f2
+] 
+[Split common functions
+merehap@gmail.com**20100217214946
+ Ignore-this: e100d1a65c1c38392605f7e7955d31cf
+] 
+[Complete whoami
+merehap@gmail.com**20100217112757
+ Ignore-this: 2b2947952b66f2b762d2d6d7f24ba175
+] 
+[Fixed and cleaned up
+merehap@gmail.com**20100217033541
+ Ignore-this: 8a77b4e21faf89bcf613347ae4726960
+] 
+[Added mininal sleep
+merehap@gmail.com**20100217030157
+ Ignore-this: 2c49d775ae0bfd4899b25f46d4d45e0
+] 
+[Fixed expand/unexpand
+merehap@gmail.com**20100216191506
+ Ignore-this: f187308dc9ef0c9aef09baaf86492836
+] 
+[Added shasum umbrella utility
+merehap@gmail.com**20100216030752
+ Ignore-this: bce838d02a7e600f5ecea4aaf95bcf2b
+] 
+[Added minimal sha utilities
+merehap@gmail.com**20100215111758
+ Ignore-this: e815e43bdec8876d6d87519dcb604748
+] 
+[Fixed repo after move (re-added expand/unexpand)
+merehap@gmail.com**20100215104922
+ Ignore-this: dd8c8c22a4d90d7bf00083ed86dded9c
+] 
+[Minimal nl
+merehap@gmail.com**20100214214637
+ Ignore-this: 1ab95e55ac705668f464d6af0c819025
+] 
+[Added easy source code link
+merehap <>**20100214204936
+ Ignore-this: bced1a0c8604f14efcbd29a4d5d4e0a
+] 
+[Added minimal expand and unexpand
+merehap@gmail.com**20100213113550
+ Ignore-this: ebcde6aa5825ec3281f2e4566f14a3e7
+] 
+[Added minimal sort
+merehap@gmail.com**20100213110800
+ Ignore-this: f88434187a203573b63837c07455ffed
+] 
+[Fixed return value
+merehap@gmail.com**20100213104947
+ Ignore-this: fe3a0e6c8ed2b3ae93f9c713c6c890c6
+] 
+[Added heads and tails
+merehap@gmail.com**20100213104249
+ Ignore-this: 69a69224b0200a9c164ff0eb4d43b7ef
+] 
+[Adding false
+merehap@gmail.com**20100213100723
+ Ignore-this: 5de219094b5f84e95ae9810fca3560c0
+] 
+[Added true
+merehap@gmail.com**20100213100328
+ Ignore-this: 943b1128d9985953576a1959d7912aa0
+] 
+[Minimal md5sum
+merehap@gmail.com**20100211085510
+ Ignore-this: a1925fe1b3d27237a58f035ef06c0dca
+] 
+[Fixed compile errors
+merehap@gmail.com**20100211084434
+ Ignore-this: 170ee789ed65c71600f8eb31c6c3a43f
+] 
+[Minor improvements to base and argDescs
+merehap@gmail.com**20100211064859
+ Ignore-this: 8bf13d402da4540477fee2f3e6bc0e41
+] 
+[Additional tr feature needed
+merehap@gmail.com**20100210022848
+ Ignore-this: 6f370c844f75d0593ea16a21198f9445
+] 
+[TR update
+merehap@gmail.com**20100210022454
+ Ignore-this: edf03503ccf38f8b72b5bd81d8ceb7b3
+] 
+[Full pureTR minus complement and interpreted chars
+merehap@gmail.com**20100210021342
+ Ignore-this: a9e470c6e4fd904f16ca0992f35b90de
+] 
+[Rearranged mode determination into error and standard
+merehap@gmail.com**20100210011036
+ Ignore-this: f160c84de7721203cac599026929c6fe
+] 
+[Added mode determination
+merehap@gmail.com**20100210005400
+ Ignore-this: 747ce2b3aa2b9d69e256f18677be4e30
+] 
+[Improved structure and error handling
+merehap@gmail.com**20100209232920
+ Ignore-this: dc4bb812e2d8eabfdb4b0fcb6fab7a62
+] 
+[Made proper parameters to pureTR
+merehap@gmail.com**20100209225846
+ Ignore-this: 6448226e469a50479e020c4785292e3d
+] 
+[Made unique unnamed arguments
+merehap@gmail.com**20100209023017
+ Ignore-this: e32de6e9cae0f6b4e09436ef77a20f66
+] 
+[Minimal version
+merehap@gmail.com**20100209002245
+ Ignore-this: edd3ed04d37dd436579b6bc843673909
+] 
+[Added required switch support
+merehap@gmail.com**20100209002049
+ Ignore-this: 656e87e7380f33b71f3b6992d18ab0cb
+] 
+[Added arg descriptions
+merehap@gmail.com**20100208084518
+ Ignore-this: 4e7f012bd011528aea91e6e2951baea2
+] 
+[Added TR hook
+merehap@gmail.com**20100208084403
+ Ignore-this: 201f56a21a44f2a9224b3fa3bd69363b
+] 
+[Updated TODOs
+merehap@gmail.com**20100208083737
+ Ignore-this: 5ea2b0e3bcc0bb8c65a723a82b03baf1
+] 
+[Removed references from husyhox to utilities with little work done on them
+merehap@gmail.com**20100208080057
+ Ignore-this: 3a8081579d44b4f2c22f43818b1b7548
+] 
+[tac and uniq
+merehap@gmail.com**20100208075056
+ Ignore-this: 22af0ab4d2a35cbe2ebcd2b2f41d4112
+] 
+[Partial fix of regex with separator before
+merehap@gmail.com**20100208074907
+ Ignore-this: 27091cc617068f75cd9832d7d46d456b
+] 
+[Partial fix of regex functionality
+merehap@gmail.com**20100208073352
+ Ignore-this: a8d1299899a2b70532b5b94dcd8446dd
+] 
+[Added TODO comment for special char handling
+merehap@gmail.com**20100208073317
+ Ignore-this: b5f7785bd08007b06ded5e8df808adac
+] 
+[Full version
+merehap@gmail.com**20100208053652
+ Ignore-this: af3754fcec62b106338a07921451fa4
+] 
+[Everything except regex support
+merehap@gmail.com**20100207023515
+ Ignore-this: 5772c87ed858cdb8223c6c3e28526ee3
+] 
+[Simple tac
+merehap@gmail.com**20100207010839
+ Ignore-this: 6f6be85abb3255eb7016b2c36ef345fb
+] 
+[Cleanup
+merehap@gmail.com**20100205103334
+ Ignore-this: 788c2b8621d8062c049f6e4ed5fc257c
+] 
+[Cleanup
+merehap@gmail.com**20100205102255
+ Ignore-this: b2a96459acbdea551d22f688a843c557
+] 
+[Cleanup cat/converted pure argument list to data
+merehap@gmail.com**20100205102036
+ Ignore-this: c0020ea194466f7453fc3d371443e0a0
+] 
+[Grouped counters with their default on/off state and switch
+merehap@gmail.com**20100205094850
+ Ignore-this: a9d902cfe67772d7f69c584d65aa6496
+] 
+[Corrected rev namespace
+merehap@gmail.com**20100205094802
+ Ignore-this: 94822f717a4f3da263781a51c856f2a7
+] 
+[Fixed failure to read from stdin when no files specified
+merehap@gmail.com**20100205090509
+ Ignore-this: 2a1d211a2cbbfdfe3365d9479fba8042
+] 
+[Pulled out common input code
+merehap@gmail.com**20100205022946
+ Ignore-this: 7686371cf1f775aee81c5ae304df12ea
+] 
+[Added support for multiple input sources
+merehap@gmail.com**20100205014949
+ Ignore-this: 844c594a0ac67cc625fd06f7104712cb
+] 
+[Added dash (-) as additional stdin reader
+merehap@gmail.com**20100205004430
+ Ignore-this: 879f3578c813e8e2bcb9a0a7a2ad6d63
+] 
+[Reverted build script location
+merehap <>**20100205084246
+ Ignore-this: cd71a0c566800d5548620d19dc9095aa
+] 
+[Added input and output file handling to uniq
+merehap@gmail.com**20100205002018
+ Ignore-this: e8be3a770442f29a7fcfc6843b7a2b4d
+] 
+[Added int arg parsing
+merehap@gmail.com**20100204234849
+ Ignore-this: 21448fd47e8caec6f56114d315f62f80
+] 
+[Moved build.sh back to src
+merehap@gmail.com**20100204234754
+ Ignore-this: 59649c527291f3091c704617b332b08f
+] 
+[Cleanup and ADT commenting
+merehap@gmail.com**20100204224518
+ Ignore-this: 55074192b1aec3481563cbb1d78f7a1f
+] 
+[Relatively complete uniq
+merehap@gmail.com**20100204063536
+ Ignore-this: 55f1fe510e1f19806831c43658ca05b5
+] 
+[Fixes to pureUniq
+merehap@gmail.com**20100204044622
+ Ignore-this: e0de7af551bd3aabd143997051e977ba
+ 
+ Corrected pureUniq so that it will allow skip fields and skip chars to specified.
+ 
+ Fixed processing order so that output lines will remain unmodified.
+ 
+] 
+[Most of pure uniq implemented (no zero delimiter)
+merehap@gmail.com**20100203054327
+ Ignore-this: 78bfca589c743641e3b7bbe9e38930ce
+] 
+[Implemented pureUniq parameter list
+merehap@gmail.com**20100201040700
+ Ignore-this: 6989f0b412e2c8eb4c87cc1a7e8bf615
+] 
+[Added core util documentation location
+merehap <>**20100203224201
+ Ignore-this: da8f85c6d424574ccac9ae78a3d14329
+] 
+[Reference to warning and hlint compliance in build script
+merehap <>**20100203223858
+ Ignore-this: 5afb2e586285cd66a3c9e1ac979a12b7
+] 
+[Added BusyBox link
+merehap <>**20100203202231
+ Ignore-this: a9e404f57b4fc70f6b6ba010eb2bf53
+] 
+[Additional purpose added
+merehap <>**20100203202017
+ Ignore-this: 980294e3406cde2a50e5efc415e6d7c
+] 
+[Updating build script, removing unused TDFA dependency
+merehap@gmail.com**20100131205158
+ Ignore-this: daa6b6eaf3ca014117e3e981e3e19193
+] 
+[Updated build script location
+merehap <>**20100131203117
+ Ignore-this: 17d0f8aabfaa55a7c43293da4f0d494d
+] 
+[Added build script
+merehap@gmail.com**20100131202329
+ Ignore-this: bc41a8e66642b86cef01706c3a4a7367
+] 
+[Qualified System.IO imports for cat
+merehap@gmail.com**20100131104725
+ Ignore-this: a89d262f71bcc7ab21099b11f9684dac
+] 
+[Clean up imports and exports
+merehap@gmail.com**20100129100849
+ Ignore-this: cb14a98639b3e6bf280e011c750ed8b4
+ 
+ Export main from utils, explicit exports from common.hs, explicit imports for husyhox.hs.
+] 
+[Updated export information
+merehap <>**20100129095646
+ Ignore-this: 77a135c5f3052f04544c00b5bbc67d52
+] 
+[Minimal uniq
+merehap@gmail.com**20100129082655
+ Ignore-this: 41232a0a2f96b6714048e9c8a0e10e4c
+] 
+[Adding version and usage feedback
+merehap@gmail.com**20100129081429
+ Ignore-this: d5e7a0be78cfa87b1de5cf9c7b31a052
+] 
+[Standardized husyhox build process
+merehap <>**20100129091936
+ Ignore-this: c6f72e5e3422ed2f722af312983dbe3e
+] 
+[Fixed escaping of ghc calls
+merehap <>**20100129030709
+ Ignore-this: c1e840dbef11869b019c1c1f42e80f27
+] 
+[Added way to build entire HusyHox
+merehap <>**20100129025950
+ Ignore-this: ad4deb620399862da591e7e38f1ca7cf
+] 
+[Updated stand alone build procedure
+merehap <>**20100129024938
+ Ignore-this: 140daa97ea9a2cb6acbe3f8853e8a95
+] 
+[Generalized and fixed util category information
+merehap <>**20100128112409
+ Ignore-this: 1540f308bb318f628f440c4144e3a87b
+] 
+[Export list information
+merehap <>**20100128112217
+ Ignore-this: 5e6490742f6cdb772bd911b1ac728d50
+] 
+[Initial HusyHox support for combined binary
+merehap@gmail.com**20100128111353
+ Ignore-this: ba99eaf0800dd3f39bf3d274de5a5b5f
+] 
+[Explicit export list per utility in each module
+merehap@gmail.com**20100128111235
+ Ignore-this: a7a07cbf11bf14ff28e6c4e13d1cbc74
+] 
+[Added TextUtils TODO list
+merehap@gmail.com**20100128093000
+ Ignore-this: c898d396ef2bfb2c6de415ef46f6e394
+] 
+[Fixed over-length line
+merehap@gmail.com**20100128092902
+ Ignore-this: e64aa29147f5086db4ed0729d23ea2ce
+] 
+[Common code folder creation
+merehap@gmail.com**20100128090429
+ Ignore-this: 50394c0601ca9be16608f4508a5154f5
+] 
+[Structuring the source tree
+merehap@gmail.com**20100128083648
+ Ignore-this: ae3cf58ced541afcc8f4cea42d20ba16
+ 
+ Core utils are broken down into file/shell/text. Other utils are divided similarly to BusyBox.
+] 
+[Subdividing Core Utils into File/Shell/Text
+merehap@gmail.com**20100128074854
+ Ignore-this: efd2fcb92bb2ef8662babdb4aa1672a2
+] 
+[Additional constraints on submissions.
+merehap <>**20100128071454
+ Ignore-this: ae775c6ffe159456c4031bfa19dfcef9
+] 
+[Added imports. Minor spelling grammar fixes. Improved pure utility description.
+merehap <>**20100127235013
+ Ignore-this: c5b1d179341aa3451064b198c47029e5
+] 
+[Removed extra blank line.
+merehap <>**20100127222933
+ Ignore-this: e70274217160d05fc3ed22b02a577352
+] 
+[Modified version numbers to be more in line with Hackage convention. Added other objectives for 0.x releases.
+merehap <>**20100127190547
+ Ignore-this: e99130373acce0771671121c517eeaad
+] 
+[Description of building stand-alone binaries
+merehap <>**20100127105940
+ Ignore-this: 1b6d1045b68fb1d69c18296fc73de1ab
+] 
+[Build page and GNU core utils link
+merehap <>**20100127105415
+ Ignore-this: 19debc65ed6865b064d10c4a0f24120a
+] 
+[Full initial architecture
+merehap <>**20100127104656
+ Ignore-this: 412bb21271b29bab7446a1d89877283d
+] 
+[Partial utility architecture description.
+merehap <>**20100127095725
+ Ignore-this: be357d86f005ce61c9e7e71fb5c87ddf
+] 
+[Architecture section
+merehap <>**20100127084957
+ Ignore-this: b111cce164c56f3f7238e7459e456932
+] 
+[Initial description
+merehap <>**20100127075343
+ Ignore-this: 6d4dd4edc644ea79afdbe76dbf493ad1
+] 
+[fix yes
+merehap@gmail.com**20100125105201
+ Ignore-this: 588b4c5ca97d95b57348ab8b20126cdd
+] 
+[hlint compliance
+merehap@gmail.com**20100125105041
+ Ignore-this: 5ac1b4e8138a65f3116f2ba7027af9de
+] 
+[Warnings fixed
+merehap@gmail.com**20100125103828
+ Ignore-this: 17a891e691979fa2621b01b40d5a35d0
+] 
+[WC update
+merehap@gmail.com**20100125102611
+ Ignore-this: 805e6b80b11185cedeff048288ea6030
+] 
+[Cleanup, cat progress.
+merehap@gmail.com**20100115033234
+ Ignore-this: 7d504ad006aa1556b107e9505b88e3e9
+] 
+[removal of extra line
+merehap@gmail.com**20100106023426
+ Ignore-this: 7e1f19f4e1776e6a6adea5b2f7708885
+] 
+[Initial echo complete.
+merehap@gmail.com**20100106022834
+ Ignore-this: e1cf501561561802e8840616988d69df
+] 
+[WC and LS clean up, echo re-architecture (broken).
+merehap@gmail.com**20100104095626
+ Ignore-this: d3982820a878d8119656fa0326f5583c
+] 
+[Tool standardization, wc implementation.
+merehap@gmail.com**20100103012030
+ Ignore-this: 37c8abafd11a53214ca4e1ea4d02bdd1
+] 
+[Fully integrated Extended Switches, Fixed Remaining Grep Compile Errors
+merehap@gmail.com**20091230114726
+ Ignore-this: 6d81cc9ec7162ece673945fb1bf4b93
+] 
+[Most grep compile errors fixed
+merehap@gmail.com**20091229114145
+ Ignore-this: a4e1425dc6eb84cac0fb99d5b8642b58
+] 
+[All args for grep (broken)
+merehap@gmail.com**20091229095127
+ Ignore-this: ddc32b0a3cf20bc9f3d688304babcbb1
+ 
+ Args need to be compiled and rearranged to be proper.
+] 
+[Basic echo with arguments
+merehap@gmail.com**20091229071828
+ Ignore-this: a28763c85c34857e288a8d482c780965
+] 
+[cat argument descriptions added
+merehap@gmail.com**20091229061924
+ Ignore-this: dce63ecf0be15ca4893453a156a57780
+] 
+[Simple cat and generalized args
+merehap@gmail.com**20091229053323
+ Ignore-this: ee06f97745b1f3b146f176ed6370ca89
+] 
+[Command line processing
+merehap@gmail.com**20091229041355
+ Ignore-this: e35c619c565dd808cb462b9253a4136d
+ 
+ Added use of System.Console.ParseArgs
+] 
+[Initial
+merehap@gmail.com**20091224053018
+ Ignore-this: fb67f972e616d543d66d662af164ab4a
+] 
+[User's guide (README)
+Gitit <>**20100125111459
+ Ignore-this: cb16395fd647fc6d95c5597031c1720f
+] 
+[Default help page
+Gitit <>**20100125111459
+ Ignore-this: ba479683be7ec30cd097a1153afbe6ed
+] 
+[Default front page
+Gitit <>**20100125111459
+ Ignore-this: b5bb7dfda85726e1379672c7a16f5b00
+] 
+Patch bundle hash:
+3b1577bfd23716e745c607fe22dde35a19327fa6

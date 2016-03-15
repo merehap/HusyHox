@@ -1,0 +1,37 @@
+Each utility can be built as a stand-alone binary or as part of a single HusyHox binary. As such there are two entries points into each utility: the main function and a function with the name of the corresponding GNU utility which acts as a hook for the full HusyHox binary.
+
+The simplest utilities are [true](src/HusyHox/Shell/True.hs) and [false](HusyHox/Shell/False.hs). Note that the last line of both utilities is a Template Haskell expression that generates the utility.
+
+For an example that actually shows off some of the architecture, look at [wc](HusyHox/Text/WC.hs).
+
+Finally, an example that makes use of custom output handling: [tee](HusyHox/Shell/Tee.hs).
+
+
+The components that all utilities share in common are as follows:
+
+# Input
+Performs all IO necessary to read the inputs to the utility. Will not process any command line arguments other than those needed for IO purposes. Must live in the IO monad.
+
+# Parse
+Takes a list of processed arguments and gathers the inputs for the program in order to generate CoreArgs. Converts string representations into well-typed representations. Must be a pure (non-IO), total function.
+
+# Core
+Takes CoreArgs and generates FormatArgs. This comprises the main functionality of the utility, independent of how its inputs and output are represented on the terminal and in the input and output files.
+Must be a pure (non-IO) function and should usually be total (through use of appropriate CoreArgs).
+
+# Format
+Takes FormatArgs and generates OutputArgs (usually just a string). Turns the well-typed data resulting from core and turns it into string data.
+Must be a pure (non-IO) function and should be total (through use of appropriate FormatArgs).
+
+# Output
+Takes OutputArgs and outputs them to standard input, a file, files, or the network. Must live in the IO monad.
+
+# Argument Descriptions
+A list of command line argument descriptions necessary for the ParseArgs library to convert raw string arguments into clean, data arguments.
+
+# Other
+Helper functions should go at the end of the file so as to keep the standard functions as clean as possible.
+
+Template Haskell is used to autogenerate the necessary type signatures and default implementations for the standard functions.
+
+In the Template Haskell expression "standardUtil", the first through fifth (boolean) arguments indicate whether the programmer will specify custom versions of input, parse, core, format, and output, respectively, or whether they should be given the default implementation. The final argument indicates whether the utility has any custom switches (that is, switches that don't have a single letter representation) or not.

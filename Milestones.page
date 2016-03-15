@@ -1,0 +1,26 @@
+#0.1
+
+- Complete implementations of each of the GNU core utilities (including file, shell, and 
+text utilities).
+- Integration of environment variables for modifying program behavior.
+- Each core utility buildable into a monolithic HusyHox binary (similar to BusyBox).
+
+- Each core utility buildable separately (similar to coreutils).
+
+- Benchmarks for time, memory, and space for each utility with comparisons to BusyBox and coreutils.
+
+- A script to configure HusyHox as the replacement for the coreutils already running a machine.
+
+#0.2
+
+- Quickcheck tests for each utility.
+
+- Tests for each utility ensuring output matching the GNU core utilities as the reference implementation (not BusyBox).
+
+- Updated benchmarks for each utility.
+
+#0.3
+
+- Performance optimization for each utility.
+
+- Updated benchmarks for each utility.
